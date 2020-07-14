@@ -3,7 +3,7 @@
 
 = Docs Landing Page
 
-
+https://app.netlify.com/sites/docs-landing-page/deploys[image:https://api.netlify.com/api/v1/badges/ea5a1331-0476-4664-83af-47ba3ac87159/deploy-status[title="Netlify Status"]]
 
 toc::[]
 
