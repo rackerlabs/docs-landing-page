@@ -1,0 +1,38 @@
+[build.environment]
+  YARN_VERSION = "1.22.4"
+  NPM_VERSION = "6.14.5"
+
+[build]
+  command = "make serve"
+  publish = "public"
+
+[context.deploy-preview]
+  publish = "public"
+
+
+[[redirects]]
+  from = "https://docs.rackspace.com/blog/"
+  to = "https://docs-rackspace-com.netlify.app/blog/"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+[[redirects]]
+  from = "https://docs.rackspace.com/css/*"
+  to = "https://docs-rackspace-com.netlify.app/css/*"
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+
