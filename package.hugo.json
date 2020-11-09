@@ -1,0 +1,7 @@
+{
+  "name": "docs-landing",
+  "version": "1.0.0",
+  "description": "Docs Landing Page for Rackspace",
+  "private": true,
+  "main": "index.js"
+}

@@ -1,49 +1,80 @@
 baseurl = "/"
-theme = "docs-developer-hugo-theme"
 copyright = ""
 defaultContentLanguage = "en-us"
 destination = "public"
 enableEmoji = true
 enableRobotsTXT = true
-languageCode = "en"
+languageCode = "en-us"
 metaDataFormat = "yaml"
 paginate = 10
 pluralizeListTitles = false
 relativeURLs = false
+disablePathToLower = true
+uglyURLs = false
+smartDashes = true
 title = "Rackspace Developer Center"
+canonifyURLs = true
+enableGitInfo = true
 [markup]
-defaultMarkdownHandler = "blackfriday"
-[markup.blackFriday]
-angledQuotes = false
-hrefTargetBlank = false
-latexDashes = true
-plainIDAnchors = true
-[markup.highlight]
-codeFences = true
-guessSyntax = true
-style = "monokailight"
-[markup.goldmark]
-[markup.goldmark.extensions]
-definitionList = true
-footnote = true
-linkify = true
-strikethrough = true
-table = true
-taskList = true
-typographer = true
-[markup.goldmark.parser]
-attribute = true
-autoHeadingID = true
-autoHeadingIDType = "github"
-[markup.goldmark.renderer]
-hardWraps = false
-unsafe = false
-xhtml = false
-
-
-[[menu.docs]]
-    name = "Welcome"
-    weight = 1
+defaultMarkdownHandler = "goldmark"
+[markup.asciidocExt]
+    backend = "html5"
+    docType = "article"
+    extensions = []
+    failureLevel = "fatal"
+    noHeaderOrFooter = true
+    safeMode = "unsafe"
+    sectionNumbers = false
+    trace = false
+    verbose = true
+    workingFolderCurrent = false
+    [markup.asciidocExt.attributes]
+  [markup.blackFriday]
+    angledQuotes = false
+    footnoteAnchorPrefix = ""
+    footnoteReturnLinkContents = ""
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    nofollowLinks = false
+    noreferrerLinks = false
+    plainIDAnchors = true
+    skipHTML = false
+    smartDashes = true
+    smartypants = true
+    smartypantsQuotesNBSP = false
+    taskLists = true
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      definitionList = true
+      footnote = true
+      linkify = true
+      strikethrough = true
+      table = true
+      taskList = true
+      typographer = true
+    [markup.goldmark.parser]
+      attribute = true
+      autoHeadingID = true
+      autoHeadingIDType = "github"
+    [markup.goldmark.renderer]
+      hardWraps = false
+      unsafe = true
+      xhtml = false
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    style = "monokai"
+    tabWidth = 4
+  [markup.tableOfContents]
+    endLevel = 3
+    ordered = false
+    startLevel = 2
 
 [[menu.footer]]
     name = "Developer Center"
@@ -120,7 +151,7 @@ xhtml = false
     identifier = "blogs"
     name = "Blogs"
     url = "#"
-    post = "&#9660;"
+    post = ""
     weight = 3
     [[menu.main]]
         identifier = "technical-blog"
@@ -157,49 +188,15 @@ xhtml = false
     weight = 6
 
 
-[outputFormats.OpenSearch]
-baseName = "opensearch"
-isPlainText = true
-mediaType = "application/xml"
-
-[outputFormats.Redirects]
-baseName = "redirects"
-isPlainText = true
-mediatype = "application/json"
-notAlternative = true
 [outputs]
-home = ["HTML", "RSS", "OpenSearch", "Redirects"]
+home = ["HTML", "RSS"]
+
+
 [params]
 dateformat = "January 2, 2006"
-description = "Rackspace Developer documentation using static site generator and headless CMS"
+description = "Rackspace Developer documentation using Hugo, Netlify"
 ghrepo = "https://github.com/rackerlabs/docs-landing-page"
-ghrepo_edit = "https://github.com/rackerlabs/docs-landing-page/edit/master/hugo/content/"
+ghrepo_edit = "https://github.com/rackerlabs/docs-landing-page/edit/master/content/"
 ghrepo_new = "https://github.com/rackerlabs/docs-landing-page/issues/new"
 images = ["/img"]
-[related]
-includeNewer = true
-threshold = 10
-toLower = true
-[[related.indices]]
-name = "Section"
-weight = 200
-[[related.indices]]
-name = "keywords"
-weight = 150
-[[related.indices]]
-name = "author"
-weight = 150
-[[related.indices]]
-name = "categories"
-weight = 150
-[[related.indices]]
-name = "tags"
-weight = 100
-[[related.indices]]
-name = "date"
-pattern = "2006"
-weight = 10
-[taxonomies]
-author = "author"
-category = "categories"
-tag = "tags"
+
