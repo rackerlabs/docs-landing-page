@@ -2,6 +2,7 @@
 *.DS_Store
 node_modules/
 .env
+resources/
 
 # Don't add personal VS Code settings
 .vscode/
