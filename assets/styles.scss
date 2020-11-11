@@ -19,7 +19,6 @@
 /* Components */
 @import "components/button.scss";
 @import "components/input.scss";
-@import "components/forms.scss";
 @import "components/pagination.scss";
 @import "components/header.scss";
 @import "components/hero.scss";
@@ -34,14 +33,11 @@
 @import "components/toc.scss";
 @import "components/announcement.scss";
 @import "components/docs.scss";
-@import "components/blog.scss";
 @import "components/spin-up.scss";
 @import "components/docs-apis.scss";
 @import "components/rack-cli.scss";
 
 /* Pages */
-@import "pages/page-about.scss";
 @import "pages/page-docs.scss";
 @import "pages/page-blog.scss";
 @import "pages/page-post.scss";
-@import "pages/algolia-netlify.scss";
