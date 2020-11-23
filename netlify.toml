@@ -34,11 +34,11 @@
 
 [[redirects]]
   from = "/blog/*"
-  to = "https://docs-technical-blog.netlify.app/blog/:splat"
+  to = "https://rackspace.netlifyglobaclcdn.com/:splat"
   status = 200
   force = true
     [redirects.headers] 
-      Host = "rackspace.netlifyglobaclcdn.com"
+      Host = "docs-technical-blog.netlify.app"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
