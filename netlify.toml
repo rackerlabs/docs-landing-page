@@ -33,10 +33,11 @@
     Cache-Control = "public, s-max-age=604800"
 
 [[redirects]]
-  from = "/blog/*"
+  from = "/blog"
   to = "https://rackspace.netlifyglobalcdn.com/:splat"
   status = 200
-  force = true
+  force = false
+  query = {path = ":path"} #  apply this rule for /old-path?path=example
   [redirects.headers]
     Host = "docs-technical-blog.netlify.app"
 
