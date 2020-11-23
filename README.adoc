@@ -35,15 +35,11 @@ Some files may not be supported for live reload. If you are not automatically se
 ```
 ├── [archetypes]- Directory where you define the content, tags, categories, etc.
 ├── [content] - Directory that contains the content of the site.
-│   ├── [contribute]
-│   ├── [documentation]
 ├── [layouts] - Directory that contains Go HTML/template library used to template and format the site.
-├── [public] - (Doesn't exist until generated) Directory that contains the generated content for the site.  Should be part of your git.ignore file.
-├── [scripts] - Directory that should scripts for generating swagger, tags, etc
+├── [public] - (Doesn't exist until generated) Directory that contains the generated content for the site. Should be part of your git.ignore file.
 ├── [static] - Directory for any static files to be compiled into the web site (style sheets, JavaScript, images, robots.txt, fav icons, etc.).
-├── [themes] - Directory that contains the site theme.  Themes override layouts.
 ├── Makefile
 ├── config.toml - Main configuration file, where you define the web site title, URL, language, etc.
-├── README.md (This file)
+├── README.adoc (This file)
 ```
 

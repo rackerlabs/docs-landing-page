@@ -1,1 +1,3 @@
-/getLatestKialiOperator https://raw.githubusercontent.com/kiali/kiali-operator/master/deploy/deploy-kiali-operator.sh
+# Domain Level Redirects
+http://sdk.rackspace.com/*   http://docs.rackspace.com/:splat  301!
+https://sdk.rackspace.com/*   https://docs.rackspace.com/:splat  301!
