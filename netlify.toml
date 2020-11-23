@@ -38,7 +38,7 @@
   status = 200
   force = true
   [redirects.headers]
-    Host = "https://docs-technical-blog.netlify.app"
+    Host = "docs-technical-blog.netlify.app"
 
 
 [[plugins]]
