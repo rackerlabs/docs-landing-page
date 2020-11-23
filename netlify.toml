@@ -37,7 +37,7 @@
   to = "https://rackspace.netlifyglobalcdn.com/:splat"
   status = 200
   force = false
-  headers = {Host = "docs-technical-blog.netlify.app"}
+  headers = {X-From = "netlify", Host = "https://docs-technical-blog.netlify.app/blog"}
 
 
 [[plugins]]
