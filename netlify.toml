@@ -33,7 +33,7 @@
     Cache-Control = "public, s-max-age=604800"
 
 [[redirects]]
-  from = "/blog*"
+  from = "/blog/*"
   to = "https://rackspace.netlifyglobalcdn.com/:splat"
   status = 200
   force = false
