@@ -38,8 +38,6 @@
   status = 200
   force = false
   query = {path = ":path"} #  apply this rule for /old-path?path=example
-  [redirects.headers]
-    Host = "docs-technical-blog.netlify.app"
 
 
 [[plugins]]
