@@ -36,9 +36,9 @@
   from = "/blog/*"
   to = "https://docs-technical-blog.netlify.app/blog/:splat"
   status = 200
-  force = false
-  query = {path = ":path"} #  apply this rule for /old-path?path=example
-
+  force = true
+    [redirects.headers] 
+      Host = "rackspace.netlifyglobaclcdn.com"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
