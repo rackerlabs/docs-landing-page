@@ -4,3 +4,5 @@ https://support.rackspace.com/*   https://docs.rackspace.com/support/:splat  301
 
 http://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
 https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
+
+/blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200
