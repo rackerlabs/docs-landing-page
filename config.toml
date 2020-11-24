@@ -94,12 +94,12 @@ defaultMarkdownHandler = "goldmark"
 [[menu.footer]]
     name = "Rackspace How-To"
     parent = "Developer Network"
-    url = "https://support.rackspace.com/how-to/"
+    url = "/support/how-to/"
     weight = 4
 [[menu.footer]]
     name = "Technical Blog"
     parent = "Blogs"
-    url = "https://docs.rackspace.com/blog"
+    url = "/blog"
     weight = 5
 [[menu.footer]]
     name = "Rackspace Blog"
@@ -156,7 +156,7 @@ defaultMarkdownHandler = "goldmark"
     [[menu.main]]
         identifier = "technical-blog"
         name ="Technical Blog"
-        url ="https://docs.rackspace.com/blog"
+        url ="/blog"
         weight = 1
         parent = "blogs"
     [[menu.main]]
@@ -174,7 +174,7 @@ defaultMarkdownHandler = "goldmark"
 [[menu.main]]
     identifier = "support_documentation"
     name = "Support Documentation"
-    url = "https://support.rackspace.com/"
+    url = "/support"
     weight = 4
 [[menu.buttons]]
     identifier = "buynow"
