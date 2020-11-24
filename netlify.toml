@@ -32,12 +32,12 @@
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 
-[[redirects]]
-  from = "/blog/*"
-  to = "https://rackspace.netlifyglobalcdn.com/blog"
-  status = 200
-  force = true
-  headers = {Host = "docs-technical-blog.netlify.app"}
+# [[redirects]]
+#   from = "/blog/*"
+#   to = "https://rackspace.netlifyglobalcdn.com"
+#   status = 200
+#   force = true
+#   headers = {Host = "docs-technical-blog.netlify.app"}
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
