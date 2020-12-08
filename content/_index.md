@@ -10,9 +10,6 @@ publishdate: 2017-12-31
 expirydate: 2030-01-01
 date: 2017-12-31
 description: 'Developer Docs'
-author: []
-categories: []
-tags: []
 cta:
   headline: ''
   textline: ''
