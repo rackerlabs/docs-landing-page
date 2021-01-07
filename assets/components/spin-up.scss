@@ -5,6 +5,9 @@
     background-size: cover;
     z-index: 1;
     padding: 180px 60px 120px 35px;
+    @media screen and (max-width: 425px) {
+        background-position: 30% 50%;
+    }
     h2 {
         font-family: 'titillium-light',arial,sans-serif;
         font-style: normal;

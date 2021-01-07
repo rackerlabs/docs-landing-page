@@ -107,4 +107,21 @@
   li {
     margin-left: 1rem;
   }
+  .row {
+    width: 100%;
+  }
+}
+
+.text-link::before {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 12px;
+  left: -30px;
+  position: absolute;
+  top: 4px;
+  width: 1px;
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
