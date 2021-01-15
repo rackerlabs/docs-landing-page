@@ -9,4 +9,5 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
 /support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
 
+/docs   https://solution-docs-homepage.netlify.app/     200!
 /docs/*     https://api.rackspace.com/docs/:splat      200!
