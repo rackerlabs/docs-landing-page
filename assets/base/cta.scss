@@ -199,7 +199,7 @@ button[disabled] {
 
 .btn:disabled {
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: "progid: DXImageTransform.Microsoft.gradient(enabled = false)";
     filter: alpha(opacity=40);
     opacity: .4;
     cursor: not-allowed;
@@ -208,7 +208,7 @@ button[disabled] {
 
 .btn-disabled {
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: "progid: DXImageTransform.Microsoft.gradient(enabled = false)";
     filter: alpha(opacity=40);
     opacity: .4;
     cursor: not-allowed;
@@ -217,7 +217,7 @@ button[disabled] {
 
 .btn-disabled:hover, .btn-disabled:focus, .btn-disabled:active {
     background-image: none;
-    filter: progid: DXImageTransform.Microsoft.gradient(enabled = false);
+    filter: "progid: DXImageTransform.Microsoft.gradient(enabled = false)";
     filter: alpha(opacity=40);
     opacity: .4;
     cursor: not-allowed;
