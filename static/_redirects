@@ -15,15 +15,5 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 # Portal Onboarding guide Redirects
 /docs/portal-onboarding-guide/      https://docs-portal-onboarding-guide.netlify.app/               200
 /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/:splat         200
-/intended_audience      /docs/portal-onboarding-guide/intended_audience     301
-/introduction           /docs/portal-onboarding-guide/introduction          301
-/portal_profile         /docs/portal-onboarding-guide/portal_profile        301
-/manage_portal_user_groups      /docs/portal-onboarding-guide/manage_portal_user_groups     301
-/administrative     /docs/portal-onboarding-guide/administrative        301
-/understand_billing     /docs/portal-onboarding-guide/understand_billing        301
-/manage_billing        /docs/portal-onboarding-guide/manage_billing     301
-/tickets        /docs/portal-onboarding-guide/tickets       301
-/notifications      /docs/portal-onboarding-guide/notifications     301
-/support        /docs/portal-onboarding-guide/support       301
 
 /docs/*     https://api.rackspace.com/docs/:splat      200
