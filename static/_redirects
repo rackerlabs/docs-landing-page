@@ -12,9 +12,9 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 # Solution Docs Redirects
 /docs   https://solution-docs-homepage.netlify.app/     200
 
+# Portal Onboarding guide Redirects
 /docs/portal-onboarding-guide/      https://docs-portal-onboarding-guide.netlify.app/               200
 /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/:splat         200
-
 /intended_audience      /docs/portal-onboarding-guide/intended_audience     301
 
 /docs/*     https://api.rackspace.com/docs/:splat      200
