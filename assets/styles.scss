@@ -16,6 +16,8 @@
 @import "base/print.scss";
 @import "base/fonts.scss";
 @import "base/fa.scss";
+@import "base/highlight.scss";
+@import "base/cta.scss";
 
 /* Components */
 @import "components/button.scss";
@@ -37,6 +39,11 @@
 @import "components/spin-up.scss";
 @import "components/docs-apis.scss";
 @import "components/rack-cli.scss";
+@import "components/basement.scss";
+@import "components/modal.scss";
+@import "components/rst-content.scss";
+@import "components/sidebar.scss";
+@import "components/tooltips.scss";
 
 /* Pages */
 @import "pages/page-docs.scss";
