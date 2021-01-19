@@ -9,6 +9,7 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
 /support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
 
+# Solution Docs Redirects
 /docs   https://solution-docs-homepage.netlify.app/     200
 
 /docs/portal-onboarding-guide/      https://docs-portal-onboarding-guide.netlify.app/               200
