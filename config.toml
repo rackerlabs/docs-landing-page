@@ -84,12 +84,12 @@ defaultMarkdownHandler = "goldmark"
 [[menu.footer]]
     name = "API Documentation and User Guides"
     parent = "Developer Network"
-    url = "https://docs.rackspace.com/docs"
+    url = "/docs"
     weight = 2
 [[menu.footer]]
     name = "SDKs"
     parent = "Developer Network"
-    url = "https://docs.rackspace.com/sdks/python/"
+    url = "/sdks/python/"
     weight = 3
 [[menu.footer]]
     name = "Rackspace How-To"
@@ -134,7 +134,7 @@ defaultMarkdownHandler = "goldmark"
 [[menu.footer]]
     name = "Style Guide for Technical Content"
     parent = "Other Information"
-    url = "https://docs.rackspace.com/docs/style-guide/"
+    url = "/docs/style-guide/"
     weight = 12
 
 [[menu.main]]
@@ -145,7 +145,7 @@ defaultMarkdownHandler = "goldmark"
 [[menu.main]]
     identifier = "developer_documentation"
     name = "Developer Documentation"
-    url = "https://docs.rackspace.com/docs"
+    url = "/docs"
     weight = 2
 [[menu.main]]
     identifier = "blogs"
