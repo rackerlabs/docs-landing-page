@@ -106,3 +106,32 @@ img[src$="cloudformation-launch-stack.png"] {
 .post-category {
   padding: 0.5rem 0 0 0;
 }
+
+.docs-header-headline-container {
+  background-image: url(/img/headline-cover.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+  z-index: 1;
+  padding: 90px 60px 90px 35px;
+  h1 {
+    font-family: "titillium-light",arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: rgba(255,255,255,.55);
+    display: inline-block;
+    font-size: 35px;
+    line-height: 1;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 40px .5em;
+    width: 100%;
+    background: 0 0;
+    padding: 0;
+  }
+  .tagline {
+    display: block;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+}
