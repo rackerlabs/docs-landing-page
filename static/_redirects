@@ -20,5 +20,4 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/service-blocks      https://docs-service-blocks.netlify.app/docs/service-blocks/      200
 /docs/service-blocks/*      https://docs-service-blocks.netlify.app/docs/service-blocks/:splat      200
 
-# Solution Docs Redirects
 /docs/*     https://api.rackspace.com/docs/:splat      200
