@@ -88,6 +88,10 @@
       flex: 0 0 40%;
     }
   }
+  ol, ul {
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .lower-footer {
