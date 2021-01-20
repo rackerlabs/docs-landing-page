@@ -1396,3 +1396,81 @@ li, button, a {
       padding: 15px 20px 0;
   }
 }
+
+.site-header .docs-header-headline {
+  background-image: url(/img/headline-cover.jpg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  z-index:1
+}
+
+.site-header .docs-header-headline h1, .site-header .docs-header-headline h2 {
+  font-family: titillium-light, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  background: rgba(255, 255, 255, .55);
+  display: inline-block;
+  font-size: 35px;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 40px .5em;
+  width:100%
+}
+
+.site-header .docs-header-headline h1 .headline-accent, .site-header .docs-header-headline h2 .headline-accent {
+  font-family: open-sans-bold, arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  display:block
+}
+
+.site-header .header-announcement .banner p, .site-header .header-maintenance .banner p {
+  font-family: open-sans-regular, arial, sans-serif;
+  font-style: normal;
+  line-height: 17px;
+  text-align:center
+}
+
+@media (min-width: 769px) {
+  .site-header .docs-header-headline h1, .site-header .docs-header-headline h2 {
+      background: 0 0;
+      padding:0
+  }
+}
+
+.site-header .docs-header-headline .tagline {
+  display: none;
+  font-size: 15px;
+  text-transform:uppercase
+}
+
+@media (min-width: 726px) {
+  .site-header .docs-header-headline {
+      margin-top:-60px
+  }
+
+  .site-header .docs-header-headline h2 {
+      padding:100px 40px 40px
+  }
+}
+
+@media (min-width: 769px) {
+  .site-header .docs-header-headline {
+      padding:120px 60px 60px 35px
+  }
+
+  .site-header .docs-header-headline h2 {
+      padding: 0;
+      width:auto
+  }
+
+  .site-header .docs-header-headline .tagline {
+      display: block;
+      font-size: 15px;
+      text-transform:uppercase
+  }
+}
