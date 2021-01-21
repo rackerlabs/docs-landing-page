@@ -24,4 +24,13 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/ras-databases     https://docs-ras-databases.netlify.app/docs/ras-databases/      200
 /docs/ras-databases/*      https://docs-ras-databases.netlify.app/docs/ras-databases/:splat      200
 
+# AWS Redirects
+/docs/fanatical-support-aws/    https://docs-aws.netlify.app/docs/fanatical-support-aws/    200
+/docs/fanatical-support-aws/*    https://docs-aws.netlify.app/docs/fanatical-support-aws/:splat    200
+
+# GCP Redirects
+/docs/fanatical-support-gcp/    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/    200
+/docs/fanatical-support-gcp/*    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/:splat    200
+
+# Main Redirects
 /docs/*     https://api.rackspace.com/docs/:splat      200
