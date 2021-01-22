@@ -36,5 +36,9 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/dxp-customer-handbook/    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/    200
 /docs/dxp-customer-handbook/*    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/:splat    200
 
+# Rackspace Federation
+/docs/rackspace-federation/    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/    200
+/docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
+
 # Main Redirects
 /docs/*     https://api.rackspace.com/docs/:splat      200
