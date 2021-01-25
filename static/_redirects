@@ -41,8 +41,8 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
 
 # RPC VMWare
-/doc/rpc-vmware/rpc-vmware-customer-handbook/  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/    200
-/doc/rpc-vmware/rpc-vmware-customer-handbook/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/:splat    200
+/docs/rpc-vmware/rpc-vmware-customer-handbook/  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/    200
+/docs/rpc-vmware/rpc-vmware-customer-handbook/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/:splat    200
 /doc/rpc-vmware/vmware-cloud/  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/    200
 /doc/rpc-vmware/vmware-cloud/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/     200
