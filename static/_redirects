@@ -52,5 +52,18 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/private-cloud/red-hat/rpcr-arch/      https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/       200
 /docs/private-cloud/red-hat/rpcr-arch/*     https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/:splat     200
 
+# Private Cloud Docs
+/docs/private-cloud/rpc/v17/       https://develop-v17--privatecloud-docs.netlify.app/      200
+/docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/:splat      200
+
+/docs/private-cloud/rpc/v16/      https://develop-v16--privatecloud-docs.netlify.app/      200
+/docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/:splat      200
+
+/docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
+/docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
+
+/docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
+/docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
+
 # Main Redirects
 /docs/*     https://api.rackspace.com/docs/:splat      200
