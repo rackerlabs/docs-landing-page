@@ -66,4 +66,4 @@ https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
 
 # Main Redirects
-/docs/*     https://api.rackspace.com/docs/:splat      200
+# /docs/*     https://api.rackspace.com/docs/:splat      200
