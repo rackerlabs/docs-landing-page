@@ -34,7 +34,7 @@
 
 [[redirects]]
   from = "/docs/*"
-  to = "https://presenter-deconst-prod.devapps.rsi.rackspace.net/docs/:splat"
+  to = "router-external.ord1.prod.rsi.rackspace.net/docs/:splat"
   status = 200
   force = true # COMMENT: ensure that we always redirect
   headers = {X-From = "api.rackspace.com"}
