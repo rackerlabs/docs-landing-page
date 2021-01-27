@@ -3,67 +3,68 @@ http://support.rackspace.com/*   http://docs.rackspace.com/support/:splat  301!
 https://support.rackspace.com/*   https://docs.rackspace.com/support/:splat  301!
 https://www.support.rackspace.com/*  https://docs.rackspace.com/support/:splat  301!
 
-http://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
-https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
+# http://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
+# https://developer.rackspace.com/*   https://docs.rackspace.com/:splat  301!
 
 /blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
 /support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
 
 # Solution Docs Redirects
-/docs   https://solution-docs-homepage.netlify.app/     200
+# /docs   https://solution-docs-homepage.netlify.app/     200
 
 # Portal Onboarding guide Redirects
-/docs/portal-onboarding-guide/      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/               200
-/docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/:splat         200
+# /docs/portal-onboarding-guide/      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/               200
+# /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/:splat         200
 
 # Service Blocks Redirects
-/docs/service-blocks      https://docs-service-blocks.netlify.app/docs/service-blocks/      200
-/docs/service-blocks/*      https://docs-service-blocks.netlify.app/docs/service-blocks/:splat      200
+# /docs/service-blocks      https://docs-service-blocks.netlify.app/docs/service-blocks/      200
+# /docs/service-blocks/*      https://docs-service-blocks.netlify.app/docs/service-blocks/:splat      200
 
 # RAS Redirects
-/docs/ras-databases     https://docs-ras-databases.netlify.app/docs/ras-databases/      200
-/docs/ras-databases/*      https://docs-ras-databases.netlify.app/docs/ras-databases/:splat      200
+# /docs/ras-databases     https://docs-ras-databases.netlify.app/docs/ras-databases/      200
+# /docs/ras-databases/*      https://docs-ras-databases.netlify.app/docs/ras-databases/:splat      200
 
 # AWS Redirects
-/docs/fanatical-support-aws/    https://docs-aws.netlify.app/docs/fanatical-support-aws/    200
-/docs/fanatical-support-aws/*    https://docs-aws.netlify.app/docs/fanatical-support-aws/:splat    200
+# /docs/fanatical-support-aws/    https://docs-aws.netlify.app/docs/fanatical-support-aws/    200
+# /docs/fanatical-support-aws/*    https://docs-aws.netlify.app/docs/fanatical-support-aws/:splat    200
 
 # GCP Redirects
-/docs/fanatical-support-gcp/    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/    200
-/docs/fanatical-support-gcp/*    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/:splat    200
+# /docs/fanatical-support-gcp/    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/    200
+# /docs/fanatical-support-gcp/*    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/:splat    200
 
 # DXP Redirects
-/docs/dxp-customer-handbook/    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/    200
-/docs/dxp-customer-handbook/*    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/:splat    200
+# /docs/dxp-customer-handbook/    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/    200
+# /docs/dxp-customer-handbook/*    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/:splat    200
 
 # Rackspace Federation
-/docs/rackspace-federation/    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/    200
-/docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
+# /docs/rackspace-federation/    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/    200
+# /docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
 
 # RPC VMWare
-/docs/rpc-vmware/rpc-vmware-customer-handbook/  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/    200
-/docs/rpc-vmware/rpc-vmware-customer-handbook/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/:splat    200
-/doc/rpc-vmware/vmware-cloud/  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/    200
-/doc/rpc-vmware/vmware-cloud/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/:splat    200
-/docs/docs-vmware-server-virt/server-virt-handbook/     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/     200
-/docs/docs-vmware-server-virt/server-virt-handbook/*     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/:splat     200
+# /docs/rpc-vmware/rpc-vmware-customer-handbook/  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/    200
+# /docs/rpc-vmware/rpc-vmware-customer-handbook/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/:splat    200
+# /doc/rpc-vmware/vmware-cloud/  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/    200
+# /doc/rpc-vmware/vmware-cloud/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/:splat    200
+# /docs/docs-vmware-server-virt/server-virt-handbook/     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/     200
+# /docs/docs-vmware-server-virt/server-virt-handbook/*     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/:splat     200
 
 # Red-hat
-/docs/private-cloud/red-hat/rpcr-arch/      https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/       200
-/docs/private-cloud/red-hat/rpcr-arch/*     https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/:splat     200
+# /docs/private-cloud/red-hat/rpcr-arch/      https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/       200
+# /docs/private-cloud/red-hat/rpcr-arch/*     https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/:splat     200
 
 # Private Cloud Docs
-/docs/private-cloud/rpc/v17/       https://develop-v17--privatecloud-docs.netlify.app/      200
-/docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v17/       https://v17--privatecloud-docs.netlify.app/      200
+# /docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/:splat      200
 
-/docs/private-cloud/rpc/v16/      https://develop-v16--privatecloud-docs.netlify.app/      200
-/docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v16/      https://develop-v16--privatecloud-docs.netlify.app/      200
+# /docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/:splat      200
 
-/docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
-/docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
 
-/docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
-/docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
-
+# /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
+ 
 # Main Redirects
+/docs/      https://api.rackspace.com/docs/     200
 /docs/*     https://api.rackspace.com/docs/:splat      200
