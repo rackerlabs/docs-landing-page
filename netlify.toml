@@ -34,10 +34,10 @@
 
 [[redirects]]
   from = "/docs/*"
-  to = "router-external.ord1.prod.rsi.rackspace.net/docs/:splat"
+  to = "https://router-external.ord1.prod.rsi.rackspace.net/docs/:splat"
   status = 200
   force = true # COMMENT: ensure that we always redirect
-  headers = {X-From = "api.rackspace.com"}
+  headers = {Host = "api.rackspace.com"}
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
