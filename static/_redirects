@@ -5,6 +5,8 @@ https://www.support.rackspace.com/*  https://docs.rackspace.com/support/:splat  
 
 https://www.docs.rackspace.com/*    https://docs.rackspace.com/:splat       301!
 
+https://docs.rackspace.com/favicon.ico     https://docs.rackspace.com/favicons/favicon.ico  301!
+
 # http://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
 
 /blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
