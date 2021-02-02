@@ -9,7 +9,8 @@ https://www.docs.rackspace.com/*    https://docs.rackspace.com/:splat       301!
 /support/favicon.ico    /favicons/favicon.ico  301!
 /support/robots.txt     /robots.txt     301!
 
-http://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
+https://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
+https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
 /blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
 /support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
