@@ -27,6 +27,15 @@
         vertical-align: top;
         width: calc(20% - 0px);
     }
+    @media screen and (max-width: 768px) {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: inline-block;
+        margin-right: -.26rem;
+        margin-left: 0;
+        vertical-align: top;
+        width: calc(100% - 0px);
+    }
     .sidebar-container {
         padding: 20px 35px;
         overflow-x: hidden;
@@ -146,7 +155,15 @@
         vertical-align: top;
         width: calc(80% - 0px);
         padding: 0 35px;
-        max-width: 960px;
+    }
+    @media screen and (max-width: 768px){
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: inline-block;
+        margin-left: 0;
+        vertical-align: top;
+        width: calc(100% - 0px);
+        padding: 0 35px;
     }
     .docs-category {
         border-bottom: dotted 1px #a3a3a3;
