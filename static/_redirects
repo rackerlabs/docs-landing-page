@@ -104,3 +104,4 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/      https://api.rackspace.com/docs/     200
 /docs/*     https://api.rackspace.com/docs/:splat      200
 /sdks/*        https://api.rackspace.com/sdks/:splat      200
+/doc/*      https://api.rackspace.com/doc/:splat    200
