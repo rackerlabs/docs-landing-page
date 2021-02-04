@@ -137,7 +137,7 @@
         padding: 0;
         margin-left: calc(37.5% - 480px);
     }
-    @media screen and (min-width: 1025px) {
+    @media screen and (min-width: 1024px) and (max-width: 1301px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         display: inline-block;
@@ -146,7 +146,7 @@
         vertical-align: top;
         width: calc(75% - 0px);
     }
-    @media screen and (min-width: 769px) and (max-width: 1024px) {
+    @media screen and (min-width: 769px) and (max-width: 1023px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
         display: inline-block;
