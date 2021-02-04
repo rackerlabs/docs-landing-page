@@ -4,37 +4,21 @@
     height: 100%;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    display: inline-block;
-    margin-right: -.26rem;
-    margin-left: 0;
     vertical-align: top;
-    width: calc(25% - 0px);
     @media screen and (min-width: 1025px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(25% - 0px);
     }
     @media screen and (min-width: 769px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(20% - 0px);
     }
     @media screen and (max-width: 768px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(100% - 0px);
     }
     .sidebar-container {
         padding: 20px 35px;
@@ -120,50 +104,27 @@
 .docs-content {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    display: inline-block;
-    margin-right: -.26rem;
-    margin-left: 0;
     vertical-align: top;
-    width: calc(100% - 0px);
-    padding: 0 5%;
     @media screen and (min-width: 1302px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(75% - 0px);
         padding: 0;
-        margin-left: calc(37.5% - 480px);
     }
     @media screen and (min-width: 1024px) and (max-width: 1301px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(75% - 0px);
     }
     @media screen and (min-width: 769px) and (max-width: 1023px) {
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-right: -.26rem;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(80% - 0px);
-        padding: 0 35px;
     }
     @media screen and (max-width: 768px){
         box-sizing: border-box;
         -moz-box-sizing: border-box;
-        display: inline-block;
-        margin-left: 0;
         vertical-align: top;
-        width: calc(100% - 0px);
-        padding: 0 35px;
     }
     .docs-category {
         border-bottom: dotted 1px #a3a3a3;
