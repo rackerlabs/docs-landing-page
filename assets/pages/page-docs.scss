@@ -102,7 +102,6 @@ $sidebar-width: 100%;
   }
 
   @media screen and (min-width: 860px) {
-    flex: 0 0 20%;
     height: calc(100vh - 6rem);
     transform: translateX(0);
     vertical-align: top;
@@ -133,10 +132,7 @@ $sidebar-width: 100%;
   font-size: 1rem;
   line-height: 1.6;
   margin: 0 auto;
-  max-width: 700px;
   min-height: 100vh;
-  padding: unset;
-  padding-top: 7rem;
   position: relative;
   width: 100%;
   word-spacing: 0.05em;
