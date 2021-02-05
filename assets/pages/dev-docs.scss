@@ -10,15 +10,8 @@
         -moz-box-sizing: border-box;
         vertical-align: top;
     }
-    @media screen and (min-width: 769px) {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        vertical-align: top;
-    }
-    @media screen and (max-width: 768px) {
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        vertical-align: top;
+    @media screen and (max-width: 1024px) {
+        display: none;
     }
     .sidebar-container {
         padding: 20px 35px;
