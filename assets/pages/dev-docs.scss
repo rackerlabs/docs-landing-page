@@ -147,17 +147,12 @@
     }
     .product-list {
         display: block;
-        width: calc(100% + 35px);
-        margin-left: -35px;
-        overflow: hidden;
+        width: calc(100%);
         .product {
             box-sizing: border-box;
             -moz-box-sizing: border-box;
             display: inline-block;
-            margin-right: -.26rem;
-            margin-left: 35px;
-            vertical-align: top;
-            width: calc(100% - 35px);
+            width: calc(100%);
             @media screen and (min-width: 769px) {
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
