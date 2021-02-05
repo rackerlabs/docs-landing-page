@@ -128,7 +128,8 @@
     }
     .docs-category {
         border-bottom: dotted 1px #a3a3a3;
-        padding: 80px 0;
+        padding-top: 80px;
+        padding-left: 35px;
         h2 {
             margin-bottom: 0;
             text-transform: uppercase;
@@ -158,18 +159,16 @@
                 -moz-box-sizing: border-box;
                 display: inline-block;
                 margin-right: -.26rem;
-                margin-left: 35px;
                 vertical-align: top;
-                width: calc(33.33333333% - 35px);   
+                width: calc(33.33333333%);   
             }
             @media (min-width: 480px) and (max-width: 768px) {
                 box-sizing: border-box;
                 -moz-box-sizing: border-box;
                 display: inline-block;
                 margin-right: -.26rem;
-                margin-left: 35px;
                 vertical-align: top;
-                width: calc(50% - 35px);
+                width: calc(50%);
             }
         }
         .card {
