@@ -1,0 +1,19 @@
+.quick-start-nav ul li a.current {
+    background: transparent;
+    box-shadow: inset 0px 0 0 0 #FFFFFF;
+}
+
+.quick-start-nav .fa-caret-right::before {
+    content: "";
+}
+
+.quick-start-nav ul li a  {
+    font-family: titillium-regular,arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #474747;
+    display: block;
+    font-size: 16px;
+    padding: .4em .5em;
+    text-decoration: none;
+}
