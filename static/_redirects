@@ -16,19 +16,19 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
 
 # Solution Docs Redirects
-# /docs   https://solution-docs-homepage.netlify.app/     200
+/docs   https://solution-docs-homepage.netlify.app/     200
 
 # Portal Onboarding guide Redirects
-# /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/:splat         200
+/docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/:splat         200
 
 # Customer Service
 # /docs/customer-service/v1/*      https://docs-customer-service.netlify.app/:splat         200
 
 # Cloud Servers
-# /docs/cloud-servers/v2/*       https://docs-cloud-servers.netlify.app/:splat       200
+/docs/cloud-servers/v2/*       https://docs-cloud-servers.netlify.app/docs/cloud-servers/v2/:splat       200
 
 # Colocation guide
-# /docs/docs-colocation-guide/*      https://docs-colocation-guide.netlify.app/:splat      200
+# /docs/docs-colocation-guide/*      https://docs-colocation-guide.netlify.app/docs/docs-colocation-guide/:splat      200
 
 # Quick start
 # /docs/cloud-servers/quickstart/*      https://docs-quickstart.netlify.app/cloud-servers/quickstart/:splat     200
@@ -62,46 +62,116 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
 
 # Service Blocks Redirects
-# /docs/service-blocks/*      https://docs-service-blocks.netlify.app/:splat      200
+/docs/service-blocks/*      https://docs-service-blocks.netlify.app/docs/service-blocks/:splat      200
 
 # RAS Redirects
-# /docs/ras-databases/*      https://docs-ras-databases.netlify.app/:splat      200
+/docs/ras-databases/*      https://docs-ras-databases.netlify.app/docs/ras-databases/:splat      200
 
 # AWS Redirects
-# /docs/fanatical-support-aws/*    https://docs-aws.netlify.app/:splat    200
+/docs/fanatical-support-aws/*    https://docs-aws.netlify.app/docs/fanatical-support-aws/:splat    200
 
 # GCP Redirects
-# /docs/fanatical-support-gcp/*    https://docs-gcp.netlify.app/:splat    200
+/docs/fanatical-support-gcp/*    https://docs-gcp.netlify.app/docs/fanatical-support-gcp/:splat    200
 
 # DXP Redirects
-# /docs/dxp-customer-handbook/*    https://docs-dxp-handbook.netlify.app/:splat    200
+/docs/dxp-customer-handbook/*    https://docs-dxp-handbook.netlify.app/docs/dxp-customer-handbook/:splat    200
 
 # Rackspace Federation
-# /docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/:splat    200
+/docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
 
 # RPC VMWare
-# /docs/rpc-vmware/rpc-vmware-customer-handbook/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/rpc-vmware-customer-handbook/:splat    200
-# /doc/rpc-vmware/vmware-cloud/  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/    200
-# /doc/rpc-vmware/vmware-cloud/*  https://rpc-vmware.netlify.app/doc/rpc-vmware/vmware-cloud/:splat    200
-# /docs/docs-vmware-server-virt/server-virt-handbook/     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/     200
-# /docs/docs-vmware-server-virt/server-virt-handbook/*     https://rpc-vmware.netlify.app/doc/rpc-vmware/server-virt-handbook/:splat     200
+/docs/rpc-vmware/*  https://develop-rpc-vmware--rpc-vmware.netlify.app/docs/rpc-vmware/:splat    200
+/doc/rpc-vmware/*  https://develop-vmware-cloud--rpc-vmware.netlify.app/doc/rpc-vmware/:splat    200
+/docs/docs-vmware-server-virt/*     https://develop-server-virtbook--rpc-vmware.netlify.app/docs/docs-vmware-server-virt/:splat     200
 
 # Red-hat
 
-# /docs/private-cloud/red-hat/rpcr-arch/*     https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/rpcr-arch/:splat     200
+/docs/private-cloud/red-hat/*     https://docs-redhat-osp.netlify.app/docs/private-cloud/red-hat/:splat     200
 
 # Private Cloud Docs
 
-# /docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v17/:splat      200
 
-# /docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v16/:splat      200
 
-# /docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v14/:splat      200
 
-# /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/:splat      200
+# /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v13/:splat      200
+
+# Cloud orchestration
+/docs/cloud-orchestration/v1/*          https://docs-cloud-orchestration.netlify.app/docs/cloud-orchestration/v1/:splat     200
+
+# Cloud Networks
+/docs/cloud-networks/v2/*       https://docs-cloud-networks.netlify.app/docs/cloud-networks/v2/:splat   200
+
+# Cloud monitoring
+/docs/rackspace-monitoring/v1/*     https://docs-cloud-monitoring.netlify.app/docs/rackspace-monitoring/v1/:splat       200
+
+# Cloud Metrics
+/docs/metrics/v2/*      https://docs-cloud-metrics.netlify.app/docs/metrics/v2/:splat       200
+
+# Cloud Load Balancers
+/docs/cloud-load-balancers/v1/*     https://docs-cloud-load-balancers.netlify.app/docs/cloud-load-balancers/v1/:splat       200
+
+# Cloud Images
+/docs/cloud-images/v2/*      https://docs-cloud-images.netlify.app/docs/cloud-images/v2/:splat      200
+
+# Cloud identity
+/docs/cloud-identity/v2/*       https://docs-cloud-identity.netlify.app/docs/cloud-identity/v2/:splat       200
+
+# Cloud Files
+/docs/cloud-files/v1/*      https://docs-cloud-files.netlify.app/docs/cloud-files/v1/:splat     200
+
+# Cloud DNS 
+/docs/cloud-dns/v1/*        https://docs-cloud-dns.netlify.app/docs/cloud-dns/v1/:splat         200
+
+# Cloud databases
+/docs/cloud-databases/v1/*      https://docs-cloud-databases.netlify.app/docs/cloud-databases/v1/:splat         200
+
+# Cloud CDN 
+/docs/cdn/v1/*      https://docs-cloud-cdn.netlify.app/docs/cdn/v1/:splat    200
+
+# Cloud Block Storage 
+/docs/cloud-block-storage/v1/*       https://docs-cloud-block-storage.netlify.app/docs/cloud-block-storage/v1/:splat     200
+
+# Cloud Backup
+/docs/cloud-backup/v1/*         https://docs-cloud-backup.netlify.app/docs/cloud-backup/v1/:splat       200
+
+# Infra User guide
+/docs/user-guides/infrastructure/*      https://docs-core-infra-user-guide.netlify.app/docs/user-guides/infrastructure/:splat       200
+
+# MPC Hyper-V
+/docs/microsoft-hyper-v/hyper-v-handbook/*      https://mpc-hyper-v.netlify.app/docs/microsoft-hyper-v/hyper-v-handbook/:splat      200
+
+# Billing API Guide
+# /docs/billing-apiguide/v2/*      https://docs-billing-apiguide.netlify.app/docs/billing-apiguide/v2/:splat      200
+
+# Cloud Rackconnect
+# /docs/rackconnect/v3/developer-guide/*      https://docs-cloud-rackconnect.netlify.app/docs/rackconnect/v3/developer-guide/:splat       200
+
+# Dedicated Networking
+# /docs/dedicated-load-balancers/v2/*      https://docs-dedicated-networking.netlify.app/docs/dedicated-load-balancers/v2/:splat   200
+
+# SDP
+# /docs/ticketing/*       https://docs-sdp.netlify.app/docs/ticketing/:splat      200
+
+# Style Guide
+# /docs/style-guide/*     https://docs-style-guide.netlify.app/docs/style-guide/:splat        200
+
+# Heat Resource Ref
+# /docs/cloud-orchestration/v1/resources-reference/*      https://heat-resource-ref.netlify.app/docs/cloud-orchestration/v1/resources-reference/:splat        200
+
+# RS Heat Docs
+# /docs/user-guides/orchestration/*       https://rs-heat-docs.netlify.app/docs/user-guides/orchestration/:splat      200
+
+# Cloud Feeds 
+# /docs/cloud-feeds/v1/developer-guide/*      https://standard-usage-schemas.netlify.app/docs/cloud-feeds/v1/developer-guide/:splat       200
+
+# 404 Redirects
+
+/docs/docs-service-blocks/*    /docs/service-blocks/:splat     301
 
 # Main Redirects
-/docs/      https://api.rackspace.com/docs/     200
 /docs/*     https://api.rackspace.com/docs/:splat      200
 /sdks/*        https://api.rackspace.com/sdks/:splat      200
 /doc/*      https://api.rackspace.com/doc/:splat    200
