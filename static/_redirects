@@ -22,42 +22,42 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/:splat         200
 
 # Customer Service
-# /docs/customer-service/v1/*      https://docs-customer-service.netlify.app/:splat         200
+/docs/customer-service/v1/*      https://docs-customer-service.netlify.app/:splat         200
 
 # Cloud Servers
 /docs/cloud-servers/v2/*       https://docs-cloud-servers.netlify.app/docs/cloud-servers/v2/:splat       200
 
 # Colocation guide
-# /docs/docs-colocation-guide/*      https://docs-colocation-guide.netlify.app/docs/docs-colocation-guide/:splat      200
+/docs/docs-colocation-guide/*      https://docs-colocation-guide.netlify.app/docs/docs-colocation-guide/:splat      200
 
 # Quick start
-# /docs/cloud-servers/quickstart/*      https://docs-quickstart.netlify.app/cloud-servers/quickstart/:splat     200
+/docs/cloud-servers/quickstart/*      https://docs-quickstart.netlify.app/cloud-servers/quickstart/:splat     200
 
-# /docs/cloud-images/quickstart/*        https://docs-quickstart.netlify.app/cloud-images/quickstart/:splat        200
+/docs/cloud-images/quickstart/*        https://docs-quickstart.netlify.app/cloud-images/quickstart/:splat        200
 
-# /docs/cloud-networks/quickstart/*      https://docs-quickstart.netlify.app/cloud-networks/quickstart/:splat        200  
+/docs/cloud-networks/quickstart/*      https://docs-quickstart.netlify.app/cloud-networks/quickstart/:splat        200  
 
-# /docs/cloud-load-balancers/quickstart/*      https://docs-quickstart.netlify.app/cloud-load-balancers/quickstart/:splat    200  
+/docs/cloud-load-balancers/quickstart/*      https://docs-quickstart.netlify.app/cloud-load-balancers/quickstart/:splat    200  
 
-# /docs/cloud-dns/quickstart/*       https://docs-quickstart.netlify.app/cloud-dns/quickstart/:splat     200
+/docs/cloud-dns/quickstart/*       https://docs-quickstart.netlify.app/cloud-dns/quickstart/:splat     200
 
-# /docs/cloud-block-storage/quickstart/*     https://docs-quickstart.netlify.app/cloud-block-storage/quickstart/:splat   200
+/docs/cloud-block-storage/quickstart/*     https://docs-quickstart.netlify.app/cloud-block-storage/quickstart/:splat   200
 
-# /docs/cloud-files/quickstart/*        https://docs-quickstart.netlify.app/cloud-files/quickstart/:splat        200
+/docs/cloud-files/quickstart/*        https://docs-quickstart.netlify.app/cloud-files/quickstart/:splat        200
 
-# /docs/cdn/quickstart/*     https://docs-quickstart.netlify.app/cdn/quickstart/:splat       200
+/docs/cdn/quickstart/*     https://docs-quickstart.netlify.app/cdn/quickstart/:splat       200
 
-# /docs/cloud-databases/quickstart/*     https://docs-quickstart.netlify.app/cloud-databases/quickstart/:splat   200
+/docs/cloud-databases/quickstart/*     https://docs-quickstart.netlify.app/cloud-databases/quickstart/:splat   200
 
-# /docs/auto-scale/quickstart/*      https://docs-quickstart.netlify.app/auto-scale/quickstart/:splat      200
+/docs/auto-scale/quickstart/*      https://docs-quickstart.netlify.app/auto-scale/quickstart/:splat      200
 
-# /docs/rackspace-monitoring/quickstart/*        https://docs-quickstart.netlify.app/rackspace-monitoring/quickstart/:splat      200
+/docs/rackspace-monitoring/quickstart/*        https://docs-quickstart.netlify.app/rackspace-monitoring/quickstart/:splat      200
 
-# /docs/cloud-identity/quickstart/*      https://docs-quickstart.netlify.app/cloud-identity/quickstart/:splat    200
+/docs/cloud-identity/quickstart/*      https://docs-quickstart.netlify.app/cloud-identity/quickstart/:splat    200
 
-# /docs/cloud-queues/quickstart/*        https://docs-quickstart.netlify.app/cloud-queues/quickstart/:splat      200
+/docs/cloud-queues/quickstart/*        https://docs-quickstart.netlify.app/cloud-queues/quickstart/:splat      200
 
-# /docs/orchestration/quickstart/*       https://docs-quickstart.netlify.app/orchestration/quickstart/:splat     200
+/docs/orchestration/quickstart/*       https://docs-quickstart.netlify.app/orchestration/quickstart/:splat     200
 
 
 
@@ -80,9 +80,9 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/rackspace-federation/*    https://docs-rackspace-federation.netlify.app/docs/rackspace-federation/:splat    200
 
 # RPC VMWare
-/docs/rpc-vmware/*  https://develop-rpc-vmware--rpc-vmware.netlify.app/docs/rpc-vmware/:splat    200
-/doc/rpc-vmware/*  https://develop-vmware-cloud--rpc-vmware.netlify.app/doc/rpc-vmware/:splat    200
-/docs/docs-vmware-server-virt/*     https://develop-server-virtbook--rpc-vmware.netlify.app/docs/docs-vmware-server-virt/:splat     200
+/docs/rpc-vmware/*  https://rpc-vmware--rpc-vmware.netlify.app/docs/rpc-vmware/:splat    200
+/doc/rpc-vmware/*  https://vmware-cloud--rpc-vmware.netlify.app/doc/rpc-vmware/:splat    200
+/docs/docs-vmware-server-virt/*     https://server-virtbook--rpc-vmware.netlify.app/docs/docs-vmware-server-virt/:splat     200
 
 # Red-hat
 
@@ -90,13 +90,13 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
 # Private Cloud Docs
 
-# /docs/private-cloud/rpc/v17/*       https://develop-v17--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v17/:splat      200
+/docs/private-cloud/rpc/v17/*       https://v17--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v17/:splat      200
 
-# /docs/private-cloud/rpc/v16/*       https://develop-v16--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v16/:splat      200
+/docs/private-cloud/rpc/v16/*       https://v16--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v16/:splat      200
 
-# /docs/private-cloud/rpc/v14/*       https://develop-v14--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v14/:splat      200
+/docs/private-cloud/rpc/v14/*       https://v14--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v14/:splat      200
 
-# /docs/private-cloud/rpc/v13/*       https://develop-v13--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v13/:splat      200
+/docs/private-cloud/rpc/v13/*       https://v13--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v13/:splat      200
 
 # Cloud orchestration
 /docs/cloud-orchestration/v1/*          https://docs-cloud-orchestration.netlify.app/docs/cloud-orchestration/v1/:splat     200
@@ -144,28 +144,28 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/microsoft-hyper-v/hyper-v-handbook/*      https://mpc-hyper-v.netlify.app/docs/microsoft-hyper-v/hyper-v-handbook/:splat      200
 
 # Billing API Guide
-# /docs/billing-apiguide/v2/*      https://docs-billing-apiguide.netlify.app/docs/billing-apiguide/v2/:splat      200
+/docs/billing-apiguide/v2/*      https://docs-billing-apiguide.netlify.app/docs/billing-apiguide/v2/:splat      200
 
 # Cloud Rackconnect
-# /docs/rackconnect/v3/developer-guide/*      https://docs-cloud-rackconnect.netlify.app/docs/rackconnect/v3/developer-guide/:splat       200
+/docs/rackconnect/v3/developer-guide/*      https://docs-cloud-rackconnect.netlify.app/docs/rackconnect/v3/developer-guide/:splat       200
 
 # Dedicated Networking
-# /docs/dedicated-load-balancers/v2/*      https://docs-dedicated-networking.netlify.app/docs/dedicated-load-balancers/v2/:splat   200
+/docs/dedicated-load-balancers/v2/*      https://docs-dedicated-networking.netlify.app/docs/dedicated-load-balancers/v2/:splat   200
 
 # SDP
-# /docs/ticketing/*       https://docs-sdp.netlify.app/docs/ticketing/:splat      200
+/docs/ticketing/*       https://docs-sdp.netlify.app/docs/ticketing/:splat      200
 
 # Style Guide
-# /docs/style-guide/*     https://docs-style-guide.netlify.app/docs/style-guide/:splat        200
+/docs/style-guide/*     https://docs-style-guide.netlify.app/docs/style-guide/:splat        200
 
 # Heat Resource Ref
-# /docs/cloud-orchestration/v1/resources-reference/*      https://heat-resource-ref.netlify.app/docs/cloud-orchestration/v1/resources-reference/:splat        200
+/docs/cloud-orchestration/v1/resources-reference/*      https://heat-resource-ref.netlify.app/docs/cloud-orchestration/v1/resources-reference/:splat        200
 
 # RS Heat Docs
-# /docs/user-guides/orchestration/*       https://rs-heat-docs.netlify.app/docs/user-guides/orchestration/:splat      200
+/docs/user-guides/orchestration/*       https://rs-heat-docs.netlify.app/docs/user-guides/orchestration/:splat      200
 
 # Cloud Feeds 
-# /docs/cloud-feeds/v1/developer-guide/*      https://standard-usage-schemas.netlify.app/docs/cloud-feeds/v1/developer-guide/:splat       200
+/docs/cloud-feeds/v1/developer-guide/*      https://standard-usage-schemas.netlify.app/docs/cloud-feeds/v1/developer-guide/:splat       200
 
 # 404 Redirects
 
