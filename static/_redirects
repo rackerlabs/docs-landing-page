@@ -167,6 +167,24 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # Cloud Feeds 
 /docs/cloud-feeds/v1/developer-guide/*      https://standard-usage-schemas.netlify.app/docs/cloud-feeds/v1/developer-guide/:splat       200
 
+# KAAS
+/docs/rkaas/v3.1.x/*    https://3-1-x--kaas.netlify.app/docs/rkaas/v3.1.x/:splat     200
+
+/docs/rkaas/v3.0.x/*   https://3-0-x--kaas.netlify.app/docs/rkaas/v3.0.x/:splat     200
+
+/docs/rkaas/v2.1.x/*   https://2-1-x--kaas.netlify.app/docs/rkaas/v2.1.x/:splat     200
+
+/docs/rkaas/v2.0.x/*   https://2-0-x--kaas.netlify.app/docs/rkaas/v2.0.x/:splat     200
+
+/docs/rkaas/v1.2.x/*   https://1-2-x--kaas.netlify.app/docs/rkaas/v1.2.x/:splat     200
+
+/docs/rkaas/v1.3.x/*   https://1-3-x--kaas.netlify.app/docs/rkaas/v1.3.x/:splat     200
+
+/docs/rkaas/v1.5.x/*   https://1-5-x--kaas.netlify.app/docs/rkaas/v1.5.x/:splat     200
+
+/docs/rkaas/v1.1.x/*   https://1-1-x--kaas.netlify.app/docs/rkaas/v1.1.x/:splat     200
+
+/docs/rkaas/v1.4.x/*   https://1-4-x--kaas.netlify.app/docs/rkaas/v1.4.x/:splat     200
 
 # Autoscale
 /docs/autoscale/v1/developer-guide/*        https://otter.netlify.app/docs/autoscale/v1/developer-guide/:splat    200
