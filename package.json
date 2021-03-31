@@ -17,7 +17,7 @@
         "markdown-link-checker": "remark -u validate-links . 2>&1 | tee log-file.txt"
     },
     "devDependencies": {
-        "@babel/core": "^7.12.1",
+        "@babel/core": "^7.13.14",
         "@babel/preset-env": "^7.12.1",
         "@babel/preset-react": "^7.13.13",
         "autoprefixer": "^9.7.4",
