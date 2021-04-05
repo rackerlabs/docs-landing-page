@@ -184,6 +184,9 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # Autoscale
 /docs/autoscale/v1/developer-guide/*        https://otter.netlify.app/docs/autoscale/v1/developer-guide/:splat    200
 
+# Cloud Queues
+/docs/cloud-queues/v1/*     https://docs-cloud-queues.netlify.app/docs/cloud-queues/v1/:splat       200
+
 # 404 Redirects
 
 # /docs/docs-service-blocks/*    /docs/service-blocks/:splat     301
