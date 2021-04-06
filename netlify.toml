@@ -51,9 +51,7 @@
   package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
-  buildDir = "public"
-  prettyURLs = true
-  trailingSlash = true
+  baseUrl = "https://develop-docs-landing-page.netlify.app"
 
 
 [[plugins]]
