@@ -62,7 +62,7 @@
         "vfile-reporter": "^6.0.1",
         "yargs": "^16.0.3"
     },
-    "name": "docs-landing",
+    "name": "docs-landing-page",
     "version": "1.0.0",
     "bin": {
         "lct": "link-checker.js"
