@@ -75,9 +75,19 @@
   package = "@netlify/plugin-lighthouse"
 
   # optional, fails build when a category is below a threshold
-  [plugins.inputs.thresholds]
-    performance = 0.9
-    accessibility = 0.9
-    best-practices = 0.9
-    seo = 0.9
-    pwa = 0.9
+  # [plugins.inputs.thresholds]
+  #   performance = 0.9
+  #   accessibility = 0.9
+  #   best-practices = 0.9
+  #   seo = 0.9
+  #   pwa = 0.9
+
+[[plugins]]
+  package = 'netlify-plugin-search-index'
+  
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+
+	[plugins.inputs]
+	# If it should show more verbose logs (optional, default = true)
+	debug = true
