@@ -51,7 +51,7 @@
   package = "@netlify/plugin-sitemap"
 
   [plugins.inputs]
-  baseUrl = "https://develop-docs-landing-page.netlify.app"
+  baseUrl = "https://docs.rackspace.com"
 
 
 [[plugins]]
