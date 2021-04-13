@@ -2897,6 +2897,7 @@ ul.language-selector > li > a.active span {
     overflow-x: hidden;
     overflow-y: auto;
     padding: 15px 15px 0;
+    margin-top: -6rem;
 }
 .sidebar-container::-webkit-scrollbar {
     background: 0 0;
@@ -3010,10 +3011,10 @@ a.cta {
     cursor: pointer;
     display: inline-block;
     height: 12px;
-    left: -12px;
+    left: -7px;
     position: absolute;
     text-align: center;
-    top: 12px;
+    top: 5px;
     width: 12px;
 }
 .sidebar-container li > ul {
