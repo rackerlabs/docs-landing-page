@@ -1,0 +1,1384 @@
+code, .rst-content tt, .rst-content code {
+    white-space: nowrap;
+    max-width: 100%;
+    background: #fff;
+    border: solid 1px #e1e4e5;
+    font-size: 75%;
+    padding: 0 5px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    color: #E74C3C;
+    overflow-x:auto
+}
+
+code.code-large, .rst-content tt.code-large {
+    font-size:90%
+}
+
+.wy-plain-list-disc, .rst-content .section ul, .rst-content .toctree-wrapper ul, article ul {
+    list-style: disc;
+    line-height: 24px;
+    margin-bottom:24px
+}
+
+.wy-plain-list-disc li, .rst-content .section ul li, .rst-content .toctree-wrapper ul li, article ul li {
+    list-style: disc;
+    margin-left:24px
+}
+
+.wy-plain-list-disc li p:last-child, .rst-content .section ul li p:last-child, .rst-content .toctree-wrapper ul li p:last-child, article ul li p:last-child {
+    margin-bottom:0
+}
+
+.wy-plain-list-disc li ul, .rst-content .section ul li ul, .rst-content .toctree-wrapper ul li ul, article ul li ul {
+    margin-bottom:0
+}
+
+.wy-plain-list-disc li li, .rst-content .section ul li li, .rst-content .toctree-wrapper ul li li, article ul li li {
+    list-style:circle
+}
+
+.wy-plain-list-disc li li li, .rst-content .section ul li li li, .rst-content .toctree-wrapper ul li li li, article ul li li li {
+    list-style:square
+}
+
+.wy-plain-list-disc li ol li, .rst-content .section ul li ol li, .rst-content .toctree-wrapper ul li ol li, article ul li ol li {
+    list-style:decimal
+}
+
+.wy-plain-list-decimal, .rst-content .section ol, .rst-content ol.arabic, article ol {
+    list-style: decimal;
+    line-height: 24px;
+    margin-bottom:24px
+}
+
+.wy-plain-list-decimal li, .rst-content .section ol li, .rst-content ol.arabic li, article ol li {
+    list-style: decimal;
+    margin-left:24px
+}
+
+.wy-plain-list-decimal li p:last-child, .rst-content .section ol li p:last-child, .rst-content ol.arabic li p:last-child, article ol li p:last-child {
+    margin-bottom:0
+}
+
+.wy-plain-list-decimal li ul, .rst-content .section ol li ul, .rst-content ol.arabic li ul, article ol li ul {
+    margin-bottom:0
+}
+
+.wy-plain-list-decimal li ul li, .rst-content .section ol li ul li, .rst-content ol.arabic li ul li, article ol li ul li {
+    list-style:disc
+}
+
+.wy-breadcrumbs {
+    transform-origin: 0 0
+}
+
+.wy-breadcrumbs:before, .wy-breadcrumbs:after {
+    display: table;
+    content: ""
+}
+
+.wy-breadcrumbs:after {
+    clear:both
+}
+
+.wy-breadcrumbs li {
+    display:inline-block
+}
+
+.wy-breadcrumbs li.wy-breadcrumbs-aside {
+    float:right
+}
+
+.wy-breadcrumbs li a {
+    display: inline-block;
+    padding:5px
+}
+
+.wy-breadcrumbs li a:first-child {
+    padding-left:0
+}
+
+.wy-breadcrumbs li code, .wy-breadcrumbs li .rst-content tt, .rst-content .wy-breadcrumbs li tt {
+    padding: 5px;
+    border: none;
+    background:none
+}
+
+.wy-breadcrumbs li code.literal, .wy-breadcrumbs li .rst-content tt.literal, .rst-content .wy-breadcrumbs li tt.literal {
+    color:#404040
+}
+
+.wy-breadcrumbs-extra {
+    margin-bottom: 0;
+    color: #b3b3b3;
+    font-size: 80%;
+    display:inline-block
+}
+
+@media screen and (max-width: 480px) {
+    .wy-breadcrumbs-extra {
+        display:none
+    }
+
+    .wy-breadcrumbs li.wy-breadcrumbs-aside {
+        display:none
+    }
+}
+
+@media print {
+    .wy-breadcrumbs li.wy-breadcrumbs-aside {
+        display:none
+    }
+}
+
+.wy-affix {
+    position: fixed;
+    top:1.618em
+}
+
+.wy-menu a:hover {
+    text-decoration:none
+}
+
+.wy-menu-horiz {
+    transform-origin: 0 0
+}
+
+.wy-menu-horiz:before, .wy-menu-horiz:after {
+    display: table;
+    content: ""
+}
+
+.wy-menu-horiz:after {
+    clear:both
+}
+
+.wy-menu-horiz ul, .wy-menu-horiz li {
+    display:inline-block
+}
+
+.wy-menu-horiz li:hover {
+    background:rgba(255, 255, 255, 0.1)
+}
+
+.wy-menu-horiz li.divide-left {
+    border-left:solid 1px #404040
+}
+
+.wy-menu-horiz li.divide-right {
+    border-right:solid 1px #404040
+}
+
+.wy-menu-horiz a {
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    padding:0 16px
+}
+
+
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+    color: #3a7ca8;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    padding: 0 1.618em;
+    margin: 12px 0 0 0;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 85%;
+    white-space:nowrap
+}
+
+.wy-menu-vertical ul {
+    margin-bottom:0
+}
+
+.wy-menu-vertical li.divide-top {
+    border-top:solid 1px #404040
+}
+
+.wy-menu-vertical li.divide-bottom {
+    border-bottom:solid 1px #404040
+}
+
+
+
+.wy-menu-vertical li.current a:hover {
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li code, .wy-menu-vertical li .rst-content tt, .rst-content .wy-menu-vertical li tt {
+    border: none;
+    color: inherit;
+    padding-left: 0;
+    padding-right:0
+}
+
+.wy-menu-vertical li span.toctree-expand {
+    display: block;
+    float: left;
+    margin-left: -1.2em;
+    font-size: .8em;
+    line-height: 1.6em;
+    color:#4d4d4d
+}
+
+.wy-menu-vertical li.on a, .wy-menu-vertical li.current > a {
+    font-weight: bold;
+    position: relative;
+    background: rgba(52,152,219,.2);
+    box-shadow: inset 3px 0 0 0 #3498db;
+    border: none;
+}
+
+.wy-menu-vertical li.on a:hover, .wy-menu-vertical li.current > a:hover {
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li.on a:hover span.toctree-expand, .wy-menu-vertical li.current > a:hover span.toctree-expand {
+    color: #3498db;
+}
+
+.wy-menu-vertical li.on a span.toctree-expand, .wy-menu-vertical li.current > a span.toctree-expand {
+    display: block;
+    font-size: .8em;
+    line-height: 1.6em;
+    color:#333;
+}
+
+
+.wy-menu-vertical li.toctree-l2 a, .wy-menu-vertical li.toctree-l3 a, .wy-menu-vertical li.toctree-l4 a {
+    color:#404040
+}
+
+.wy-menu-vertical li.toctree-l1.current li.toctree-l2.current > ul, .wy-menu-vertical li.toctree-l2.current li.toctree-l3.current > ul {
+    display:block
+}
+
+.wy-menu-vertical li.toctree-l2.current > a {
+    display: block;
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3.current > a {
+    display: block;
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li.toctree-l2 a:hover span.toctree-expand {
+    color: #3498db;
+}
+
+.wy-menu-vertical li.toctree-l2 span.toctree-expand {
+    color:#a3a3a3
+}
+
+.wy-menu-vertical li.toctree-l3 {
+    font-size:.9em
+}
+
+.wy-menu-vertical li.toctree-l3.current > a {
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4.current > a {
+    display: block;
+    background: rgba(52,152,219,.2);
+}
+
+/* .wy-menu-vertical li.toctree-l3 a:hover span.toctree-expand {
+    background: rgba(52,152,219,.2);
+}
+
+.wy-menu-vertical li.toctree-l3 span.toctree-expand {
+    background: rgba(52,152,219,.2);
+} */
+
+.wy-menu-vertical li.toctree-l4 {
+    font-size:.9em
+}
+
+
+.wy-menu-vertical li ul {
+    margin-bottom: 0;
+    display:none;
+}
+.wy-menu-vertical li.toctree-l1.open > ul{
+    display: block;
+}
+.wy-menu-vertical li.toctree-l2.open > ul {
+    display: block;
+}
+.wy-menu-vertical li.toctree-l3.open > ul {
+    display: block;
+}
+
+.wy-menu-vertical li.toctree-l1.current > ul{
+    display: block;
+}
+.wy-menu-vertical li.toctree-l2.current > ul {
+    display: block;
+}
+.wy-menu-vertical li.toctree-l3.current > ul {
+    display: block;
+}
+
+.wy-menu-vertical li.current > .collapse-target {
+    transform: rotate(90deg);
+}
+
+.wy-menu-vertical li ul li a {
+    margin-bottom: 0;
+    font-weight:normal
+}
+
+.wy-menu-vertical a {
+    display: inline-block;
+    line-height: 18px;
+    display: block;
+    position: relative;
+}
+
+.wy-menu-vertical a:hover {
+    background-color: transparent;
+    cursor:pointer
+}
+
+.wy-menu-vertical a:hover span.toctree-expand {
+    color: #3498db;
+}
+
+.wy-menu-vertical a:active {
+    background: rgba(52,152,219,.2);
+    cursor: pointer;
+}
+
+.wy-menu-vertical a:active span.toctree-expand {
+    color:#3498db;
+}
+
+.wy-side-nav-search {
+    display: block;
+    width: 300px;
+    padding: .809em;
+    margin-bottom: .809em;
+    z-index: 200;
+    text-align: center;
+    padding: .809em;
+    display: block;
+    color: #fcfcfc;
+    margin-bottom:.809em
+}
+
+.wy-side-nav-search input[type=text] {
+    width: 100%;
+    border-radius: 50px;
+    padding: 6px 12px;
+    border-color:#2472a4
+}
+
+.wy-side-nav-search img {
+    display: block;
+    margin: auto auto .809em auto;
+    height: 45px;
+    width: 45px;
+    background-color: #2980B9;
+    padding: 5px;
+    border-radius:100%
+}
+
+.wy-side-nav-search > a, .wy-side-nav-search .wy-dropdown > a {
+    color: #fcfcfc;
+    font-size: 100%;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 6px;
+    margin-bottom:.809em
+}
+
+.wy-side-nav-search > a:hover, .wy-side-nav-search .wy-dropdown > a:hover {
+    background:rgba(255, 255, 255, 0.1)
+}
+
+.wy-side-nav-search > a img.logo, .wy-side-nav-search .wy-dropdown > a img.logo {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: auto;
+    border-radius: 0;
+    max-width: 100%;
+    background:transparent
+}
+
+.wy-side-nav-search > a.icon img.logo, .wy-side-nav-search .wy-dropdown > a.icon img.logo {
+    margin-top:.85em
+}
+
+.wy-side-nav-search > div.version {
+    margin-top: -.4045em;
+    margin-bottom: .809em;
+    font-weight: normal;
+    color:rgba(255, 255, 255, 0.3)
+}
+
+.wy-nav .wy-menu-vertical header {
+    color:#2980B9
+}
+
+.wy-nav .wy-menu-vertical a {
+    color:#b3b3b3
+}
+
+.wy-nav .wy-menu-vertical a:hover {
+    color: #3498db;
+}
+
+[data-menu-wrap] {
+    -webkit-transition: all .2s ease-in;
+    -moz-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    position: absolute;
+    opacity: 1;
+    width: 100%;
+    opacity:0
+}
+
+[data-menu-wrap].move-center {
+    left: 0;
+    right: auto;
+    opacity:1
+}
+
+[data-menu-wrap].move-left {
+    right: auto;
+    left: -100%;
+    opacity:0
+}
+
+[data-menu-wrap].move-right {
+    right: -100%;
+    left: auto;
+    opacity:0
+}
+
+.wy-body-for-nav {
+    background:#fcfcfc
+}
+
+.wy-grid-for-nav {
+    position: absolute;
+    width: 100%;
+    height:100%
+}
+
+
+.wy-side-scroll {
+    position: relative;
+    height:100%
+}
+
+.wy-nav-top {
+    display: none;
+    background: #2980B9;
+    color: #fff;
+    padding: .4045em .809em;
+    position: relative;
+    line-height: 50px;
+    text-align: center;
+    font-size: 100%;
+    transform-origin: 0 0
+}
+
+.wy-nav-top:before, .wy-nav-top:after {
+    display: table;
+    content: ""
+}
+
+.wy-nav-top:after {
+    clear:both
+}
+
+.wy-nav-top a {
+    color: #fff;
+    font-weight:bold
+}
+
+.wy-nav-top img {
+    margin-right: 12px;
+    height: 45px;
+    width: 45px;
+    background-color: #2980B9;
+    padding: 5px;
+    border-radius:100%
+}
+
+.wy-nav-top i {
+    font-size: 30px;
+    float: left;
+    cursor: pointer;
+    padding-top:inherit
+}
+
+.wy-nav-content-wrap {
+    margin-left: 300px;
+    background: #fcfcfc;
+    min-height:100%
+}
+
+.wy-nav-content {
+    height: 100%;
+    margin:auto
+}
+
+.wy-body-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index:499
+}
+
+.wy-body-mask.on {
+    display:block
+}
+
+footer {
+    color:gray
+}
+
+footer p {
+    margin-bottom:12px
+}
+
+footer span.commit code, footer span.commit .rst-content tt, .rst-content footer span.commit tt {
+    padding: 0px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color:gray
+}
+
+.rst-footer-buttons {
+    transform-origin: 0 0;
+    border-top: dotted 1px rgba(71,71,71,.3);
+    padding: 35px 0;
+    overflow: hidden;
+}
+.rst-footer-buttons .prev {
+    text-align: left;
+    left: 0;
+}
+
+.rst-footer-buttons .next {
+    text-align: right;
+    right: 0;
+}
+
+.rst-footer-buttons .prev, .rst-footer-buttons .next {
+    @media screen and (min-width: 451px) {
+        -moz-box-sizing: border-box;
+        vertical-align: top;
+        margin-bottom: 0;
+    }
+}
+.rst-footer-buttons .prev, .rst-footer-buttons .next {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    vertical-align: top;
+    margin-bottom: 1.5em;
+    top: 1rem;
+    bottom: 1rem;
+}
+
+.rst-footer-buttons .label {
+    color: rgba(71,71,71,.6);
+    display: block;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: open-sans-bold,arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.rst-footer-buttons .prev a, .rst-footer-buttons .next a {
+    font-size: 14px;
+    display: inline;
+    position: relative;
+    text-decoration: underline;
+}
+
+
+.rst-breadcrumbs-buttons {
+    margin-top: 12px;
+    transform-origin: 0 0
+}
+
+.rst-breadcrumbs-buttons:before, .rst-breadcrumbs-buttons:after {
+    display: table;
+    content: ""
+}
+
+.rst-breadcrumbs-buttons:after {
+    clear:both
+}
+
+.genindextable li > ul {
+    margin-left:24px
+}
+
+@media screen and (max-width: 768px) {
+    .wy-body-for-nav {
+        background:#fcfcfc
+    }
+
+    .wy-nav-top {
+        display:block
+    }
+
+    .wy-nav-side.shift {
+        width: 85%;
+        left:0
+    }
+
+    .wy-side-nav-search {
+        width:auto
+    }
+
+    .wy-nav-content-wrap {
+        margin-left:0
+    }
+
+    .wy-nav-content-wrap .wy-nav-content {
+        padding:1.618em
+    }
+
+    .wy-nav-content-wrap.shift {
+        position: fixed;
+        min-width: 100%;
+        left: 85%;
+        top: 0;
+        height: 100%;
+        overflow:hidden
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .wy-nav-content-wrap {
+        background:rgba(0, 0, 0, 0.05)
+    }
+
+    .wy-nav-content {
+        margin: 0;
+        background:#fcfcfc
+    }
+}
+
+@media print {
+    .rst-versions, footer, .wy-nav-side {
+        display:none
+    }
+
+    .wy-nav-content-wrap {
+        margin-left:0
+    }
+}
+
+.rst-versions {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    color: #fcfcfc;
+    background: #1f1d1d;
+    font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+    z-index:400
+}
+
+.rst-versions a {
+    color: #2980B9;
+    text-decoration:none
+}
+
+.rst-versions .rst-badge-small {
+    display:none
+}
+
+.rst-versions .rst-current-version {
+    padding: 12px;
+    background-color: #272525;
+    display: block;
+    text-align: right;
+    font-size: 90%;
+    cursor: pointer;
+    color: #27AE60;
+    transform-origin: 0 0
+}
+
+.rst-versions .rst-current-version:before, .rst-versions .rst-current-version:after {
+    display: table;
+    content: ""
+}
+
+.rst-versions .rst-current-version:after {
+    clear:both
+}
+
+.rst-versions .rst-current-version .fa, .rst-versions .rst-current-version .wy-menu-vertical li span.toctree-expand, .wy-menu-vertical li .rst-versions .rst-current-version span.toctree-expand, .rst-versions .rst-current-version .rst-content .admonition-title, .rst-content .rst-versions .rst-current-version .admonition-title, .rst-versions .rst-current-version .rst-content h1 .headerlink, .rst-content h1 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h2 .headerlink, .rst-content h2 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h3 .headerlink, .rst-content h3 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h4 .headerlink, .rst-content h4 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h5 .headerlink, .rst-content h5 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content h6 .headerlink, .rst-content h6 .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content dl dt .headerlink, .rst-content dl dt .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content p.caption .headerlink, .rst-content p.caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content table > caption .headerlink, .rst-content table > caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content .code-block-caption .headerlink, .rst-content .code-block-caption .rst-versions .rst-current-version .headerlink, .rst-versions .rst-current-version .rst-content tt.download span:first-child, .rst-content tt.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .rst-content code.download span:first-child, .rst-content code.download .rst-versions .rst-current-version span:first-child, .rst-versions .rst-current-version .icon {
+    color:#fcfcfc
+}
+
+.rst-versions .rst-current-version .fa-book, .rst-versions .rst-current-version .icon-book {
+    float:left
+}
+
+.rst-versions .rst-current-version .icon-book {
+    float:left
+}
+
+.rst-versions .rst-current-version.rst-out-of-date {
+    background-color: #E74C3C;
+    color:#fff
+}
+
+.rst-versions .rst-current-version.rst-active-old-version {
+    background-color: #F1C40F;
+    color:#000
+}
+
+.rst-versions.shift-up {
+    height: auto;
+    max-height: 100%;
+    overflow-y:scroll
+}
+
+.rst-versions.shift-up .rst-other-versions {
+    display:block
+}
+
+.rst-versions .rst-other-versions {
+    font-size: 90%;
+    padding: 12px;
+    color: gray;
+    display:none
+}
+
+.rst-versions .rst-other-versions hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 20px 0;
+    padding: 0;
+    border-top:solid 1px #413d3d
+}
+
+.rst-versions .rst-other-versions dd {
+    display: inline-block;
+    margin:0
+}
+
+.rst-versions .rst-other-versions dd a {
+    display: inline-block;
+    padding: 6px;
+    color:#fcfcfc
+}
+
+.rst-versions.rst-badge {
+    width: auto;
+    bottom: 20px;
+    right: 20px;
+    left: auto;
+    border: none;
+    max-width: 300px;
+    max-height:90%
+}
+
+.rst-versions.rst-badge .icon-book {
+    float:none
+}
+
+.rst-versions.rst-badge .fa-book, .rst-versions.rst-badge .icon-book {
+    float:none
+}
+
+.rst-versions.rst-badge.shift-up .rst-current-version {
+    text-align:right
+}
+
+.rst-versions.rst-badge.shift-up .rst-current-version .fa-book, .rst-versions.rst-badge.shift-up .rst-current-version .icon-book {
+    float:left
+}
+
+.rst-versions.rst-badge.shift-up .rst-current-version .icon-book {
+    float:left
+}
+
+.rst-versions.rst-badge .rst-current-version {
+    width: auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 6px;
+    display: block;
+    text-align:center
+}
+
+@media screen and (max-width: 768px) {
+    .rst-versions {
+        width: 85%;
+        display:none
+    }
+
+    .rst-versions.shift {
+        display:block
+    }
+}
+
+.rst-content img {
+    max-width: 100%;
+    height:auto
+}
+
+.rst-content div.figure {
+    margin-bottom:24px
+}
+
+.rst-content div.figure p.caption {
+    font-style:italic
+}
+
+.rst-content div.figure p:last-child.caption {
+    margin-bottom:0px
+}
+
+.rst-content div.figure.align-center {
+    text-align:center
+}
+
+.rst-content .section > img, .rst-content .section > a > img {
+    margin-bottom:24px
+}
+
+.rst-content abbr[title] {
+    text-decoration:none
+}
+
+.rst-content.style-external-links a.reference.external:after {
+    font-family: FontAwesome;
+    content: "";
+    color: #b3b3b3;
+    vertical-align: super;
+    font-size: 60%;
+    margin:0 .2em
+}
+
+.rst-content blockquote {
+    line-height: 24px;
+    margin-bottom:24px
+}
+
+.rst-content pre.literal-block {
+    white-space: pre;
+    margin: 0;
+    padding: 12px 12px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    display: block;
+    overflow: auto
+}
+
+.rst-content pre.literal-block, .rst-content div[class^='highlight'] {
+    border: 1px solid #e1e4e5;
+    overflow-x: auto;
+    margin: 1px 0 24px 0
+}
+
+.rst-content pre.literal-block div[class^='highlight'], .rst-content div[class^='highlight'] div[class^='highlight'] {
+    padding: 0px;
+    border: none;
+    margin: 0
+}
+
+.rst-content div[class^='highlight'] td.code {
+    width:100%
+}
+
+.rst-content .linenodiv pre {
+    border-right: solid 1px #e6e9ea;
+    margin: 0;
+    padding: 12px 12px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    user-select: none;
+    pointer-events: none
+}
+
+.rst-content div[class^='highlight'] pre {
+    white-space: pre;
+    margin: 0;
+    padding: 12px 12px;
+    display: block;
+    overflow: auto
+}
+
+.rst-content div[class^='highlight'] pre .hll {
+    display: block;
+    margin: 0 -12px;
+    padding: 0 12px
+}
+
+.rst-content pre.literal-block, .rst-content div[class^='highlight'] pre, .rst-content .linenodiv pre {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    font-size: 14px;
+    line-height:1.4
+}
+
+.rst-content .code-block-caption {
+    font-style: italic;
+    font-size: 85%;
+    line-height: 1;
+    padding: 1em 0;
+    text-align:center
+}
+
+@media print {
+    .rst-content .codeblock, .rst-content div[class^='highlight'], .rst-content div[class^='highlight'] pre {
+        white-space:pre-wrap
+    }
+}
+
+.rst-content .note .last, .rst-content .attention .last, .rst-content .caution .last, .rst-content .danger .last, .rst-content .error .last, .rst-content .hint .last, .rst-content .important .last, .rst-content .tip .last, .rst-content .warning .last, .rst-content .seealso .last, .rst-content .admonition-todo .last, .rst-content .admonition .last {
+    margin-bottom:0
+}
+
+.rst-content .admonition-title:before {
+    margin-right:4px
+}
+
+.rst-content .admonition table {
+    border-color:rgba(0, 0, 0, 0.1)
+}
+
+.rst-content .admonition table td, .rst-content .admonition table th {
+    background: transparent !important;
+    border-color:rgba(0, 0, 0, 0.1) !important
+}
+
+.rst-content .section ol.loweralpha, .rst-content .section ol.loweralpha li {
+    list-style:lower-alpha
+}
+
+.rst-content .section ol.upperalpha, .rst-content .section ol.upperalpha li {
+    list-style:upper-alpha
+}
+
+.rst-content .section ol p, .rst-content .section ul p {
+    margin-bottom:12px
+}
+
+.rst-content .section ol p:last-child, .rst-content .section ul p:last-child {
+    margin-bottom:24px
+}
+
+.rst-content .line-block {
+    margin-left: 0px;
+    margin-bottom: 24px;
+    line-height:24px
+}
+
+.rst-content .line-block .line-block {
+    margin-left: 24px;
+    margin-bottom:0px
+}
+
+.rst-content .topic-title {
+    font-weight: bold;
+    margin-bottom:12px
+}
+
+.rst-content .toc-backref {
+    color:#404040
+}
+
+.rst-content .align-right {
+    float: right;
+    margin:0px 0px 24px 24px
+}
+
+.rst-content .align-left {
+    float: left;
+    margin:0px 24px 24px 0px
+}
+
+.rst-content .align-center {
+    margin:auto
+}
+
+.rst-content .align-center:not(table) {
+    display:block
+}
+
+.rst-content h1 .headerlink, .rst-content h2 .headerlink, .rst-content .toctree-wrapper p.caption .headerlink, .rst-content h3 .headerlink, .rst-content h4 .headerlink, .rst-content h5 .headerlink, .rst-content h6 .headerlink, .rst-content dl dt .headerlink, .rst-content p.caption .headerlink, .rst-content table > caption .headerlink, .rst-content .code-block-caption .headerlink {
+    visibility: hidden;
+    font-size:14px
+}
+
+.rst-content h1 .headerlink:after, .rst-content h2 .headerlink:after, .rst-content .toctree-wrapper p.caption .headerlink:after, .rst-content h3 .headerlink:after, .rst-content h4 .headerlink:after, .rst-content h5 .headerlink:after, .rst-content h6 .headerlink:after, .rst-content dl dt .headerlink:after, .rst-content p.caption .headerlink:after, .rst-content table > caption .headerlink:after, .rst-content .code-block-caption .headerlink:after {
+    content: "";
+    font-family:FontAwesome
+}
+
+.rst-content h1:hover .headerlink:after, .rst-content h2:hover .headerlink:after, .rst-content .toctree-wrapper p.caption:hover .headerlink:after, .rst-content h3:hover .headerlink:after, .rst-content h4:hover .headerlink:after, .rst-content h5:hover .headerlink:after, .rst-content h6:hover .headerlink:after, .rst-content dl dt:hover .headerlink:after, .rst-content p.caption:hover .headerlink:after, .rst-content table > caption:hover .headerlink:after, .rst-content .code-block-caption:hover .headerlink:after {
+    visibility:visible
+}
+
+.rst-content table > caption .headerlink:after {
+    font-size:12px
+}
+
+.rst-content .centered {
+    text-align:center
+}
+
+.rst-content .sidebar {
+    float: right;
+    width: 40%;
+    display: block;
+    margin: 0 0 24px 24px;
+    padding: 24px;
+    background: #f3f6f6;
+    border:solid 1px #e1e4e5
+}
+
+.rst-content .sidebar p, .rst-content .sidebar ul, .rst-content .sidebar dl {
+    font-size:90%
+}
+
+.rst-content .sidebar .last {
+    margin-bottom:0
+}
+
+.rst-content .sidebar .sidebar-title {
+    display: block;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+    font-weight: bold;
+    background: #e1e4e5;
+    padding: 6px 12px;
+    margin: -24px;
+    margin-bottom: 24px;
+    font-size:100%
+}
+
+.rst-content .highlighted {
+    background: #F1C40F;
+    display: inline-block;
+    font-weight: bold;
+    padding:0 6px
+}
+
+.rst-content .footnote-reference, .rst-content .citation-reference {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+    line-height: 0;
+    font-size:90%
+}
+
+.rst-content table.docutils.citation, .rst-content table.docutils.footnote {
+    background: none;
+    border: none;
+    color:gray
+}
+
+.rst-content table.docutils.citation td, .rst-content table.docutils.citation tr, .rst-content table.docutils.footnote td, .rst-content table.docutils.footnote tr {
+    border: none;
+    background-color: transparent !important;
+    white-space:normal
+}
+
+.rst-content table.docutils.citation td.label, .rst-content table.docutils.footnote td.label {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align:top
+}
+
+.rst-content table.docutils.citation tt, .rst-content table.docutils.citation code, .rst-content table.docutils.footnote tt, .rst-content table.docutils.footnote code {
+    color:#555
+}
+
+.rst-content .wy-table-responsive.citation, .rst-content .wy-table-responsive.footnote {
+    margin-bottom:0
+}
+
+.rst-content .wy-table-responsive.citation + :not(.citation), .rst-content .wy-table-responsive.footnote + :not(.footnote) {
+    margin-top:24px
+}
+
+.rst-content .wy-table-responsive.citation:last-child, .rst-content .wy-table-responsive.footnote:last-child {
+    margin-bottom:24px
+}
+
+.rst-content table.docutils th {
+    border-color:#e1e4e5
+}
+
+.rst-content table.docutils td .last, .rst-content table.docutils td .last :last-child {
+    margin-bottom:0
+}
+
+.rst-content table.field-list {
+    border:none
+}
+
+.rst-content table.field-list td {
+    border:none
+}
+
+.rst-content table.field-list td p {
+    font-size: inherit;
+    line-height:inherit
+}
+
+.rst-content table.field-list td > strong {
+    display:inline-block
+}
+
+.rst-content table.field-list .field-name {
+    padding-right: 10px;
+    text-align: left;
+    white-space:nowrap
+}
+
+.rst-content table.field-list .field-body {
+    text-align:left
+}
+
+.rst-content tt, .rst-content tt, .rst-content code {
+    color: #000;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace;
+    padding:2px 5px
+}
+
+.rst-content tt big, .rst-content tt em, .rst-content tt big, .rst-content code big, .rst-content tt em, .rst-content code em {
+    font-size: 100% !important;
+    line-height:normal
+}
+
+.rst-content tt.literal, .rst-content tt.literal, .rst-content code.literal {
+    color:#E74C3C
+}
+
+.rst-content tt.xref, a .rst-content tt, .rst-content tt.xref, .rst-content code.xref, a .rst-content tt, a .rst-content code {
+    font-weight: bold;
+    color:#404040
+}
+
+.rst-content pre, .rst-content kbd, .rst-content samp {
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", Courier, monospace
+}
+
+.rst-content a tt, .rst-content a tt, .rst-content a code {
+    color:#2980B9
+}
+
+.rst-content dl {
+    margin-bottom:24px
+}
+
+.rst-content dl dt {
+    font-weight: bold;
+    margin-bottom:12px
+}
+
+.rst-content dl p, .rst-content dl table, .rst-content dl ul, .rst-content dl ol {
+    margin-bottom:12px !important
+}
+
+.rst-content dl dd {
+    line-height:24px
+}
+
+.rst-content dl:not(.docutils) {
+    margin-bottom:24px
+}
+
+
+.rst-content dl:not(.docutils) dt:before {
+    color:#6ab0de
+}
+
+.rst-content dl:not(.docutils) dt .headerlink {
+    color: #404040;
+    font-size:100% !important
+}
+
+.rst-content dl:not(.docutils) dl dt {
+    margin-bottom: 6px;
+    border: none;
+    border-left: solid 3px #ccc;
+    background: #f0f0f0;
+    color:#555
+}
+
+.rst-content dl:not(.docutils) dl dt .headerlink {
+    color: #404040;
+    font-size:100% !important
+}
+
+.rst-content dl:not(.docutils) dt:first-child {
+    margin-top:0
+}
+
+.rst-content dl:not(.docutils) tt, .rst-content dl:not(.docutils) tt, .rst-content dl:not(.docutils) code {
+    font-weight:bold
+}
+
+.rst-content dl:not(.docutils) tt.descname, .rst-content dl:not(.docutils) tt.descclassname, .rst-content dl:not(.docutils) tt.descname, .rst-content dl:not(.docutils) code.descname, .rst-content dl:not(.docutils) tt.descclassname, .rst-content dl:not(.docutils) code.descclassname {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size:100% !important
+}
+
+.rst-content dl:not(.docutils) tt.descname, .rst-content dl:not(.docutils) tt.descname, .rst-content dl:not(.docutils) code.descname {
+    font-weight:bold
+}
+
+.rst-content dl:not(.docutils) .optional {
+    display: inline-block;
+    padding: 0 4px;
+    color: #000;
+    font-weight:bold
+}
+
+.rst-content dl:not(.docutils) .property {
+    display: inline-block;
+    padding-right:8px
+}
+
+.rst-content .viewcode-link, .rst-content .viewcode-back {
+    display: inline-block;
+    color: #27AE60;
+    font-size: 80%;
+    padding-left:24px
+}
+
+.rst-content .viewcode-back {
+    display: block;
+    float:right
+}
+
+.rst-content p.rubric {
+    margin-bottom: 12px;
+    font-weight:bold
+}
+
+.rst-content tt.download, .rst-content code.download {
+    background: inherit;
+    padding: inherit;
+    font-weight: normal;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    border: inherit;
+    white-space:inherit
+}
+
+.rst-content tt.download span:first-child, .rst-content code.download span:first-child {
+    -webkit-font-smoothing:subpixel-antialiased
+}
+
+.rst-content tt.download span:first-child:before, .rst-content code.download span:first-child:before {
+    margin-right:4px
+}
+
+.rst-content .guilabel {
+    border: 1px solid #7fbbe3;
+    background: #e7f2fa;
+    font-size: 80%;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 2.4px 6px;
+    margin:auto 2px
+}
+
+.rst-content .versionmodified {
+    font-style:italic
+}
+
+@media screen and (max-width: 480px) {
+    .rst-content .sidebar {
+        width: 100%
+    }
+}
+
+.math {
+    text-align:center
+}
+
+
+
+.hoverxref {
+    border-bottom: 1px dotted;
+    border-color: gray;
+}
+
+.tooltipster-box {
+    max-height: 600px;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-custom .tooltipster-content {
+    color: #8d8d8d;
+    font-size: 80%;
+    padding: 18px;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-custom .tooltipster-content p {
+    font-size: 100% !important;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-custom .tooltipster-content .headerlink {
+    visibility: hidden;
+}
+
+/* Left for CSS overrides we need to make in the future */
+
+/* Fix badge on RTD Theme */
+
+/* Please keep RTD badge displayed on your site */
+.rst-versions.rst-badge {
+    display: block;
+
+    bottom: 50px;
+
+    /* Workaround for mkdocs which set a specific height for this element */
+    height: auto;
+}
+
+.rst-other-versions {
+    text-align: left;
+}
+
+.rst-other-versions a {
+    border: 0;
+}
+
+.rst-other-versions dl {
+    margin: 0;
+}
+
+
+/* Fix RTD theme bottom margin */
+.rst-content .line-block {
+    margin-bottom: 24px
+}
+
+/* Fix for nav bottom padding with flyout */
+nav.wy-nav-side {
+    padding-bottom: 3em;
+}
+
+/* bookmark icon */
+.bookmark-added-msg {display: none;}
+.bookmark-active {display: none;}
+.bookmark-inactive {display: none;}
