@@ -9,7 +9,8 @@ const webpack = require("webpack");
 dotenv.config();
 module.exports = {
   entry: [
-    path.resolve('src', 'js', 'index.js')
+    path.resolve('src', 'js', 'index.js'),
+    path.resolve('src', 'js', 'theme.js'),
   ],
   module: {
     rules: [
@@ -25,6 +26,26 @@ module.exports = {
           'css-loader',
           'postcss-loader'
         ],
+      },
+      {
+        test: /\.(png|svg|jpe?g|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }
+          }
+        ]
+      },
+      {
+        test: /\.(eot|ttf|woff|woff2)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        }
       },
     ],
   },
@@ -43,5 +64,12 @@ module.exports = {
     poll: 1000
   },
   plugins: [
-    new MiniCssExtractPlugin()],
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin(),
+    new webpack.DefinePlugin({
+      // Provide enviroment variable defaults
+      // from .env
+      ALGOLIA_API_KEY: JSON.stringify(process.env.ALGOLIA_API_KEY),
+      ALGOLIA_BASE_URL: JSON.stringify(process.env.ALGOLIA_BASE_URL)
+    })],
 };
