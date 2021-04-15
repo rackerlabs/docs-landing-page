@@ -49,7 +49,7 @@ class App extends Component {
       <div className="ais-InstantSearch">
         <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}>
           <Configure hitsPerPage={16} />
-          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Solution Docs', }} showLoadingIndicator />
+          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
             <Results>
               <InfiniteHits minHitsPerPage={16} />
             </Results>
