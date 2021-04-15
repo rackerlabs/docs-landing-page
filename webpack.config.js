@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const dotenv = require("dotenv");
 const fs = require("fs");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 /**
  * Load env vars from .env if available
  */
