@@ -44,7 +44,7 @@ const searchClient = {
 class App extends Component {
   
   render() {
-    const ALGOLIA_INDEX_NAME = 'netlify_22f90b68-b04d-411c-a401-a4e19170c6ae_master_all';
+    const ALGOLIA_INDEX_NAME = 'netlify_f6012b1b-e032-4bb3-91f5-addb2e700fe2_master_all';
     return (
       <div className="ais-InstantSearch">
         <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}>
