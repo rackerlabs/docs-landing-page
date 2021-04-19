@@ -20,7 +20,7 @@ const Hit = ({ hit }) => {
     return (
       <div className="row">
         <div className="col-sm-12">
-          <HeaderLink headerUrl={hit.url} />&nbsp;&gt;&nbsp;{hit.category.map((value, index) => <a key={value} className="search-type-link">{value} {index < hit.value.length - 1 ? ',\u00A0' : ''}</a>)}
+          <HeaderLink headerUrl={hit.url} />&nbsp;&gt;&nbsp;<a className="search-type-link">{hit.category}</a>
           <h2>
             <a className="search-title-link" href={`${hit.url}`}>
               <Highlight attribute="title" hit={hit} />
