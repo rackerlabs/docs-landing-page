@@ -135,3 +135,13 @@ img[src$="cloudformation-launch-stack.png"] {
     text-transform: uppercase;
 }
 }
+
+.post-category {
+  padding: 0.5rem 0 0 0;
+}
+
+.post-excerpt {
+  img {
+    max-width: 200px !important;
+  }
+}

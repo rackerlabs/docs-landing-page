@@ -12,13 +12,13 @@ https://www.docs.rackspace.com/*    https://docs.rackspace.com/:splat       301!
 https://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
 https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
-/blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
-/support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
+/blog/*     https://staging-blog-rackspace.netlify.app/blog/:splat  200!
+/support/*  https://staging-support-rackspace.netlify.app/support/:splat  200!
 
 # Comment from here to remove the netlify dependency for solution docs
 
 # Solution Docs Redirects
-/docs   https://solution-docs-homepage.netlify.app/     200
+/docs   https://staging-solution-docs.netlify.app/docs     200
 
 # Portal Onboarding guide Redirects
 /docs/portal-onboarding-guide/*      https://docs-portal-onboarding-guide.netlify.app/docs/portal-onboarding-guide/:splat         200

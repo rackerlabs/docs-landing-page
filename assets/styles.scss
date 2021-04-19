@@ -41,6 +41,13 @@
 @import "components/rack-cli.scss";
 @import "components/rst-content.scss";
 @import "components/rtd.scss";
+@import "components/support-docs.scss";
+@import "components/how-to.scss";
+@import "components/sidebar.scss";
+@import "components/accordion.scss";
+@import "components/responsive-tabs.scss";
+@import "components/blog.scss";
+@import "components/hlinks.scss";
 
 /* Pages */
 @import "pages/page-docs.scss";
@@ -48,3 +55,4 @@
 @import "pages/page-post.scss";
 @import "pages/dev-docs.scss";
 @import "pages/quick-start";
+@import "pages/page-404.scss";
