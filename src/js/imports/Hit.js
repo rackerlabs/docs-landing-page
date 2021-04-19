@@ -5,15 +5,14 @@ import Snippet from './Snippet';
 
 function HeaderLink(props) {
   const headerUrl = props.headerUrl;
-  switch (headerUrl) {
-    case headerUrl.includes('/docs/'):
-      return (<a className="search-type-link" href="/docs/">Solution Docs</a>);
-    case headerUrl.includes('/support/how-to/'):
-      return (<a className="search-type-link" href="/support/how-to/">How-To</a>);
-    case headerUrl.includes('/blog/'):
-      return (<a className="search-type-link" href="/blog">Blog</a>);
-    default:
-      return (<span></span>)
+  if (headerUrl.includes('/docs/')) {
+    return (<a className="search-type-link" href="/docs/">Solution Docs</a>);
+  } else if (headerUrl.includes('/support/how-to/')) {
+    return ( <a className="search-type-link" href="/support/how-to/">How-To</a>);
+  } else if (headerUrl.includes('/blog/')) {
+    return (<a className="search-type-link" href="/blog">Blog</a>);
+  } else {
+    return (<span></span>);
   }
 }
 const Hit = ({ hit }) => {
