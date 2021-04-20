@@ -115,11 +115,4 @@ window.onload = function () {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 }
-algoliasearchNetlify({
-    appId: 'I0JO56OFYD',
-    apiKey: 'ce5576a8109906d7cbc0c7ebdff2c2e2',
-    siteId: 'f6012b1b-e032-4bb3-91f5-addb2e700fe2',
-    branch: 'master',
-    selector: 'div#crawler-search',
-  });
 ReactDOM.render(<App />, document.getElementById('search'));
