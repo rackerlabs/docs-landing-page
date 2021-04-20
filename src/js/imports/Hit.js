@@ -18,7 +18,11 @@ function HeaderLink(props) {
 function CategoryLink(props) {
   const categories = props.category;
   if (categories != '' && categories != null) {
-    return (categories.map((category, index) => <a key={category} className="search-type-link">{category} {index < categories.length - 1 ? ',\u00A0' : ''}</a>))
+    if (Array.isArray(categories)) {
+      return (categories.map((category, index) => <a key={category} className="search-type-link">{category} {index < categories.length - 1 ? ',\u00A0' : ''}</a>))
+    } else {
+      return (<a className="search-type-link">{categories}</a>);
+    }
   } else {
     return (<span></span>);
   }
