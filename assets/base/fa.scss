@@ -3027,6 +3027,9 @@ a.cta {
 .sidebar-container li.open > ul {
     max-height: initial;
 }
+.sidebar-container li.current > ul {
+    max-height: initial;
+}
 @media (min-width: 769px) {
     .sidebar-container.sticky {
         position: fixed;
