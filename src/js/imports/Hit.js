@@ -15,12 +15,20 @@ function HeaderLink(props) {
     return (<span></span>);
   }
 }
+function CategoryLink(props) {
+  const categories = props.category;
+  if (categories != '' && categories != null) {
+    return (categories.map((category, index) => <a key={category} className="search-type-link">{category} {index < categories.length - 1 ? ',\u00A0' : ''}</a>))
+  } else {
+    return (<span></span>);
+  }
+}
 const Hit = ({ hit }) => {
   if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null) {
     return (
       <div className="row">
         <div className="col-sm-12">
-          <HeaderLink headerUrl={hit.url} />&nbsp;&gt;&nbsp;<a className="search-type-link">{hit.category}</a>
+          <HeaderLink headerUrl={hit.url} />&nbsp;&gt;&nbsp;<CategoryLink category={hit.category} />
           <h2>
             <a className="search-title-link" href={`${hit.url}`}>
               <Highlight attribute="title" hit={hit} />
