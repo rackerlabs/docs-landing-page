@@ -19,7 +19,7 @@ function CategoryLink(props) {
   const categories = props.category;
   if (categories != '' && categories != null) {
     if (Array.isArray(categories)) {
-      return (categories.map((category, index) => <a key={category} className="search-type-link-multiple">{category} {index < categories.length - 1 ? ',\u00A0' : ''}</a>))
+      return (categories.map((category) => <a key={category} className="search-type-link-multiple">{category}</a>))
     } else {
       return (<a className="search-type-link-single">{categories}</a>);
     }
