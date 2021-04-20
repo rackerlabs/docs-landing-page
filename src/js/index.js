@@ -122,5 +122,7 @@ algoliasearchNetlify({
     branch: 'master',
     selector: 'div#crawler-search',
   });
-
+jQuery(function () {
+    SphinxRtdTheme.Navigation.enable({{ 'true' if theme_sticky_navigation|tobool else 'false' }});
+});
 ReactDOM.render(<App />, document.getElementById('search'));
