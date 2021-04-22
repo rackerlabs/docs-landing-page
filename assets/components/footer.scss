@@ -15,11 +15,14 @@
 
   a {
     line-height: 1.8;
-    text-decoration: none;
+    text-decoration: none !important;
     transition: opacity 0.15s ease;
     vertical-align: top;
     will-change: opacity;
-    color: $color-white;
+    color: $color-white !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    font-size: inherit !important;
 
     &:hover {
       opacity: 0.6;
