@@ -105,6 +105,10 @@ img[src$="cloudformation-launch-stack.png"] {
 
 .post-category {
   padding: 0.5rem 0 0 0;
+  li {
+    list-style: none !important;
+    list-style-type: none !important;
+  }
 }
 
 .docs-header-headline-container {
