@@ -451,3 +451,18 @@
       font-size: inherit;
   }
 }
+
+.first-footer {
+  ul {
+    list-style-type: none !important;
+    list-style: none i !important;
+    font-size: inherit;
+    font-weight: inherit;
+    li {
+      list-style-type: none !important;
+      list-style: none !important;
+      margin-bottom: .5rem;
+    }
+  }
+  margin-bottom: 2rem;
+}
