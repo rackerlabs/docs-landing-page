@@ -1418,3 +1418,13 @@ table {
 .fa-stack {
  display:flex
 }
+
+.share-buttons {
+    .fa {
+        display: inline !important;
+    }
+}
+
+ul.area {
+    padding-left: 0 !important;
+}

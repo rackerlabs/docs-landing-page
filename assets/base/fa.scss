@@ -3023,6 +3023,7 @@ a.cta {
 }
 .sidebar-container li.open > .collapse-target {
     transform: rotate(90deg);
+    top: 10px;
 }
 .sidebar-container li.open > ul {
     max-height: initial;
