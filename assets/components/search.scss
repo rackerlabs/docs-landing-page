@@ -364,11 +364,17 @@ a.search-title:visited {
   width: 59px;
   height: 17px;
   color: rgb(255, 255, 255);
-  font-size: 12px;
+  font-size: 14px;
   font-family: FiraSans-Medium;
   font-weight: 500;
   text-transform: uppercase;
   border-radius: 4px;
+  padding: 0.1rem;
+  margin-right: 0.5rem;
+}
+.search-tag:hover, .article-tag:hover, .post-tag:hover, .technical-tag:hover{
+  color: #000000;
+  background: #fff;
 }
 .article-tag {
   background: rgb(250, 144, 0);
