@@ -3652,6 +3652,13 @@ pre code {
     color: #e0e0d7;
     padding: 0;
 }
+#single-post {
+    pre {
+        code {
+            color: inherit !important;
+        }
+    }
+}
 pre {
     overflow-x: scroll;
     overflow-y: hidden;
