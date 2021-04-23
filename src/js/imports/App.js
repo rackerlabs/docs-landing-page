@@ -1,6 +1,6 @@
 import algoliasearch from 'algoliasearch/lite';
 import React, { Component } from 'react';
-import { InstantSearch, SearchBox, Configure } from 'react-instantsearch-dom';
+import { InstantSearch, SearchBox, Configure, RefinementList, connectRefinementList } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors"
 
@@ -22,6 +22,7 @@ const Results = connectStateResults(
     }
   }
 );
+
 const searchClient = {
   
     search(requests) {
@@ -50,6 +51,13 @@ class App extends Component {
         <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}>
           <Configure hitsPerPage={20} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
+          <RefinementList
+                  attribute="keywords"
+                  searchable={true}
+                  translations={{
+                    placeholder: 'Search for keywords…',
+                  }}
+                />
             <Results>
               <InfiniteHits minHitsPerPage={16} />
             </Results>
