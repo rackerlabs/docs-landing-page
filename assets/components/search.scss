@@ -238,7 +238,7 @@ a.search-title:visited {
 .hit-item-single {
   margin: 0 auto;
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   border-bottom: 2px solid #ebebeb;
   .search-type-link {
     color: rgb(99, 100, 102) !important;
@@ -339,6 +339,7 @@ a.search-title:visited {
   letter-spacing: 0px;
   text-align: left;
   margin-left: 2rem;
+  padding-top: 2rem;
 }
 
 .no-results {
@@ -357,4 +358,24 @@ a.search-title:visited {
     letter-spacing: 0px;
     line-height: 24px;
   }
+}
+
+.search-tag {
+  width: 59px;
+  height: 17px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-family: FiraSans-Medium;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+.article-tag {
+  background: rgb(250, 144, 0);
+}
+.post-tag {
+  background: rgb(67, 125, 154);
+}
+.technical-tag {
+  background: rgb(67, 125, 154);
 }
