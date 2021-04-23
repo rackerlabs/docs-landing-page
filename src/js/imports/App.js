@@ -51,13 +51,7 @@ class App extends Component {
         <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}>
           <Configure hitsPerPage={20} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
-          <RefinementList
-                  attribute="keywords"
-                  searchable={true}
-                  translations={{
-                    placeholder: 'Search for keywords…',
-                  }}
-                />
+          <RefinementList attribute="keywords" />
             <Results>
               <InfiniteHits minHitsPerPage={16} />
             </Results>
