@@ -1,5 +1,6 @@
 code, .rst-content tt, .rst-content code {
-    white-space: nowrap;
+    white-space: break-spaces;
+    line-height: normal;
     max-width: 100%;
     background: #fff;
     border: solid 1px #e1e4e5;
