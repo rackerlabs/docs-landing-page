@@ -45,7 +45,7 @@ const Hit = ({ hit }) => {
     return (
       <div className="row">
         <div className="col-sm-12">
-          <HeaderLink headerUrl={hit.url} /><CategoryLink category={hit.category} />
+          <HeaderLink headerUrl={hit.url} /><CategoryLink category={hit.keywords} />
           <h2>
             <TitleTag headerUrl={hit.url} />
             <a className="search-title-link" href={`${hit.url}`}>

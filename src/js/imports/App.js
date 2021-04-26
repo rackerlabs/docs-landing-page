@@ -52,7 +52,7 @@ class App extends Component {
           <Configure hitsPerPage={20} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
           <Results>
-          <RefinementList attribute="keywords" />
+          <RefinementList attribute="category" />
               <InfiniteHits minHitsPerPage={16} />
             </Results>
         </InstantSearch>
