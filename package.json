@@ -34,7 +34,7 @@
         "react-instantsearch": "^6.10.3",
         "react-instantsearch-dom": "^6.10.3",
         "url-parse": "^1.5.1",
-        "webpack": "^5.33.2",
+        "webpack": "^5.35.1",
         "webpack-cli": "^4.6.0"
     },
     "dependencies": {
