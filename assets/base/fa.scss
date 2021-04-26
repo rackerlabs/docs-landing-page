@@ -3658,6 +3658,13 @@ pre code {
         }
     }
 }
+.how-to-wrapper {
+    pre {
+        code {
+            color: inherit !important;
+        }
+    }
+}
 pre {
     overflow-x: scroll;
     overflow-y: hidden;
