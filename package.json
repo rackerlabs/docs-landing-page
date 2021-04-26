@@ -38,7 +38,7 @@
         "webpack-cli": "^4.6.0"
     },
     "dependencies": {
-        "@babel/cli": "^7.13.14",
+        "@babel/cli": "^7.13.16",
         "algoliasearch": "^4.9.0",
         "angular": "^1.4.1",
         "angular-sanitize": "^1.5.3",
