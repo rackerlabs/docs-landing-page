@@ -39,7 +39,7 @@
     },
     "dependencies": {
         "@babel/cli": "^7.13.16",
-        "algoliasearch": "^4.9.0",
+        "algoliasearch": "^4.9.1",
         "angular": "^1.4.1",
         "angular-sanitize": "^1.5.3",
         "assets-webpack-plugin": "^7.1.0",
