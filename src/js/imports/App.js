@@ -1,5 +1,5 @@
 import algoliasearch from 'algoliasearch/lite';
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 import { InstantSearch, SearchBox, Configure, RefinementList, connectRefinementList } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors"
