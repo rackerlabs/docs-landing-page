@@ -34,7 +34,7 @@ function CategoryLink(props) {
     if (Array.isArray(categories) && type === "Expert Insights") {
       return (<span>&nbsp;&gt;&nbsp;{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/[\[\]']+/g,'').replace(" ", ", ")}</a>)}</span>);
     } else {
-      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-single">{categories}</a></span>);
+      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
     }
   } else {
     return (<span></span>);
