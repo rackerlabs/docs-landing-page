@@ -30,7 +30,11 @@ function TitleTag(props) {
 function CategoryLink(props) {
   const categories = props.category;
   if (categories != '' && categories != null) {
-    return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
+    if (Array.isArray(categories)) {
+          return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-array">{categories}</a></span>);
+        } else {
+          return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-single">{categories}</a></span>);
+        }
   } else {
     return (<span></span>);
   }
