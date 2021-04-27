@@ -98,3 +98,23 @@
     opacity: 0.8;
   }
 }
+
+.btn-filter {
+  background: rgb(246, 246, 246) !important;
+}
+.popover-header {
+  background-color: $color-white;
+  color: rgb(0, 0, 0);
+  font-size: 18px !important;
+  font-family: inherit;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.ais-RefinementList-labelText {
+  color: rgb(0, 0, 0);
+  font-size: 14px !important;
+  font-family: inherit;
+  font-weight: normal;
+  letter-spacing: 0px;
+  margin-left: .5rem;
+}

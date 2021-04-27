@@ -1,12 +1,34 @@
 import React, { Component } from 'react';
-import { connectInfiniteHits, Configure, connectStats } from 'react-instantsearch-dom';
+import { connectInfiniteHits, Configure, connectStats, RefinementList } from 'react-instantsearch-dom';
+import { Button, Popover, OverlayTrigger } from "react-bootstrap";
+import { FaSlidersH } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import Hit from './Hit';
 
+const popover = (<Popover id="popover-filter">
+  <Popover.Title as="h3">Filter by Type</Popover.Title>
+  <Popover.Content>
+    <RefinementList attribute="category" />
+  </Popover.Content>
+</Popover>);
+function FilterPopover() {
+  return (
+    <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
+    <Button variant="light" className="btn-filter">
+        Filter <FaSlidersH />
+      </Button>
+      </OverlayTrigger>
+  );
+}
 const Stats = ({ nbHits }) => (
-  <p className="statsLine">
-    {nbHits} search results found
-  </p>
+  <>
+    <div className="statsLine">
+      <div className="row justify-content-between">
+        <div className="col-8">{nbHits} search results found</div>
+        <div className="col-2"><FilterPopover /></div>
+      </div>
+    </div>
+  </>
 );
 
 const CustomStats = connectStats(Stats);

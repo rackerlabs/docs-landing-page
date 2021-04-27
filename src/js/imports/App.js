@@ -1,9 +1,8 @@
 import algoliasearch from 'algoliasearch/lite';
-import React, { Component, useState } from 'react';
-import { InstantSearch, SearchBox, Configure, RefinementList, connectRefinementList } from 'react-instantsearch-dom';
+import React, { Component } from 'react';
+import { InstantSearch, SearchBox, Configure } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors";
-import { Button, Modal } from "react-bootstrap";
 
 const ALGOLIA_SEARCH_KEY = 'ce5576a8109906d7cbc0c7ebdff2c2e2';
 const ALGOLIA_APP_ID = 'I0JO56OFYD';
@@ -43,24 +42,6 @@ const searchClient = {
     }
 };
 
-function FilterModal() {
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
-
-  return (
-    <>
-      <Button variant="secondary" onClick={handleShow} className="btn-modal">
-        Filter
-      </Button>
-      <Modal size="sm" show={show} onHide={handleClose} aria-labelledby="filter-modal" dialogClassName="filter-modal" className="filter-modal">
-        <RefinementList attribute="category" />
-      </Modal>
-    </>
-  );
-}
-
 class App extends Component {
   
   render() {
@@ -71,7 +52,6 @@ class App extends Component {
           <Configure hitsPerPage={20} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
           <Results>
-              <FilterModal />
               <InfiniteHits minHitsPerPage={16} />
           </Results>
         </InstantSearch>
