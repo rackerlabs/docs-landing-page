@@ -41,7 +41,7 @@ function CategoryLink(props) {
   }
 }
 const Hit = ({ hit }) => {
-  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null) {
+  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != null) {
     return (
       <div className="row">
         <div className="col-sm-12">
