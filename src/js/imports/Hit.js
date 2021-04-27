@@ -31,7 +31,7 @@ function CategoryLink(props) {
   const categories = props.category;
   if (categories != '' && categories != null) {
     if (Array.isArray(categories)) {
-          return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-array">{categories.replace(/ *\([^)]*\) */g, "")}</a></span>);
+          return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-array">{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/ *\([^)]*\) */g, "")}</a>)}</a></span>);
         } else {
           return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link-single">{categories}</a></span>);
         }
