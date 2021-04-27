@@ -51,10 +51,10 @@ function FilterModal() {
 
   return (
     <>
-      <Button variant="secondary" onClick={handleShow}>
+      <Button variant="secondary" onClick={handleShow} className="btn-modal">
         Filter
       </Button>
-      <Modal size="sm" show={show} onHide={handleClose} aria-labelledby="filter-modal">
+      <Modal size="sm" show={show} onHide={handleClose} aria-labelledby="filter-modal" dialogClassName="filter-modal" className="filter-modal">
         <RefinementList attribute="category" />
       </Modal>
     </>
