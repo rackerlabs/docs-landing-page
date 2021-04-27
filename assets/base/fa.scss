@@ -141,10 +141,6 @@ q:before {
     content: "";
     content: none;
 }
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
 * {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3495,7 +3491,7 @@ html {
     overflow-wrap: break-word;
     -webkit-font-smoothing: antialiased;
     word-wrap: break-word;
-    word-break: break-word;
+    word-break: normal;
 }
 em,
 i {
