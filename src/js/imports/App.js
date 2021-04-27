@@ -51,7 +51,7 @@ function FilterModal() {
 
   return (
     <>
-      <Button variant="secondary" onClick={handleShow}>
+      <Button variant="secondary" onClick={handleShow} bsPrefix="filter">
         Filter
       </Button>
       <Modal size="sm" show={show} onHide={handleClose} aria-labelledby="filter-modal">
