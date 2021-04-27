@@ -42,6 +42,25 @@ const searchClient = {
     }
 };
 
+function FilterModal() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
+  return (
+    <>
+      <Button variant="secondary" onClick={handleShow}>
+        Filter
+      </Button>
+
+      <Modal show={show} onHide={handleClose}>
+        <RefinementList attribute="category" />
+      </Modal>
+    </>
+  );
+}
+
 class App extends Component {
   
   render() {
@@ -52,9 +71,9 @@ class App extends Component {
           <Configure hitsPerPage={20} />
           <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator />
           <Results>
-          <RefinementList attribute="category" />
+              <FilterModal />
               <InfiniteHits minHitsPerPage={16} />
-            </Results>
+          </Results>
         </InstantSearch>
       </div>
     );
