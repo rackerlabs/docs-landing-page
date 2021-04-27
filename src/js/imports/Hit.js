@@ -30,18 +30,24 @@ function TitleTag(props) {
 function CategoryLink(props) {
   const categories = props.category;
   if (categories != '' && categories != null) {
-    if (Array.isArray(categories)) {
-      categories = categories.flat();
-      return (<span>&nbsp;&gt;&nbsp;{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/ *\([^)]*\) */g, "")}{index < hit.categories.length - 1 ? ',\u00A0' : ''}</a>)}</span>)
-    } else {
-      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
-    }
+    return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
   } else {
     return (<span></span>);
   }
+  
+  // if (categories != '' && categories != null) {
+  //   if (Array.isArray(categories)) {
+  //     categories = categories.flat();
+  //     return (<span>&nbsp;&gt;&nbsp;{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/ *\([^)]*\) */g, "")}{index < hit.categories.length - 1 ? ',\u00A0' : ''}</a>)}</span>)
+  //   } else {
+  //     return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
+  //   }
+  // } else {
+  //   return (<span></span>);
+  // }
 }
 const Hit = ({ hit }) => {
-  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != null) {
+  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != '' && hit.category != null && hit.category != '') {
     return (
       <div className="row">
         <div className="col-sm-12">
