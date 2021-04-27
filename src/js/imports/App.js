@@ -54,8 +54,7 @@ function FilterModal() {
       <Button variant="secondary" onClick={handleShow}>
         Filter
       </Button>
-
-      <Modal show={show} onHide={handleClose}>
+      <Modal size="sm" show={show} onHide={handleClose} aria-labelledby="filter-modal">
         <RefinementList attribute="category" />
       </Modal>
     </>
