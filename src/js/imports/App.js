@@ -2,7 +2,8 @@ import algoliasearch from 'algoliasearch/lite';
 import React, { Component, useState } from 'react';
 import { InstantSearch, SearchBox, Configure, RefinementList, connectRefinementList } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
-import { connectStateResults } from "react-instantsearch/connectors"
+import { connectStateResults } from "react-instantsearch/connectors";
+import { Button, Modal } from "react-bootstrap";
 
 const ALGOLIA_SEARCH_KEY = 'ce5576a8109906d7cbc0c7ebdff2c2e2';
 const ALGOLIA_APP_ID = 'I0JO56OFYD';
