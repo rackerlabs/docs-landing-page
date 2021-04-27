@@ -1083,11 +1083,6 @@ blockquote:after, blockquote:before, q:after, q:before {
     content:none
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing:0
-}
-
 * {
     box-sizing: border-box;
     -moz-box-sizing:border-box
@@ -1398,10 +1393,6 @@ q:after,
 q:before {
  content:'';
  content:none
-}
-table {
- border-collapse:collapse;
- border-spacing:0
 }
 * {
  box-sizing:border-box;
