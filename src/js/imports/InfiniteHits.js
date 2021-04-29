@@ -1,31 +1,41 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useRef } from 'react';
 import { connectInfiniteHits, Configure, connectStats, RefinementList } from 'react-instantsearch-dom';
-import { Button, Popover, OverlayTrigger } from "react-bootstrap";
+import { Button, Popover, Overlay } from "react-bootstrap";
 import { FaSlidersH } from "react-icons/fa";
 import PropTypes from 'prop-types';
 import Hit from './Hit';
 
-const popover = (<Popover id="popover-filter">
-  <Popover.Title as="h3">Filter by Type</Popover.Title>
-  <Popover.Content>
-    <RefinementList attribute="category" />
-  </Popover.Content>
-</Popover>);
 function FilterPopover() {
+  const [show, setShow] = useState(false);
+  const [target, setTarget] = useState(null);
+  const ref = useRef(null);
+
+  const handleClick = (event) => {
+    setShow(!show);
+    setTarget(event.target);
+  };
   return (
-    <OverlayTrigger trigger="click" placement="bottom" overlay={popover}>
-    <Button variant="light" className="btn-filter">
-        Filter <FaSlidersH />
+    <div ref={ref}>
+      <Button variant="light" className="btn-filter" onClick={handleClick}>
+      Filter <FaSlidersH />
       </Button>
-      </OverlayTrigger>
+      <Overlay show={show} target={target} placement="bottom" container={ref.current} containerPadding={20}>
+        <Popover id="popover-filter">
+          <Popover.Title as="h3">Filter by Type</Popover.Title>
+          <Popover.Content>
+            <RefinementList attribute="category" />
+          </Popover.Content>
+        </Popover>
+      </Overlay>
+    </div>
   );
 }
 const Stats = ({ nbHits }) => (
   <>
     <div className="statsLine">
-      <div className="row justify-content-between">
+      <div className="row">
         <div className="col-8">{nbHits} search results found</div>
-        <div className="col-2"><FilterPopover /></div>
+        <div className="col-4 text-right-filter"><FilterPopover /></div>
       </div>
     </div>
   </>

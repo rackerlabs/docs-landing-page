@@ -18,11 +18,11 @@ function HeaderLink(props) {
 function TitleTag(props) {
   const type = props.type;
   if (type==="Solutions") {
-    return (<a className="search-tag technical-tag" href="/docs/">Technical</a>);
+    return (<a className="search-tag technical-tag" href="/docs/">Guides</a>);
   } else if (type==="How-To") {
-    return ( <a className="search-tag article-tag" href="/support/how-to/">Article</a>);
+    return ( <a className="search-tag article-tag" href="/support/how-to/">How-Tos</a>);
   } else if (type==="Expert Insights") {
-    return (<a className="search-tag post-tag" href="/blog">Post</a>);
+    return (<a className="search-tag post-tag" href="/blog">Insights</a>);
   } else {
     return (<span></span>);
   }
