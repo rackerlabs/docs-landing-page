@@ -5,24 +5,24 @@ import Snippet from './Snippet';
 
 function HeaderLink(props) {
   const type = props.type;
-  if (type==="Solutions") {
+  if (type==="Guides") {
     return (<a className="search-type-link" href="/docs/">Guides</a>);
-  } else if (type==="How-To") {
+  } else if (type==="How-Tos") {
     return ( <a className="search-type-link" href="/support/how-to/">How-Tos</a>);
-  } else if (type==="Expert Insights") {
-    return (<a className="search-type-link" href="/blog">Insights</a>);
+  } else if (type==="Insights") {
+    return (<a className="search-type-link" href="/blog/">Insights</a>);
   } else {
     return (<a className="search-type-link" href="/">Developer Home</a>);
   }
 }
 function TitleTag(props) {
   const type = props.type;
-  if (type==="Solutions") {
+  if (type==="Guides") {
     return (<a className="search-tag technical-tag" href="/docs/">Guides</a>);
-  } else if (type==="How-To") {
+  } else if (type==="How-Tos") {
     return ( <a className="search-tag article-tag" href="/support/how-to/">How-Tos</a>);
-  } else if (type==="Expert Insights") {
-    return (<a className="search-tag post-tag" href="/blog">Insights</a>);
+  } else if (type==="Insights") {
+    return (<a className="search-tag post-tag" href="/blog/">Insights</a>);
   } else {
     return (<span></span>);
   }
@@ -31,7 +31,7 @@ function CategoryLink(props) {
   const categories = props.category;
   const type = props.type;
   if (categories != '' && categories != null) {
-    if (Array.isArray(categories) && type === "Expert Insights") {
+    if (Array.isArray(categories) && type === "Insights") {
       return (<span>&nbsp;&gt;&nbsp;{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/[\[\]']+/g, '').replace(/\s/g, ', ')}</a>)}</span>);
     } else {
       return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
