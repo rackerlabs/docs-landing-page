@@ -6,11 +6,11 @@ import Snippet from './Snippet';
 function HeaderLink(props) {
   const type = props.type;
   if (type==="Solutions") {
-    return (<a className="search-type-link" href="/docs/">Solutions</a>);
+    return (<a className="search-type-link" href="/docs/">Guides</a>);
   } else if (type==="How-To") {
-    return ( <a className="search-type-link" href="/support/how-to/">How-To</a>);
+    return ( <a className="search-type-link" href="/support/how-to/">How-Tos</a>);
   } else if (type==="Expert Insights") {
-    return (<a className="search-type-link" href="/blog">Blog</a>);
+    return (<a className="search-type-link" href="/blog">Insights</a>);
   } else {
     return (<a className="search-type-link" href="/">Developer Home</a>);
   }
