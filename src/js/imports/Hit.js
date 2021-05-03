@@ -10,7 +10,7 @@ function HeaderLink(props) {
   } else if (type==="How-Tos") {
     return ( <a className="search-type-link" href="/support/how-to/">How-Tos</a>);
   } else if (type==="Insights") {
-    return (<a className="search-type-link" href="/blog/">Insights</a>);
+    return (<a className="search-type-link" href="/blog/">Expert Insights Blog</a>);
   } else {
     return (<a className="search-type-link" href="/">Developer Home</a>);
   }
@@ -18,11 +18,11 @@ function HeaderLink(props) {
 function TitleTag(props) {
   const type = props.type;
   if (type==="Guides") {
-    return (<a className="search-tag technical-tag" href="/docs/">Guides</a>);
+    return (<a className="search-tag technical-tag" href="/docs/">GUIDES</a>);
   } else if (type==="How-Tos") {
-    return ( <a className="search-tag article-tag" href="/support/how-to/">How-Tos</a>);
+    return ( <a className="search-tag article-tag" href="/support/how-to/">HOW-TOs</a>);
   } else if (type==="Insights") {
-    return (<a className="search-tag post-tag" href="/blog/">Insights</a>);
+    return (<a className="search-tag post-tag" href="/blog/">INSIGHTS</a>);
   } else {
     return (<span></span>);
   }
