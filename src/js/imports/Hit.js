@@ -51,6 +51,10 @@ function CategoryLink(props) {
   //   return (<span></span>);
   // }
 }
+function HitDate(props) {
+  const hitDate = new Date(hit.datePublished * 1000);
+  const createdDate = hitDate.toJSON().split('T')[0];
+}
 const Hit = ({ hit }) => {
   if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != '' && hit.category != null && hit.category != '') {
     return (

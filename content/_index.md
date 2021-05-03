@@ -1,6 +1,6 @@
 ---
-title: Rackspace Developer Center
-headline: Rackspace Developer Center
+title: 
+headline: 
 textline: Welcome to the Developer Docs!
 weight: 4
 outputs:
