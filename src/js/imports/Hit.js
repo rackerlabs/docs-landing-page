@@ -52,8 +52,28 @@ function CategoryLink(props) {
   // }
 }
 function HitDate(props) {
-  const hitDate = new Date(hit.datePublished * 1000);
-  const createdDate = hitDate.toJSON().split('T')[0];
+  const date = props.date;
+  if (date != '' && date != null) {
+    const hitDate = new Date(date * 1000);
+    const createdDate = hitDate.toJSON().split('T')[0];
+    return (<span className="search-date">{moment(createdDate).format('LL')}</span>);
+  } else {
+    return (<span></span>);
+  }
+}
+
+function Authors(props) {
+  const authors = props.authors;
+  const type = props.type;
+  if (authors != '' && authors != null) {
+    if (Array.isArray(authors) && (type === "Insights" || type === "How-Tos") ) {
+      return (<span>&nbsp;&gt;&nbsp;{authors.map((author) => <a key={author} className="search-type-link">{author.replace(/[\[\]']+/g, '').replace(/\s/g, ', ')}</a>)}</span>);
+    } else {
+      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{authors}</a></span>);
+    }
+  } else {
+    return (<span></span>);
+  }
 }
 const Hit = ({ hit }) => {
   if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != '' && hit.category != null && hit.category != '') {
