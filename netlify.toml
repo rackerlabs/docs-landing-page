@@ -111,4 +111,4 @@
 	]
 
 [[plugins]]
-package = "netlify-plugin-image-optim"
+  package = "netlify-plugin-image-optim"
