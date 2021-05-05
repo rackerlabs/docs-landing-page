@@ -4,8 +4,8 @@ import { InstantSearch, SearchBox, Configure } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors";
 
-const ALGOLIA_SEARCH_KEY = 'ce5576a8109906d7cbc0c7ebdff2c2e2';
-const ALGOLIA_APP_ID = '5RUKQWP125';
+const ALGOLIA_SEARCH_KEY = 'ec196286ebae1a6db15148eeea26b485';
+const ALGOLIA_APP_ID = 'UTC1CE04NQ';
 const algoliaClient = algoliasearch(
   ALGOLIA_APP_ID,
   ALGOLIA_SEARCH_KEY
