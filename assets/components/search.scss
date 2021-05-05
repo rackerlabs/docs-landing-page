@@ -88,6 +88,7 @@
   letter-spacing: 0px;
   line-height: 27px;
   margin-top: 1rem;
+  word-wrap: anywhere;
 }
 
 .search-date {
@@ -238,7 +239,7 @@ a.search-title:visited {
 .hit-item-single {
   margin: 0 auto;
   display: flex;
-  padding: 2rem;
+  padding: 1rem;
   border-bottom: 2px solid #ebebeb;
   .search-type-link {
     color: rgb(99, 100, 102) !important;
@@ -339,6 +340,7 @@ a.search-title:visited {
   letter-spacing: 0px;
   text-align: left;
   margin-left: 2rem;
+  padding-top: 2rem;
 }
 
 .no-results {
@@ -357,4 +359,35 @@ a.search-title:visited {
     letter-spacing: 0px;
     line-height: 24px;
   }
+}
+
+.search-tag {
+  color: $color-white;
+  font-family: inherit;
+  font-weight: 500;
+  margin-right: 0.5rem;
+  text-align: center;
+  padding: 0px 6px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+.search-tag:hover, .search-tag:visited {
+  color: $color-white;
+  text-decoration: none;
+}
+.article-tag {
+  background: rgb(250, 144, 0);
+}
+.post-tag {
+  background: #A37AC2;
+}
+.technical-tag {
+  background: rgb(67, 125, 154);
+}
+
+.text-right-filter {
+  text-align: right !important;
+  float: right !important;
+  margin-left: -20px;
 }

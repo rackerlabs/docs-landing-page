@@ -6,7 +6,7 @@ body {
   line-height: 1.5;
   color: #474747;
   word-wrap: break-word;
-  word-break: break-word;
+  word-break: normal;
 }
 
 
@@ -196,7 +196,6 @@ tr:nth-child(odd) td {
 }
 
 a, a:visited {
-  color: #3498db;
   cursor: pointer;
   text-decoration: none;
 }
