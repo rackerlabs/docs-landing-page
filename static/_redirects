@@ -84,7 +84,6 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # RPC VMWare
 /docs/rpc-vmware/*  https://rpc-vmware--rpc-vmware.netlify.app/docs/rpc-vmware/:splat    200
 /doc/rpc-vmware/*  https://vmware-cloud--rpc-vmware.netlify.app/doc/rpc-vmware/:splat    200
-/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#powering-a-virtual-maching-on-and-off/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/power-a-vm-on-and-off#power-a-vm-on-and-off/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#rebooting-a-virtual-machine/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/reboot-a-vm/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#filtering-virtual-machines/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/:splat    200
@@ -93,6 +92,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#re-imaging-virtual-machines/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/reimage-a-vm/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#removing-and-deleting-virtual-machines/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/delete-a-vm/:splat    200
 /docs/docs/vmware-server-virt/server-virt-handbook/user-manual/managing-vms/#tracking-orders/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/track-a-vm-order/:splat    200
+/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/*     https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/:splat     200
 
 
