@@ -148,6 +148,44 @@ img[src$="cloudformation-launch-stack.png"] {
   }
 }
 
+.blog-headline-container {
+  background-image: url(/img/ExpertInsightsBanner.png);
+  background-repeat: no-repeat;
+  background-position: 100% 70%;
+  background-size: cover;
+  z-index: 1;
+  padding: 120px 100px 120px 100px;
+  @media screen and (max-width: 499px) {
+    padding: 40px 100px;
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    padding: 100px 100px;
+  }
+  h1 {
+    font-family: "titillium-light",arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: rgba(255,255,255,.55);
+    display: inline-block;
+    font-size: 35px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding: 40px .5em;
+    width: 100%;
+    background: 0 0;
+    padding: 0;
+  }
+  .tagline {
+    display: block;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 0;
+    padding-bottom: 0;
+    width: 30%;
+}
+}
+
 .docs-header-headline-container {
   background-image: url(/img/headline-cover.jpg);
   background-repeat: no-repeat;
