@@ -85,6 +85,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/rpc-vmware/*  https://rpc-vmware--rpc-vmware.netlify.app/docs/rpc-vmware/:splat    200
 /doc/rpc-vmware/*  https://vmware-cloud--rpc-vmware.netlify.app/doc/rpc-vmware/:splat    200
 /docs/docs-vmware-server-virt/server-virt-handbook/*     https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/:splat     200
+/docs/docs-vmware-server-virt/server-virt-handbook/user-manual/managing-vms/*    https://rxt-docs-server-virt.netlify.app/docs/docs-vmware-server-virt/server-virt-handbook/manage-your-virtual-machine/:splat    200
 
 # Red-hat
 
@@ -197,6 +198,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
 # VM Management
 /docs/vm-management/*           https://vm-management.netlify.app/docs/vm-management/:splat        200
+
 
 # 404 Redirects
 
