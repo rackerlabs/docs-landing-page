@@ -65,19 +65,22 @@
     a.inactive:after {
         content: url(/img/plus.svg);
         position: absolute;
-        left: 1rem;
+        left: -2rem;
         color: #3498DB;
+        margin: .3rem;
     }
     a.inactive.collapsed:after {
         content: url(/img/plus.svg);;
         position: absolute;
-        left: 1rem;
+        left: -2rem;
         color: #3498DB;
+        margin: .3rem;
     }
     a[aria-expanded="true"]:after {
         content: url(/img/minus.svg);
         position: absolute;
-        left: 1rem;
+        left: -2rem;
         color: #3498DB;
+        margin: .3rem;
     }
 }
