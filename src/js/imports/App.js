@@ -5,8 +5,8 @@ import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors";
 
 
-const ALGOLIA_SEARCH_KEY = 'ce5576a8109906d7cbc0c7ebdff2c2e2';
-const ALGOLIA_APP_ID = 'I0JO56OFYD';
+const ALGOLIA_SEARCH_KEY = '415b49ee31c126e903e2ff7fbb56064c';
+const ALGOLIA_APP_ID = 'PXE1L93DMW';
 const algoliaClient = algoliasearch(
   ALGOLIA_APP_ID,
   ALGOLIA_SEARCH_KEY
