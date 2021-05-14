@@ -200,6 +200,8 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # VM Management
 /docs/vm-management/*           https://vm-management.netlify.app/docs/vm-management/:splat        200
 
+# Faws Legacy
+/docs/faws-legacy/*     https://faws-legacy.netlify.app/docs/faws-legacy/:splat     200
 
 # 404 Redirects
 
