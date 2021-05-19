@@ -205,6 +205,9 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # Faws Legacy
 /docs/faws-legacy/*     https://faws-legacy.netlify.app/docs/faws-legacy/:splat     200
 
+# DBA Solutions Guide
+/docs/dba-solutions-guide/*     https://docs-dba-solution-guide.netlify.app/docs/dba-solutions-guide/:splat  200
+
 # 404 Redirects
 
 # /docs/docs-service-blocks/*    /docs/service-blocks/:splat     301
