@@ -70,7 +70,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/ras-databases/*      https://docs-ras-databases.netlify.app/docs/ras-databases/:splat      200
 
 # AWS Redirects
-/docs/fanatical-support-aws/service-blocks/*    https://faws-legacy.netlify.app/docs/faws-legacy/service-blocks/:splat   200
+/docs/fanatical-support-aws/service-blocks/*    /docs/faws-legacy/service-blocks/:splat   200
 
 /docs/fanatical-support-aws/*    https://docs-aws.netlify.app/docs/fanatical-support-aws/:splat    200
 
