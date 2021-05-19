@@ -54,7 +54,7 @@ class App extends Component {
     window.ga('send', 'pageView', page);
   }}>
           <Configure hitsPerPage={20} />
-          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator searchAsYouType={false} />
+          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator searchAsYouType={true} />
           <Results>
               <InfiniteHits minHitsPerPage={20} />
           </Results>
