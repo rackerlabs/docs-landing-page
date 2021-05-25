@@ -454,6 +454,7 @@ $header-height: 5rem;
 
       li {
         margin-bottom: .5em;
+        margin-right: 0;
 
         a {
           color: $color-white;
@@ -472,7 +473,6 @@ $header-height: 5rem;
   .buttons-nav-item {
     ul {
       position: absolute;
-      padding-left: 0;
       border-top: 1px solid $color-black;
       border-radius: 3px;
       z-index: 20;
@@ -480,6 +480,7 @@ $header-height: 5rem;
       color: $color-white;
       right: 0;
       top: 75%;
+      padding-right: 10px;
     }
   }
 
