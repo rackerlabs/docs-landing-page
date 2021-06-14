@@ -9,9 +9,8 @@
         "start": "run-p start:*",
         "start:hugo": "make serve",
         "start:webpack": "webpack --mode=development --watch",
-        "build:index": "node scraper.js",
         "build:algolia": "atomic-algolia",
-        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo build:index build:algolia",
+        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo build:algolia",
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
         "build:webpack": "webpack --mode=production"
