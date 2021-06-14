@@ -1,12 +1,14 @@
 var __asyncValues =
   (this && this.__asyncValues) ||
   function (o) {
-    if (!Symbol.asyncIterator) throw new TypeError("Symbol.asyncIterator is not defined.");
+    if (!Symbol.asyncIterator)
+      throw new TypeError("Symbol.asyncIterator is not defined.");
     var m = o[Symbol.asyncIterator],
       i;
     return m
       ? m.call(o)
-      : ((o = typeof __values === "function" ? __values(o) : o[Symbol.iterator]()),
+      : ((o =
+          typeof __values === "function" ? __values(o) : o[Symbol.iterator]()),
         (i = {}),
         verb("next"),
         verb("throw"),
@@ -31,8 +33,7 @@ var __asyncValues =
     }
   };
 const { createHash } = require("crypto");
-// const chrome = require("chrome-aws-lambda");
-const { Page } = require("puppeteer-core")
+const chrome = require("chrome-aws-lambda");
 const fs = require("fs");
 const items = new Set();
 const startUrl = "https://docs.rackspace.com/";
@@ -60,8 +61,8 @@ const getUrls = async (page, _url, baseUrl) => {
   let text = undefined;
   try {
     text =
-      (_c = await page.$eval("main", (element) => element.innerText)) !== null &&
-      _c !== void 0
+      (_c = await page.$eval("main", (element) => element.innerText)) !==
+        null && _c !== void 0
         ? _c
         : undefined;
   } catch (error) {}
@@ -99,7 +100,8 @@ const getUrls = async (page, _url, baseUrl) => {
     e_1 = { error: e_1_1 };
   } finally {
     try {
-      if (hrefs_1_1 && !hrefs_1_1.done && (_a = hrefs_1.return)) await _a.call(hrefs_1);
+      if (hrefs_1_1 && !hrefs_1_1.done && (_a = hrefs_1.return))
+        await _a.call(hrefs_1);
     } finally {
       if (e_1) throw e_1.error;
     }
@@ -107,13 +109,13 @@ const getUrls = async (page, _url, baseUrl) => {
 };
 const crawl = async () => {
   var e_2, _a;
-  // const browser = await chrome.puppeteer.launch({
-  //   executablePath: await chrome.executablePath,
-  //   args: chrome.args,
-  //   defaultViewport: chrome.defaultViewport,
-  //   headless: chrome.headless,
-  // });
-  const page = new Page();
+  const browser = await chrome.puppeteer.launch({
+    executablePath: await chrome.executablePath,
+    args: chrome.args,
+    defaultViewport: chrome.defaultViewport,
+    headless: chrome.headless,
+  });
+  const page = await browser.newPage();
   if (Array.isArray(startUrl)) {
     try {
       for (
@@ -136,15 +138,26 @@ const crawl = async () => {
   } else {
     await getUrls(page, startUrl, baseUrl);
   }
-  // await browser.close();
+  await browser.close();
   return items;
 };
-(async () => {
+exports.handler = async (event, context) => {
   try {
     const items = await crawl();
     fs.writeFileSync("data.json", JSON.stringify([...items]));
-    console.log("Crawling Done!");
+    return {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: `Completed Crawling!`,
+        buffer: items,
+      }),
+    };
+    // console.log("Crawling Done!");
   } catch (error) {
-    console.log(error);
+      return {
+          statusCode: 400,
+          body: JSON.stringify({ message: 'Unable to Crawl: ${error}'})
+      }
+    // console.log(error);
   }
-})()
+};
