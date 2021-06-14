@@ -144,7 +144,7 @@ const crawl = async () => {
 exports.handler = async (event, context) => {
   try {
     const items = await crawl();
-    fs.writeFileSync("data.json", JSON.stringify([...items]));
+    fs.writeFileSync("../../data.json", JSON.stringify([...items]));
     return {
       statusCode: 200,
       body: JSON.stringify({
