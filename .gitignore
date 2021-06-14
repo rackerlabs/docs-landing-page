@@ -18,3 +18,4 @@ resources/_gen
 .netlify
 Gemfile.lock
 static/assets
+functions-build

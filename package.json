@@ -10,10 +10,13 @@
         "start:hugo": "make serve",
         "start:webpack": "webpack --mode=development --watch",
         "build:algolia": "atomic-algolia",
-        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo build:algolia",
+        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo build:functions",
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
-        "build:webpack": "webpack --mode=production"
+        "build:webpack": "webpack --mode=production",
+        "build:functions": "netlify-lambda build functions --config webpack.functions.js",
+        "postinstall": "netlify-lambda install",
+        "dev": "netlify dev"
     },
     "devDependencies": {
         "@babel/core": "^7.14.5",
@@ -30,6 +33,7 @@
         "file-loader": "^6.2.0",
         "html-entities": "^2.3.2",
         "mini-css-extract-plugin": "^1.5.0",
+        "netlify-lambda": "^2.0.9",
         "npm-run-all": "^4.1.5",
         "postcss": "^8.3.4",
         "postcss-cli": "^8.3.1",
@@ -44,7 +48,8 @@
         "react-instantsearch-dom": "^6.11.1",
         "url-parse": "^1.5.1",
         "webpack": "^5.38.1",
-        "webpack-cli": "^4.7.2"
+        "webpack-cli": "^4.7.2",
+        "webpack-node-externals": "^3.0.0"
     },
     "dependencies": {
         "@babel/cli": "^7.14.5",

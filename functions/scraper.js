@@ -107,44 +107,40 @@ const getUrls = async (page, _url, baseUrl) => {
     }
   }
 };
-const crawl = async () => {
-  var e_2, _a;
-  const browser = await chrome.puppeteer.launch({
-    executablePath: await chrome.executablePath,
-    args: chrome.args,
-    defaultViewport: chrome.defaultViewport,
-    headless: chrome.headless,
-  });
-  const page = await browser.newPage();
-  if (Array.isArray(startUrl)) {
-    try {
-      for (
-        var _b = __asyncValues(startUrl), _c;
-        (_c = await _b.next()), !_c.done;
-
-      ) {
-        const url = _c.value;
-        await getUrls(page, url, baseUrl);
-      }
-    } catch (e_2_1) {
-      e_2 = { error: e_2_1 };
-    } finally {
-      try {
-        if (_c && !_c.done && (_a = _b.return)) await _a.call(_b);
-      } finally {
-        if (e_2) throw e_2.error;
-      }
-    }
-  } else {
-    await getUrls(page, startUrl, baseUrl);
-  }
-  await browser.close();
-  return items;
-};
 exports.handler = async (event, context) => {
+    var e_2, _a;
+    const browser = await chrome.puppeteer.launch({
+      executablePath: await chrome.executablePath,
+      args: chrome.args,
+      defaultViewport: chrome.defaultViewport,
+      headless: chrome.headless,
+    });
+    const page = await browser.newPage();
+    if (Array.isArray(startUrl)) {
+      try {
+        for (
+          var _b = __asyncValues(startUrl), _c;
+          (_c = await _b.next()), !_c.done;
+
+        ) {
+          const url = _c.value;
+          await getUrls(page, url, baseUrl);
+        }
+      } catch (e_2_1) {
+        e_2 = { error: e_2_1 };
+      } finally {
+        try {
+          if (_c && !_c.done && (_a = _b.return)) await _a.call(_b);
+        } finally {
+          if (e_2) throw e_2.error;
+        }
+      }
+    } else {
+      await getUrls(page, startUrl, baseUrl);
+    }
+    await browser.close();
   try {
-    const items = await crawl();
-    fs.writeFileSync("../../data.json", JSON.stringify([...items]));
+    fs.writeFileSync("data.json", JSON.stringify([...items]));
     return {
       statusCode: 200,
       body: JSON.stringify({
