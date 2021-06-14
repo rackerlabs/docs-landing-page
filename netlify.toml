@@ -87,28 +87,28 @@
   #   seo = 0.9
   #   pwa = 0.9
 
-[[plugins]]
-  package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ['master']
-  disabled = false
-  renderJavaScript = true
+# [[plugins]]
+#   package = "@algolia/netlify-plugin-crawler"
+#   [plugins.inputs]
+#   branches = ['master']
+#   disabled = false
+#   renderJavaScript = true
 
-[[plugins]]
-  package = "netlify-plugin-submit-sitemap"
+# [[plugins]]
+#   package = "netlify-plugin-submit-sitemap"
 
-	[plugins.inputs]
+# 	[plugins.inputs]
 
-	# The base url of your site (optional, default = main URL set in Netlify)
-	baseUrl = "https://docs.rackspace.com"
+# 	# The base url of your site (optional, default = main URL set in Netlify)
+# 	baseUrl = "https://docs.rackspace.com"
 
-	# Path to the sitemap URL (optional, default = /sitemap.xml)
-	sitemapPath = "/sitemap.xml"
+# 	# Path to the sitemap URL (optional, default = /sitemap.xml)
+# 	sitemapPath = "/sitemap.xml"
 
-	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
-	providers = [
-		"google"
-	]
+# 	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+# 	providers = [
+# 		"google"
+# 	]
 
 [[plugins]]
   package = "netlify-plugin-image-optim"

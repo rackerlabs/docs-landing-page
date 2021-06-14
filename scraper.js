@@ -31,7 +31,8 @@ var __asyncValues =
     }
   };
 const { createHash } = require("crypto");
-const chrome = require("chrome-aws-lambda");
+// const chrome = require("chrome-aws-lambda");
+const { Page } = require("puppeteer-core")
 const fs = require("fs");
 const items = new Set();
 const startUrl = "https://docs.rackspace.com/";
@@ -106,13 +107,13 @@ const getUrls = async (page, _url, baseUrl) => {
 };
 const crawl = async () => {
   var e_2, _a;
-  const browser = await chrome.puppeteer.launch({
-    executablePath: await chrome.executablePath,
-    args: chrome.args,
-    defaultViewport: chrome.defaultViewport,
-    headless: chrome.headless,
-  });
-  const page = await browser.newPage();
+  // const browser = await chrome.puppeteer.launch({
+  //   executablePath: await chrome.executablePath,
+  //   args: chrome.args,
+  //   defaultViewport: chrome.defaultViewport,
+  //   headless: chrome.headless,
+  // });
+  const page = new Page();
   if (Array.isArray(startUrl)) {
     try {
       for (
@@ -135,7 +136,7 @@ const crawl = async () => {
   } else {
     await getUrls(page, startUrl, baseUrl);
   }
-  await browser.close();
+  // await browser.close();
   return items;
 };
 (async () => {
