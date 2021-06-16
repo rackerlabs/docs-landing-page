@@ -76,11 +76,13 @@ function Authors(props) {
   }
 }
 const Hit = ({ hit }) => {
-  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.url != '') {
+  if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != '' && hit.category != null && hit.category != '') {
     return (
       <div className="row">
         <div className="col-sm-12">
+          <HeaderLink type={hit.category} /><CategoryLink category={hit.keywords} type={hit.category} />
           <h2>
+            <TitleTag type={hit.category} />
             <a className="search-title-link" href={`${hit.url}`}>
               <Highlight attribute="title" hit={hit} />
             </a>

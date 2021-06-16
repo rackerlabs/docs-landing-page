@@ -54,24 +54,41 @@ const getUrls = async (page, _url, baseUrl) => {
   console.log("Fetching", url);
   try {
     await page.goto(url);
-  } catch (error) {}
-  let description = undefined;
+  } catch (error) {
+    console.log("Unable to reach the URL -> ", error);
+  }
+  let category = undefined;
   try {
-    description =
-      (_b = await page.$eval("head > meta[name='description']", (element) =>
+    category =
+      (_b = await page.$eval("head > meta[name='category']", (element) =>
         element.getAttribute("content")
       )) !== null && _b !== void 0
         ? _b
         : undefined;
-  } catch (error) {}
+  } catch (error) {
+    console.log("Category doesn't exist here -> ", error)
+  }
+    let keywords = undefined;
+    try {
+      keywords =
+        (_b = await page.$eval("head > meta[name='keywords']", (element) =>
+          element.getAttribute("content")
+        )) !== null && _b !== void 0
+          ? _b
+          : undefined;
+    } catch (error) {
+      console.log("Keywords doesn't exist here -> ", error);
+    }
   let text = undefined;
   try {
     text =
-      (_c = await page.$eval("main", (element) => element.innerText)) !==
+      (_c = await page.$eval("main .content", (element) => element.innerText)) !==
         null && _c !== void 0
         ? _c
         : undefined;
-  } catch (error) {}
+  } catch (error) {
+    console.log("Content doesn't exist here -> ", error)
+  }
   let title = "";
   try {
     title = await page.title();

@@ -25,19 +25,16 @@
     }
 
     .general-campaign {
+        text-align: center;
+        font-size: 1.2em;
+        color: #1E82D7;
+        text-decoration: none;
         display: inline-block;
         border: 1px solid #1E82D7;
         padding: 20px 35px;
         position: relative;
         width: 60%;
-        font-family: serif;
-    }
-
-    .general-campaign:link {
-        text-align: center;
-        font-size: 1.2em;
-        color: #1E82D7;
-        text-decoration: none;
+        font-family: inherit;
 
         &:hover,
         &:focus {
@@ -107,7 +104,7 @@
         padding: 20px 35px;
         position: relative;
         width: 90%;
-        font-family: serif;
+        font-family: inherit;
         @media (max-width: 1024px) {
             padding: 10px 5px;
         }
