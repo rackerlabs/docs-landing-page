@@ -54,9 +54,7 @@ const getUrls = async (page, _url, baseUrl) => {
   console.log("Fetching", url);
   try {
     await page.goto(url);
-  } catch (error) {
-    console.log("Unable to reach the URL -> ", error);
-  }
+  } catch (error) {}
   let category = undefined;
   try {
     category =
@@ -87,15 +85,34 @@ const getUrls = async (page, _url, baseUrl) => {
   try {
     title = await page.title();
   } catch (error) { }
-  if (category != undefined && title != undefined && content != undefined && keywords != undefined && category != undefined) {
-      items.add({
-        objectID: createHash("md5").update(url).digest("hex"),
-        url,
-        title,
-        category,
-        keywords,
-        content,
-      });
+  if (
+    category != undefined &&
+    category != null &&
+    category != "" &&
+    title != undefined &&
+    title != null &&
+    title != "" &&
+    content != undefined &&
+    content != null &&
+    content != "" &&
+    keywords != undefined &&
+    keywords != null &&
+    keywords != "" &&
+    category != undefined &&
+    category != null &&
+    category != "" &&
+    url != undefined &&
+    url != null &&
+    url != ""
+  ) {
+    items.add({
+      objectID: createHash("md5").update(url).digest("hex"),
+      url,
+      title,
+      category,
+      keywords,
+      content,
+    });
   }
   let hrefs = [];
   try {
@@ -160,21 +177,17 @@ const crawl = async (startUrl, baseUrl) => {
 
 
 module.exports = {
-  async onPreBuild(opts) {
+  async onPostBuild(opts) {
     const {
-      inputs: {
-        startUrl,
-        baseUrl,
-        jsonFileName,
-        pathName
-      },
+      inputs: { startUrl, baseUrl, jsonFileName },
+      constants: { PUBLISH_DIR },
       utils: { build },
     } = opts;
       try {
         const items = await crawl(startUrl, baseUrl);
         const stringifiedIndex = JSON.stringify([...items]);
         if (jsonFileName) {
-          let searchIndexPath = path.join(pathName, jsonFileName + ".json");
+          let searchIndexPath = path.join(PUBLISH_DIR, jsonFileName + ".json");
           if (await pathExists(searchIndexPath)) {
             console.warn(
               `Existing file at ${searchIndexPath}, plugin will overwrite it but this may indicate an accidental conflict. Delete this file from your repo to avoid confusion - the plugin should be the sole manager of your search index`

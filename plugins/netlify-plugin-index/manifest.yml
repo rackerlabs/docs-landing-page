@@ -6,5 +6,3 @@ inputs:
     description: Starting URL
   - name: baseUrl
     description: Base URL
-  - name: pathName
-    description: Path to write JSON index file
