@@ -116,7 +116,7 @@
 [[plugins]]
 package = "./plugins/netlify-plugin-index"
   [plugins.inputs]
-    startUrl = "https://docs.rackspace.com/docs/portal-onboarding-guide/"
-    baseUrl = "https://docs.rackspace.com/docs/portal-onboarding-guide/"
+    startUrl = "https://docs.rackspace.com/"
+    baseUrl = "https://docs.rackspace.com/"
     jsonFileName = "searchIndex"
     pathName = "searchIndex"
