@@ -14,7 +14,7 @@
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
         "build:webpack": "webpack --mode=production",
-        "prepublish": "atomic-algolia",
+        "postpublish": "atomic-algolia",
         "dev": "netlify dev"
     },
     "devDependencies": {
