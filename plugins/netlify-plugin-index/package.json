@@ -1,0 +1,30 @@
+{
+  "name": "netlify-plugin-index",
+  "version": "0.1.6",
+  "description": "Generate a Search Index for Algolia",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "netlify",
+    "netlify-plugin",
+    "index",
+    "serverless"
+  ],
+  "devDependencies": {
+    "chrome-aws-lambda": "^10.0.0",
+    "crypto": "^1.0.1",
+    "fs": "^0.0.1-security",
+    "jest": "^27.0.4",
+    "make-dir": "^3.1.0",
+    "path-exists": "^4.0.0",
+    "puppeteer": "^10.0.0",
+    "puppeteer-core": "^10.0.0",
+    "util": "^0.12.4"
+  },
+  "dependencies": {
+    "chalk": "^4.1.1",
+    "path": "^0.12.7"
+  }
+}

@@ -6,7 +6,6 @@
 [build]
   command = "npm run build"
   publish = "public"
-  functions = "functions-build"
 
 [context.production]
   publish = "public"
@@ -113,3 +112,10 @@
 
 [[plugins]]
   package = "netlify-plugin-image-optim"
+
+[[plugins]]
+package = "./plugins/netlify-plugin-index"
+  [plugins.inputs]
+    startUrl = "https://docs.rackspace.com/docs/portal-onboarding-guide/"
+    baseUrl = "https://docs.rackspace.com/docs/portal-onboarding-guide/"
+    jsonFileName = "searchIndex"

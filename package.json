@@ -10,12 +10,11 @@
         "start:hugo": "make serve",
         "start:webpack": "webpack --mode=development --watch",
         "build:algolia": "atomic-algolia",
-        "build": "make install && rm -rf static/assets && run-s build:webpack build:hugo build:functions",
+        "build": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
         "build:webpack": "webpack --mode=production",
-        "build:functions": "netlify-lambda build functions --config webpack.functions.js",
-        "postinstall": "netlify-lambda install",
+        "prepublish": "atomic-algolia",
         "dev": "netlify dev"
     },
     "devDependencies": {
@@ -69,6 +68,7 @@
         "instantsearch.js": "^4.23.0",
         "jquery": "^3.5.1",
         "moment": "^2.29.1",
+        "path": "^0.12.7",
         "popper.js": "^1.16.1",
         "prop-types": "^15.7.2",
         "sass-loader": "^12.1.0",
