@@ -1,12 +1,6 @@
-const { promisify } = require("util");
 const { createHash } = require("crypto");
-const fs = require("fs");
-const chalk = require("chalk");
-const path = require("path");
-const makeDir = require("make-dir");
-const pathExists = require("path-exists");
 const puppeteer = require("puppeteer");
-const writeFile = promisify(fs.writeFile);
+const algoliasearch = require("algoliasearch");
 
 const __asyncValues =
   (this && this.__asyncValues) ||
@@ -174,43 +168,24 @@ const crawl = async (startUrl, baseUrl) => {
   await browser.close();
   return items;
 };
-
+const client = algoliasearch(
+  process.env.ALGOLIA_APP_ID,
+  process.env.ALGOLIA_ADMIN_KEY
+);
+const index = client.initIndex(process.env.ALGOLIA_INDEX_NAME);
+const indexObjects = async (objects) => index.replaceAllObjects(objects);
 
 module.exports = {
-  async onPostBuild(opts) {
+  async onSuccess(opts) {
     const {
-      inputs: { startUrl, baseUrl, jsonFileName },
-      constants: { PUBLISH_DIR },
-      utils: { build },
+      inputs: { startUrl, baseUrl },
     } = opts;
-      try {
-        const items = await crawl(startUrl, baseUrl);
-        const stringifiedIndex = JSON.stringify([...items]);
-        if (jsonFileName) {
-          let searchIndexPath = path.join(PUBLISH_DIR, jsonFileName + ".json");
-          if (await pathExists(searchIndexPath)) {
-            console.warn(
-              `Existing file at ${searchIndexPath}, plugin will overwrite it but this may indicate an accidental conflict. Delete this file from your repo to avoid confusion - the plugin should be the sole manager of your search index`
-            );
-            // to do: let people turn off this warning?
-          }
-          await makeDir(`${searchIndexPath}/..`); // make a dir out of the parent
-          await writeFile(searchIndexPath, stringifiedIndex);
-          console.log(
-            `Search Index JSON generated at ${chalk.cyan(
-              `/${jsonFileName}.json`
-            )}!`
-          );
-        }
-        // fs.writeFileSync("data.json", JSON.stringify([...items]));
-        console.log("Crawling Done!");
-      } catch (error) {
-        console.log(error);
-      }
-    if (jsonFileName === null) {
-      build.failPlugin(
-        "jsonFileName cannot both be null, this plugin wouldn't be generating anything!"
-      );
+    try {
+      const items = await crawl(startUrl, baseUrl);
+      await indexObjects(Array.from(items));
+      console.log("Crawling Done!");
+    } catch (error) {
+      console.log(error);
     }
   },
 };

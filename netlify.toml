@@ -59,22 +59,22 @@
   baseUrl = "https://docs.rackspace.com"
 
 
-[[plugins]]
-  package = "netlify-plugin-a11y"
+# [[plugins]]
+#   package = "netlify-plugin-a11y"
 
-  # all inputs are optional, we just show you the defaults below
-  [plugins.inputs]
+#   # all inputs are optional, we just show you the defaults below
+#   [plugins.inputs]
   
-  # required config
-  checkPaths = ['/'] # you can give an array of directories or paths to html files, that you want to run a11y checks on
+#   # required config
+#   checkPaths = ['/'] # you can give an array of directories or paths to html files, that you want to run a11y checks on
 
-  # optional config
-  # ignoreDirectories = ['/admin']  # explicitly ignore these directories
+#   # optional config
+#   # ignoreDirectories = ['/admin']  # explicitly ignore these directories
 
-  resultMode = "warn" # is "error" by default
+#   resultMode = "warn" # is "error" by default
 
-  # Developer only
-  debugMode = true # extra logging for plugin developers
+#   # Developer only
+#   debugMode = true # extra logging for plugin developers
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
@@ -116,6 +116,6 @@
 [[plugins]]
 package = "./plugins/netlify-plugin-index"
   [plugins.inputs]
-    startUrl = "https://docs.rackspace.com/"
-    baseUrl = "https://docs.rackspace.com/"
+    startUrl = "https://docs.rackspace.com/docs/service-blocks/"
+    baseUrl = "https://docs.rackspace.com/docs/service-blocks/"
     jsonFileName = "searchIndex"
