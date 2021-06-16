@@ -54,7 +54,6 @@
         "algoliasearch": "^4.9.2",
         "angular": "^1.4.1",
         "angular-sanitize": "^1.5.3",
-        "apify": "^1.2.1",
         "assets-webpack-plugin": "^7.1.0",
         "axios": "^0.21.1",
         "babel-plugin-import": "^1.13.3",

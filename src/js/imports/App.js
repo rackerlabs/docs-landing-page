@@ -4,12 +4,9 @@ import { InstantSearch, SearchBox, Configure } from 'react-instantsearch-dom';
 import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors";
 
-
-const ALGOLIA_SEARCH_KEY = 'ec196286ebae1a6db15148eeea26b485';
-const ALGOLIA_APP_ID = 'UTC1CE04NQ';
 const algoliaClient = algoliasearch(
-  ALGOLIA_APP_ID,
-  ALGOLIA_SEARCH_KEY
+  process.env.ALGOLIA_APP_ID,
+  process.env.ALGOLIA_SEARCH_KEY
 );
 
 const Results = connectStateResults(
@@ -44,12 +41,10 @@ const searchClient = {
 };
 
 class App extends Component {
-  
   render() {
-    const ALGOLIA_INDEX_NAME = 'netlify_ea5a1331-0476-4664-83af-47ba3ac87159_master_all';
     return (
       <div className="ais-InstantSearch">
-        <InstantSearch indexName={ALGOLIA_INDEX_NAME} searchClient={searchClient}  onSearchStateChange={searchState => {
+        <InstantSearch indexName={process.env.ALGOLIA_INDEX_NAME} searchClient={searchClient}  onSearchStateChange={searchState => {
     const page = `?query=${searchState.query}`;
     window.ga('send', 'pageView', page);
   }}>
