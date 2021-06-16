@@ -65,9 +65,7 @@ const getUrls = async (page, _url, baseUrl) => {
       )) !== null && _b !== void 0
         ? _b
         : undefined;
-  } catch (error) {
-    console.log("Category doesn't exist here -> ", error)
-  }
+  } catch (error) {}
     let keywords = undefined;
     try {
       keywords =
@@ -76,30 +74,29 @@ const getUrls = async (page, _url, baseUrl) => {
         )) !== null && _b !== void 0
           ? _b
           : undefined;
-    } catch (error) {
-      console.log("Keywords doesn't exist here -> ", error);
-    }
-  let text = undefined;
+    } catch (error) {}
+  let content = undefined;
   try {
-    text =
+    content =
       (_c = await page.$eval("main .content", (element) => element.innerText)) !==
         null && _c !== void 0
         ? _c
         : undefined;
-  } catch (error) {
-    console.log("Content doesn't exist here -> ", error)
-  }
+  } catch (error) {}
   let title = "";
   try {
     title = await page.title();
-  } catch (error) {}
-  items.add({
-    objectID: createHash("md5").update(url).digest("hex"),
-    url,
-    title,
-    description,
-    text,
-  });
+  } catch (error) { }
+  if (category != undefined && title != undefined && content != undefined && keywords != undefined && category != undefined) {
+      items.add({
+        objectID: createHash("md5").update(url).digest("hex"),
+        url,
+        title,
+        category,
+        keywords,
+        content,
+      });
+  }
   let hrefs = [];
   try {
     hrefs = await page.$$eval("a", (as) => as.map((a) => a.href));
