@@ -1,11 +1,11 @@
 const { promisify } = require("util");
 const { createHash } = require("crypto");
-const chrome = require("chrome-aws-lambda");
 const fs = require("fs");
 const chalk = require("chalk");
 const path = require("path");
 const makeDir = require("make-dir");
 const pathExists = require("path-exists");
+const puppeteer = require("puppeteer");
 const writeFile = promisify(fs.writeFile);
 
 const __asyncValues =
@@ -116,12 +116,7 @@ const getUrls = async (page, _url, baseUrl) => {
 
 const crawl = async (startUrl, baseUrl) => {
   var e_2, _a;
-  const browser = await chrome.puppeteer.launch({
-    executablePath: await chrome.executablePath,
-    args: chrome.args,
-    defaultViewport: chrome.defaultViewport,
-    headless: chrome.headless,
-  });
+  const browser = await puppeteer.launch();
   const page = await browser.newPage();
   if (Array.isArray(startUrl)) {
     try {
@@ -151,21 +146,21 @@ const crawl = async (startUrl, baseUrl) => {
 
 
 module.exports = {
-  async onPostBuild(opts) {
+  async onPreBuild(opts) {
     const {
       inputs: {
         startUrl,
         baseUrl,
-        jsonFileName
+        jsonFileName,
+        pathName
       },
-      constants: { PUBLISH_DIR },
       utils: { build },
     } = opts;
       try {
         const items = await crawl(startUrl, baseUrl);
         const stringifiedIndex = JSON.stringify([...items]);
         if (jsonFileName) {
-          let searchIndexPath = path.join(PUBLISH_DIR, jsonFileName + ".json");
+          let searchIndexPath = path.join(pathName, jsonFileName + ".json");
           if (await pathExists(searchIndexPath)) {
             console.warn(
               `Existing file at ${searchIndexPath}, plugin will overwrite it but this may indicate an accidental conflict. Delete this file from your repo to avoid confusion - the plugin should be the sole manager of your search index`

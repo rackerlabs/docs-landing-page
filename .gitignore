@@ -19,3 +19,5 @@ resources/_gen
 Gemfile.lock
 static/assets
 functions-build
+searchIndex/
+test.js
