@@ -5,8 +5,8 @@ import InfiniteHits from './InfiniteHits';
 import { connectStateResults } from "react-instantsearch/connectors";
 
 const algoliaClient = algoliasearch(
-  process.env.ALGOLIA_APP_ID,
-  process.env.ALGOLIA_SEARCH_KEY
+  ALGOLIA_APP_ID,
+  ALGOLIA_SEARCH_KEY
 );
 
 const Results = connectStateResults(
@@ -44,14 +44,24 @@ class App extends Component {
   render() {
     return (
       <div className="ais-InstantSearch">
-        <InstantSearch indexName={process.env.ALGOLIA_INDEX_NAME} searchClient={searchClient}  onSearchStateChange={searchState => {
-    const page = `?query=${searchState.query}`;
-    window.ga('send', 'pageView', page);
-  }}>
+        <InstantSearch
+          indexName={ALGOLIA_INDEX_NAME}
+          searchClient={searchClient}
+          onSearchStateChange={(searchState) => {
+            const page = `?query=${searchState.query}`;
+            window.ga("send", "pageView", page);
+          }}
+        >
           <Configure hitsPerPage={20} />
-          <SearchBox className="searchbox" translations={{ placeholder: 'Search across Docs', }} showLoadingIndicator searchAsYouType={false} autoFocus />
+          <SearchBox
+            className="searchbox"
+            translations={{ placeholder: "Search across Docs" }}
+            showLoadingIndicator
+            searchAsYouType={true}
+            autoFocus
+          />
           <Results>
-              <InfiniteHits minHitsPerPage={20} />
+            <InfiniteHits minHitsPerPage={20} />
           </Results>
         </InstantSearch>
       </div>
