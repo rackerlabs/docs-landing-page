@@ -1,4 +1,3 @@
-const { createHash } = require("crypto");
 const puppeteer = require("puppeteer");
 const algoliasearch = require("algoliasearch");
 
@@ -100,7 +99,6 @@ const getUrls = async (page, _url, baseUrl) => {
     url != ""
   ) {
     items.add({
-      objectID: createHash("md5").update(url).digest("hex"),
       url,
       title,
       category,
@@ -173,10 +171,11 @@ const client = algoliasearch(
   process.env.ALGOLIA_ADMIN_KEY
 );
 const index = client.initIndex(process.env.ALGOLIA_INDEX_NAME);
-const indexObjects = async (objects) => index.replaceAllObjects(objects);
+const indexObjects = async (objects) =>
+  index.saveObjects(objects, { autoGenerateObjectIDIfNotExist: true });
 
 module.exports = {
-  async onSuccess(opts) {
+  async onEnd(opts) {
     const {
       inputs: { startUrl, baseUrl },
     } = opts;

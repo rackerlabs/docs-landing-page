@@ -116,5 +116,5 @@
 [[plugins]]
 package = "./plugins/netlify-plugin-index"
   [plugins.inputs]
-    startUrl = "https://docs.rackspace.com/"
-    baseUrl = "https://docs.rackspace.com/"
+    startUrl = "https://docs.rackspace.com/blog/"
+    baseUrl = "https://docs.rackspace.com/blog/"
