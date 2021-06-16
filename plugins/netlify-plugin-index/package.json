@@ -1,6 +1,6 @@
 {
   "name": "netlify-plugin-index",
-  "version": "0.1.6",
+  "version": "0.1.0",
   "description": "Generate a Search Index for Algolia",
   "main": "index.js",
   "scripts": {
