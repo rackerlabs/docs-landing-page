@@ -16,7 +16,7 @@
         "dev": "netlify dev",
         "crawler": "node crawler.js",
         "test": "jest",
-        "aloglia": "atomic-algolia"
+        "algolia": "atomic-algolia"
     },
     "devDependencies": {
         "@babel/core": "^7.14.5",
