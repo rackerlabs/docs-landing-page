@@ -44,8 +44,8 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
-const startUrl = "https://docs.rackspace.com/docs/";
-const baseUrl = "https://docs.rackspace.com/docs/";
+const startUrl = "https://docs.rackspace.com/support/";
+const baseUrl = "https://docs.rackspace.com/support/";
 const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
