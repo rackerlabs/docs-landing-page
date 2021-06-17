@@ -24,7 +24,10 @@
     "util": "^0.12.4"
   },
   "dependencies": {
+    "algoliasearch": "^4.9.3",
     "chalk": "^4.1.1",
+    "debug": "^4.3.1",
+    "md5": "^2.3.0",
     "path": "^0.12.7"
   }
 }

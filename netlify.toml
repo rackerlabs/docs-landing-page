@@ -113,8 +113,9 @@
 [[plugins]]
   package = "netlify-plugin-image-optim"
 
-[[plugins]]
-package = "./plugins/netlify-plugin-index"
-  [plugins.inputs]
-    startUrl = "https://docs.rackspace.com/blog/"
-    baseUrl = "https://docs.rackspace.com/blog/"
+# [[plugins]]
+# package = "./plugins/netlify-plugin-index"
+#   [plugins.inputs]
+#     startUrl = "https://docs.rackspace.com/docs/fanatical-support-aws/"
+#     baseUrl = "https://docs.rackspace.com/docs/fanatical-support-aws/"
+#     jsonFileName = "searchIndex"

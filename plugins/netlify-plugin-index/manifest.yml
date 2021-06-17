@@ -1,5 +1,7 @@
 name: netlify-plugin-index
 inputs:
+  - name: jsonFileName
+    description: The name of the JSON index file
   - name: startUrl
     description: Starting URL
   - name: baseUrl

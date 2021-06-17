@@ -44,6 +44,9 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
+const startUrl = "https://docs.rackspace.com/docs/vm-management/";
+const baseUrl = "https://docs.rackspace.com/docs/vm-management/";
+const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
   var e_1, _a;
@@ -177,18 +180,12 @@ const crawl = async (startUrl, baseUrl) => {
   return items;
 };
 
-module.exports = {
-  async onPostBuild(opts) {
-    const {
-      inputs: { startUrl, baseUrl, jsonFileName },
-      constants: { PUBLISH_DIR },
-      utils: { build },
-    } = opts;
+(async () => {
     try {
       const items = await crawl(startUrl, baseUrl);
       const stringifiedIndex = JSON.stringify([...items]);
       if (jsonFileName) {
-        let searchIndexPath = path.join(PUBLISH_DIR, jsonFileName + ".json");
+        let searchIndexPath = path.join("/", jsonFileName + ".json");
         if (await pathExists(searchIndexPath)) {
           console.warn(
             `Existing file at ${searchIndexPath}, plugin will overwrite it but this may indicate an accidental conflict. Delete this file from your repo to avoid confusion - the plugin should be the sole manager of your search index`
@@ -213,5 +210,4 @@ module.exports = {
         "jsonFileName cannot both be null, this plugin wouldn't be generating anything!"
       );
     }
-  },
-};
+})()
