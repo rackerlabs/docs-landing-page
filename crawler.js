@@ -196,7 +196,7 @@ const crawl = async (startUrl, baseUrl) => {
         await writeFile(searchIndexPath, stringifiedIndex);
         console.log(
           `Search Index JSON generated at ${chalk.cyan(
-            `/${jsonFileName}.json`
+            `${searchIndexPath}/${jsonFileName}.json`
           )}!`
         );
       }
