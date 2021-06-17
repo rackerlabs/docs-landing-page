@@ -15,7 +15,8 @@
         "build:webpack": "webpack --mode=production",
         "dev": "netlify dev",
         "crawler": "node crawler.js",
-        "test": "jest"
+        "test": "jest",
+        "aloglia": "atomic-algolia"
     },
     "devDependencies": {
         "@babel/core": "^7.14.5",
