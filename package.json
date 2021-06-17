@@ -13,7 +13,8 @@
         "build:local": "rm -rf static/assets && run-s build:webpack build:hugo",
         "build:hugo": "make build",
         "build:webpack": "webpack --mode=production",
-        "dev": "netlify dev"
+        "dev": "netlify dev",
+        "crawler": "node crawler.js"
     },
     "devDependencies": {
         "@babel/core": "^7.14.5",

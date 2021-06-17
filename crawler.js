@@ -185,7 +185,7 @@ const crawl = async (startUrl, baseUrl) => {
       const items = await crawl(startUrl, baseUrl);
       const stringifiedIndex = JSON.stringify([...items]);
       if (jsonFileName) {
-        let searchIndexPath = path.join("/", jsonFileName + ".json");
+        let searchIndexPath = path.join("public", jsonFileName + ".json");
         if (await pathExists(searchIndexPath)) {
           console.warn(
             `Existing file at ${searchIndexPath}, plugin will overwrite it but this may indicate an accidental conflict. Delete this file from your repo to avoid confusion - the plugin should be the sole manager of your search index`
