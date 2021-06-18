@@ -90,9 +90,6 @@ const getUrls = async (page, _url, baseUrl) => {
   try {
     title = await page.title();
   } catch (error) {}
-  console.log('category to add:: ', category);
-  console.log('keywords to add:: ', keywords);
-  console.log('title to add:: ', title);
   items.add({
     objectID: createHash("md5").update(url).digest("hex"),
     url,
