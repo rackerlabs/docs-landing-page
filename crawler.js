@@ -44,8 +44,8 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
-const startUrl = "https://docs.rackspace.com/support/how-to/";
-const baseUrl = "https://docs.rackspace.com/support/how-to/";
+const startUrl = "https://staging-support-rackspace.netlify.app/";
+const baseUrl = "https://staging-support-rackspace.netlify.app/";
 const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
