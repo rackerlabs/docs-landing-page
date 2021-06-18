@@ -44,13 +44,13 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
-const startUrl = "https://docs.rackspace.com/support/";
-const baseUrl = "https://docs.rackspace.com/support/";
+const startUrl = "https://docs.rackspace.com/support/how-to/";
+const baseUrl = "https://docs.rackspace.com/support/how-to/";
 const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
-  var e_1, _a;
-  var _b, _c;
+  let e_1, _a;
+  let _b, _c, _d;
   const url = _url.split("#")[0];
   if (done.includes(url)) return;
   done.push(url);
@@ -58,67 +58,49 @@ const getUrls = async (page, _url, baseUrl) => {
   try {
     await page.goto(url);
   } catch (error) {}
-  let category = undefined;
+  let category = null;
   try {
     category =
-      (_b = await page.$eval("head > meta[name='category']", (element) =>
+      (_d = await page.$eval("head > meta[name='category']", (element) =>
         element.getAttribute("content")
-      )) !== null && _b !== void 0
-        ? _b
-        : undefined;
+      )) !== null && _d !== void 0
+        ? _d
+        : null;
   } catch (error) {}
-  let keywords = undefined;
+  let keywords = null;
   try {
     keywords =
       (_b = await page.$eval("head > meta[name='keywords']", (element) =>
         element.getAttribute("content")
       )) !== null && _b !== void 0
         ? _b
-        : undefined;
+        : null;
   } catch (error) {}
-  let content = undefined;
+  let content = null;
   try {
     content =
       (_c = await page.$eval(
-        "main .content",
+        "body .content",
         (element) => element.innerText
       )) !== null && _c !== void 0
         ? _c
-        : undefined;
+        : null;
   } catch (error) {}
   let title = "";
   try {
     title = await page.title();
   } catch (error) {}
-  if (
-    category != undefined &&
-    category != null &&
-    category != "" &&
-    title != undefined &&
-    title != null &&
-    title != "" &&
-    content != undefined &&
-    content != null &&
-    content != "" &&
-    keywords != undefined &&
-    keywords != null &&
-    keywords != "" &&
-    category != undefined &&
-    category != null &&
-    category != "" &&
-    url != undefined &&
-    url != null &&
-    url != ""
-  ) {
-    items.add({
-      objectID: createHash("md5").update(url).digest("hex"),
-      url,
-      title,
-      category,
-      keywords,
-      content,
-    });
-  }
+  console.log('category to add:: ', category);
+  console.log('keywords to add:: ', keywords);
+  console.log('title to add:: ', title);
+  items.add({
+    objectID: createHash("md5").update(url).digest("hex"),
+    url,
+    title,
+    category,
+    keywords,
+    content,
+  });
   let hrefs = [];
   try {
     hrefs = await page.$$eval("a", (as) => as.map((a) => a.href));
@@ -151,24 +133,24 @@ const getUrls = async (page, _url, baseUrl) => {
 };
 
 const crawl = async (startUrl, baseUrl) => {
-  var e_2, _a;
+  var e_2, _f;
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
   if (Array.isArray(startUrl)) {
     try {
       for (
-        var _b = __asyncValues(startUrl), _c;
-        (_c = await _b.next()), !_c.done;
+        var _g = __asyncValues(startUrl), _h;
+        (_h = await _g.next()), !_h.done;
 
       ) {
-        const url = _c.value;
+        const url = _h.value;
         await getUrls(page, url, baseUrl);
       }
     } catch (e_2_1) {
       e_2 = { error: e_2_1 };
     } finally {
       try {
-        if (_c && !_c.done && (_a = _b.return)) await _a.call(_b);
+        if (_h && !_h.done && (_f = _g.return)) await _f.call(_g);
       } finally {
         if (e_2) throw e_2.error;
       }
@@ -184,6 +166,7 @@ const crawl = async (startUrl, baseUrl) => {
     try {
       const items = await crawl(startUrl, baseUrl);
       const stringifiedIndex = JSON.stringify([...items]);
+      console.log("Indexing Data:: ", stringifiedIndex)
       if (jsonFileName) {
         let searchIndexPath = path.join("public", jsonFileName + ".json");
         if (await pathExists(searchIndexPath)) {
