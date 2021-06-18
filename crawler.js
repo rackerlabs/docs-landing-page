@@ -44,8 +44,8 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
-const startUrl = "https://staging-blog-rackspace.netlify.app";
-const baseUrl = "https://staging-blog-rackspace.netlify.app";
+const startUrl = "https://staging-docs-landing-page.netlify.app";
+const baseUrl = "https://staging-docs-landing-page.netlify.app";
 const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
@@ -81,7 +81,7 @@ const getUrls = async (page, _url, baseUrl) => {
     content =
       (_c = await page.$eval(
         "body .content",
-        (element) => element.innerText
+        (element) => element.innerText.slice(0,1000)
       )) !== null && _c !== void 0
         ? _c
         : null;
