@@ -90,6 +90,8 @@ const Hit = ({ hit }) => {
           <a className="search-summary-link" href={`${hit.url}`}>
             <p className="search-summary"><Snippet hit={hit} attribute="content" tagName="mark"/></p>
           </a>
+          <Authors authors={hit.author} type={hit.category} />
+          <HitDate date={hit.date} />
         </div>
       </div>
     );

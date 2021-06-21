@@ -50,7 +50,7 @@ const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
   let e_1, _a;
-  let _b, _c, _d;
+  let _b, _c, _d, _f, _g;
   const url = _url.split("#")[0];
   if (done.includes(url)) return;
   done.push(url);
@@ -75,6 +75,24 @@ const getUrls = async (page, _url, baseUrl) => {
       )) !== null && _b !== void 0
         ? _b
         : null;
+  } catch (error) {}
+  let author = null;
+  try {
+    author =
+        (_f = await page.$eval("head > meta[name='authors']", (element) =>
+          element.getAttribute("content")
+        )) !== null && _f !== void 0
+          ? _f
+          : null;
+  } catch (error) {}
+  let date = null;
+  try {
+    date =
+        (_g = await page.$eval("head > meta[name='datePublished']", (element) =>
+          element.getAttribute("content")
+        )) !== null && _g !== void 0
+          ? _g
+          : null;
   } catch (error) {}
   let content = null;
   try {
