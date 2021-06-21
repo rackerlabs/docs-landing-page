@@ -80,7 +80,8 @@ const Hit = ({ hit }) => {
     return (
       <div className="row">
         <div className="col-sm-12">
-          <HeaderLink type={hit.category} /><CategoryLink category={hit.keywords} type={hit.category} />
+          <HeaderLink type={hit.category} />
+          <CategoryLink category={hit.keywords} type={hit.category} />
           <h2>
             <TitleTag type={hit.category} />
             <a className="search-title-link" href={`${hit.url}`}>
@@ -88,10 +89,18 @@ const Hit = ({ hit }) => {
             </a>
           </h2>
           <a className="search-summary-link" href={`${hit.url}`}>
-            <p className="search-summary"><Snippet hit={hit} attribute="content" tagName="mark"/></p>
+            <p className="search-summary">
+              <Snippet hit={hit} attribute="content" tagName="mark" />
+            </p>
           </a>
-          <Authors authors={hit.author} type={hit.category} />
-          <HitDate date={hit.date} />
+          <div className="row">
+            <div className="col-sm-12 col-md-6">
+              <Authors authors={hit.author} type={hit.category} />
+            </div>
+            <div className="col-sm-12 col-md-6">
+              <HitDate date={hit.date} />
+            </div>
+          </div>
         </div>
       </div>
     );
