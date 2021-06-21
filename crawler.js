@@ -115,6 +115,8 @@ const getUrls = async (page, _url, baseUrl) => {
     category,
     keywords,
     content,
+    author,
+    date
   });
   let hrefs = [];
   try {
