@@ -27,14 +27,14 @@ function TitleTag(props) {
     return (<span></span>);
   }
 }
-function CategoryLink(props) {
-  const categories = props.category;
+function KeywordsLink(props) {
+  const keywords = props.keywords;
   const type = props.type;
-  if (categories != '' && categories != null) {
-    if (Array.isArray(categories) && type === "Insights") {
-      return (<span>&nbsp;&gt;&nbsp;{categories.map((category) => <a key={category} className="search-type-link">{category.replace(/[\[\]']+/g, '').replace(/\s/g, ', ')}</a>)}</span>);
+  if (keywords != '' && keywords != null) {
+    if (Array.isArray(keywords) && type === "Insights") {
+      return (<span>&nbsp;&gt;&nbsp;{keywords.map((keyword) => <a key={keyword} className="search-type-link">{keyword.replace(/[\[\]']+/g, '').replace(/\s/g, ', ')}</a>)}</span>);
     } else {
-      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{categories}</a></span>);
+      return (<span>&nbsp;&gt;&nbsp;<a className="search-type-link">{keywords}</a></span>);
     }
   } else {
     return (<span></span>);
@@ -81,7 +81,7 @@ const Hit = ({ hit }) => {
       <div className="row">
         <div className="col-sm-12">
           <HeaderLink type={hit.category} />
-          <CategoryLink category={hit.keywords} type={hit.category} />
+          <KeywordsLink category={hit.keywords} type={hit.category} />
           <h2>
             <TitleTag type={hit.category} />
             <a className="search-title-link" href={`${hit.url}`}>
