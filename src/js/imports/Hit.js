@@ -76,7 +76,6 @@ function Authors(props) {
   }
 }
 const Hit = ({ hit }) => {
-  console.log(hit);
   if (hit.title != null && hit.title != '' && hit.content != '' && hit.content != null && hit.url != null && hit.keywords != null && hit.keywords != '' && hit.category != null && hit.category != '') {
     return (
       <div className="row">

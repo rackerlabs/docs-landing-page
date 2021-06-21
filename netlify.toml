@@ -59,22 +59,22 @@
   baseUrl = "https://docs.rackspace.com"
 
 
-# [[plugins]]
-#   package = "netlify-plugin-a11y"
+[[plugins]]
+  package = "netlify-plugin-a11y"
 
-#   # all inputs are optional, we just show you the defaults below
-#   [plugins.inputs]
+  # all inputs are optional, we just show you the defaults below
+  [plugins.inputs]
   
-#   # required config
-#   checkPaths = ['/'] # you can give an array of directories or paths to html files, that you want to run a11y checks on
+  # required config
+  checkPaths = ['/'] # you can give an array of directories or paths to html files, that you want to run a11y checks on
 
-#   # optional config
-#   # ignoreDirectories = ['/admin']  # explicitly ignore these directories
+  # optional config
+  # ignoreDirectories = ['/admin']  # explicitly ignore these directories
 
-#   resultMode = "warn" # is "error" by default
+  resultMode = "warn" # is "error" by default
 
-#   # Developer only
-#   debugMode = true # extra logging for plugin developers
+  # Developer only
+  debugMode = true # extra logging for plugin developers
 
 [[plugins]]
   package = "@netlify/plugin-lighthouse"
@@ -87,35 +87,22 @@
   #   seo = 0.9
   #   pwa = 0.9
 
-# [[plugins]]
-#   package = "@algolia/netlify-plugin-crawler"
-#   [plugins.inputs]
-#   branches = ['master']
-#   disabled = false
-#   renderJavaScript = true
 
-# [[plugins]]
-#   package = "netlify-plugin-submit-sitemap"
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
 
-# 	[plugins.inputs]
+	[plugins.inputs]
 
-# 	# The base url of your site (optional, default = main URL set in Netlify)
-# 	baseUrl = "https://docs.rackspace.com"
+	# The base url of your site (optional, default = main URL set in Netlify)
+	baseUrl = "https://docs.rackspace.com"
 
-# 	# Path to the sitemap URL (optional, default = /sitemap.xml)
-# 	sitemapPath = "/sitemap.xml"
+	# Path to the sitemap URL (optional, default = /sitemap.xml)
+	sitemapPath = "/sitemap.xml"
 
-# 	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
-# 	providers = [
-# 		"google"
-# 	]
+	# Enabled providers to submit sitemap to (optional, default = 'google', 'bing', 'yandex'). Possible providers are currently only 'google', 'bing', 'yandex'.
+	providers = [
+		"google"
+	]
 
 [[plugins]]
   package = "netlify-plugin-image-optim"
-
-# [[plugins]]
-# package = "./plugins/netlify-plugin-index"
-#   [plugins.inputs]
-#     startUrl = "https://docs.rackspace.com/docs/fanatical-support-aws/"
-#     baseUrl = "https://docs.rackspace.com/docs/fanatical-support-aws/"
-#     jsonFileName = "searchIndex"

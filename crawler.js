@@ -81,7 +81,7 @@ const getUrls = async (page, _url, baseUrl) => {
     content =
       (_c = await page.$eval(
         "body .content",
-        (element) => element.innerText.slice(0,1000)
+        (element) => element.innerText.slice(0,10000)
       )) !== null && _c !== void 0
         ? _c
         : null;
@@ -163,7 +163,6 @@ const crawl = async (startUrl, baseUrl) => {
     try {
       const items = await crawl(startUrl, baseUrl);
       const stringifiedIndex = JSON.stringify([...items]);
-      console.log("Indexing Data:: ", stringifiedIndex)
       if (jsonFileName) {
         let searchIndexPath = path.join("public", jsonFileName + ".json");
         if (await pathExists(searchIndexPath)) {
