@@ -44,8 +44,10 @@ const __asyncValues =
   };
 const items = new Set();
 let done = [];
-const startUrl = "https://staging-docs-landing-page.netlify.app";
-const baseUrl = "https://staging-docs-landing-page.netlify.app";
+const startUrl =
+  "https://staging-docs-landing-page.netlify.app/";
+const baseUrl =
+  "https://staging-docs-landing-page.netlify.app/";
 const jsonFileName = "searchIndex";
 
 const getUrls = async (page, _url, baseUrl) => {
@@ -107,17 +109,21 @@ const getUrls = async (page, _url, baseUrl) => {
   let title = "";
   try {
     title = await page.title();
-  } catch (error) {}
-  items.add({
-    objectID: createHash("md5").update(url).digest("hex"),
-    url,
-    title,
-    category,
-    keywords,
-    content,
-    author,
-    date
-  });
+  } catch (error) { }
+  if (title != null && content != null && category != null && keywords != null) {
+    items.add({
+      objectID: createHash("md5").update(url).digest("hex"),
+      url,
+      title,
+      category,
+      keywords,
+      content,
+      author,
+      date,
+    });
+  } else {
+    console.log("cannot add null attributes");
+  }
   let hrefs = [];
   try {
     hrefs = await page.$$eval("a", (as) => as.map((a) => a.href));
@@ -182,6 +188,7 @@ const crawl = async (startUrl, baseUrl) => {
 (async () => {
     try {
       const items = await crawl(startUrl, baseUrl);
+      console.log('items added:: ', items)
       const stringifiedIndex = JSON.stringify([...items]);
       if (jsonFileName) {
         let searchIndexPath = path.join("public", jsonFileName + ".json");
