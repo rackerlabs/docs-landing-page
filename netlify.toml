@@ -87,12 +87,6 @@
   #   seo = 0.9
   #   pwa = 0.9
 
-[[plugins]]
-  package = "@algolia/netlify-plugin-crawler"
-  [plugins.inputs]
-  branches = ['master']
-  disabled = false
-  renderJavaScript = true
 
 [[plugins]]
   package = "netlify-plugin-submit-sitemap"

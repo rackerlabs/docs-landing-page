@@ -10,59 +10,53 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 dotenv.config();
 module.exports = {
   entry: [
-    path.resolve('src', 'js', 'index.js'),
-    path.resolve('src', 'js', 'theme.js'),
+    path.resolve("src", "js", "index.js"),
+    path.resolve("src", "js", "theme.js"),
   ],
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: ['babel-loader'],
+        use: ["babel-loader"],
       },
       {
         test: /\.scss$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'postcss-loader'
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
       },
       {
         test: /\.(png|svg|jpe?g|gif)$/,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              name: '[name].[ext]'
-            }
-          }
-        ]
+              name: "[name].[ext]",
+            },
+          },
+        ],
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         use: {
-          loader: 'file-loader',
+          loader: "file-loader",
           options: {
-            name: '[name].[ext]'
-          }
-        }
+            name: "[name].[ext]",
+          },
+        },
       },
     ],
   },
   resolve: {
-    extensions: ['.jsx', '.scss', '.css', '.js'],
-    modules: [
-      path.resolve(__dirname, "node_modules"),
-    ],
+    extensions: [".jsx", ".scss", ".css", ".js"],
+    modules: [path.resolve(__dirname, "node_modules")],
   },
   output: {
-    path: path.resolve('static', 'assets'),
-    filename: 'bundle.js',
+    path: path.resolve("static", "assets"),
+    filename: "bundle.js",
   },
   watchOptions: {
     aggregateTimeout: 300,
-    poll: 1000
+    poll: 1000,
   },
   plugins: [
     new MiniCssExtractPlugin(),
@@ -70,7 +64,9 @@ module.exports = {
     new webpack.DefinePlugin({
       // Provide enviroment variable defaults
       // from .env
-      ALGOLIA_API_KEY: JSON.stringify(process.env.ALGOLIA_API_KEY),
-      ALGOLIA_BASE_URL: JSON.stringify(process.env.ALGOLIA_BASE_URL)
-    })],
+      ALGOLIA_APP_ID: JSON.stringify(process.env.ALGOLIA_APP_ID),
+      ALGOLIA_INDEX_NAME: JSON.stringify(process.env.ALGOLIA_INDEX_NAME),
+      ALGOLIA_SEARCH_KEY: JSON.stringify(process.env.ALGOLIA_SEARCH_KEY),
+    }),
+  ],
 };
