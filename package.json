@@ -18,18 +18,23 @@
     "devDependencies": {
         "@azure/msal-browser": "^2.14.2",
         "@babel/core": "^7.14.6",
-        "@babel/preset-env": "^7.14.5",
+        "@babel/preset-env": "^7.14.7",
         "@babel/preset-react": "^7.14.5",
         "autoprefixer": "^10.2.6",
         "babel-loader": "^8.1.0",
+<<<<<<< HEAD
         "bootstrap": "^5.0.1",
+=======
+        "bootstrap": "^5.0.2",
+        "chrome-aws-lambda": "^10.0.0",
+>>>>>>> 2866af9f5080e6cc19a8c29aa9015339dbdd8ab8
         "core-js": "^3.15.0",
         "css-loader": "^5.2.6",
         "file-loader": "^6.2.0",
         "html-entities": "^2.3.2",
-        "jest": "^27.0.4",
+        "jest": "^27.0.5",
         "mini-css-extract-plugin": "^1.5.0",
-        "netlify-lambda": "^2.0.9",
+        "netlify-lambda": "^2.0.10",
         "npm-run-all": "^4.1.5",
         "postcss": "^8.3.5",
         "postcss-cli": "^8.3.1",
@@ -47,7 +52,12 @@
     },
     "dependencies": {
         "@babel/cli": "^7.14.5",
+<<<<<<< HEAD
         "algoliasearch": "^4.9.3",
+=======
+        "algolia-crawl": "^1.2.16",
+        "algoliasearch": "^4.10.2",
+>>>>>>> 2866af9f5080e6cc19a8c29aa9015339dbdd8ab8
         "angular": "^1.4.1",
         "angular-sanitize": "^1.5.3",
         "assets-webpack-plugin": "^7.1.0",
