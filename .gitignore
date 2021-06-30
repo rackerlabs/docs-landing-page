@@ -18,3 +18,7 @@ resources/_gen
 .netlify
 Gemfile.lock
 static/assets
+functions-build
+searchIndex/
+test.js
+log.txt
