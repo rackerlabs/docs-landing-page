@@ -12,8 +12,8 @@ https://www.docs.rackspace.com/*    https://docs.rackspace.com/:splat       301!
 https://developer.rackspace.com/*   http://docs.rackspace.com/:splat  301!
 https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 
-/blog/*     https://staging-blog-rackspace.netlify.app/blog/:splat  200!
-/support/*  https://staging-support-rackspace.netlify.app/support/:splat  200!
+/blog/*     https://docs-technical-blog.netlify.app/blog/:splat  200!
+/support/*  https://docs-support-how-to.netlify.app/support/:splat  200!
 
 # Comment from here to remove the netlify dependency for solution docs
 
@@ -206,7 +206,10 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/faws-legacy/*     https://faws-legacy.netlify.app/docs/faws-legacy/:splat     200
 
 # DBA Solutions Guide
-/docs/dba-solutions-guide/*     https://docs-dba-solution-guide.netlify.app/docs/dba-solutions-guide/:splat  200
+/docs/dba-solutions-guide/*     https://docs-dba-solution-guide.netlify.app/docs/dba-solutions-guide/:splat     200
+
+# RSVC Docs
+/docs/rsvc-solutions-guide/*    https://rsvc-solution-guide.netlify.app/docs/rsvc-solutions-guide/:splat    200
 
 # 404 Redirects
 

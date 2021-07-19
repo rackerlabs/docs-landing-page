@@ -1,9 +1,14 @@
-import React, { Component, useState, useRef } from 'react';
-import { connectInfiniteHits, Configure, connectStats, RefinementList } from 'react-instantsearch-dom';
+import React, { Component, useState, useRef } from "react";
+import {
+  connectInfiniteHits,
+  Configure,
+  connectStats,
+  RefinementList,
+} from "react-instantsearch-dom";
 import { Button, Popover, Overlay } from "react-bootstrap";
 import { FaSlidersH } from "react-icons/fa";
-import PropTypes from 'prop-types';
-import Hit from './Hit';
+import PropTypes from "prop-types";
+import Hit from "./Hit";
 
 function FilterPopover() {
   const [show, setShow] = useState(false);
@@ -17,9 +22,15 @@ function FilterPopover() {
   return (
     <div ref={ref}>
       <Button variant="light" className="btn-filter" onClick={handleClick}>
-      Filter <FaSlidersH />
+        Filter <FaSlidersH />
       </Button>
-      <Overlay show={show} target={target} placement="bottom" container={ref.current} containerPadding={20}>
+      <Overlay
+        show={show}
+        target={target}
+        placement="bottom"
+        container={ref.current}
+        containerPadding={20}
+      >
         <Popover id="popover-filter">
           <Popover.Title as="h3">Filter by Type</Popover.Title>
           <Popover.Content>
@@ -35,7 +46,9 @@ const Stats = ({ nbHits }) => (
     <div className="statsLine">
       <div className="row">
         <div className="col-8">{nbHits} search results found</div>
-        <div className="col-4 text-right-filter"><FilterPopover /></div>
+        <div className="col-4 text-right-filter">
+          <FilterPopover />
+        </div>
       </div>
     </div>
   </>
@@ -51,10 +64,10 @@ class InfiniteHits extends Component {
 
   sentinel = null;
 
-  onSentinelIntersection = entries => {
+  onSentinelIntersection = (entries) => {
     const { hasMore, refineNext } = this.props;
 
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting && hasMore) {
         refineNext();
       }
@@ -75,17 +88,17 @@ class InfiniteHits extends Component {
 
     return (
       <div className="hits">
-        <Configure attributesToSnippet={['title', 'content:80']} />
+        <Configure attributesToSnippet={["title", "content:80"]} />
         <CustomStats />
         <ul>
-          {hits.map(hit => (
+          {hits.map((hit) => (
             <li key={hit.objectID} className="hit-item-single">
               <Hit hit={hit} />
             </li>
           ))}
           <li
             className="ais-InfiniteHits-sentinel"
-            ref={c => (this.sentinel = c)}
+            ref={(c) => (this.sentinel = c)}
           />
         </ul>
       </div>
