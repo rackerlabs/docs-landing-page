@@ -105,6 +105,15 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/private-cloud/rpc/v13/*       https://v13--privatecloud-docs.netlify.app/docs/private-cloud/rpc/v13/:splat      200
 
 # KaaS
+
+/docs/rkaas/v6.0.x/*    https://6-0-x--kaas.netlify.app/docs/rkaas/v6.0.x/:splat     200
+
+/docs/rkaas/v5.1.x/*    https://5-1-x--kaas.netlify.app/docs/rkaas/v5.1.x/:splat     200
+
+/docs/rkaas/v5.0.x/*    https://5-0-x--kaas.netlify.app/docs/rkaas/v5.0.x/:splat     200
+
+/docs/rkaas/v4.0.x/*    https://4-0-x--kaas.netlify.app/docs/rkaas/v4.0.x/:splat     200
+
 /docs/rkaas/v3.1.x/*    https://3-1-x--kaas.netlify.app/docs/rkaas/v3.1.x/:splat     200
 
 /docs/rkaas/v3.0.x/*   https://3-0-x--kaas.netlify.app/docs/rkaas/v3.0.x/:splat     200
