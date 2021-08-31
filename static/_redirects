@@ -221,7 +221,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 /docs/rsvc-solutions-guide/*    https://rsvc-solution-guide.netlify.app/docs/rsvc-solutions-guide/:splat    200
 
 # AMR Solution Guide
-/docs/amr/*    https://amr.netlify.app/docs/amr/:splat    200
+/docs/amr/*   https://docs-amr.netlify.app/docs/amr/:splat    200
 
 # Dedicated Load Balancer v3
 /docs/dedicated-load-balancer-v3/*    https://docs-dedicated-load-balancer-v3.netlify.app/docs/dedicated-load-balancer-v3/:splat    200
