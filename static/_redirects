@@ -1,4 +1,4 @@
-# Domain Level Redirects
+# Domain Level Redirect
 http://support.rackspace.com/*   http://docs.rackspace.com/support/:splat  301!
 https://support.rackspace.com/*   https://docs.rackspace.com/support/:splat  301!
 https://www.support.rackspace.com/*  https://docs.rackspace.com/support/:splat  301!
