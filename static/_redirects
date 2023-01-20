@@ -220,7 +220,7 @@ https://www.developer.rackspace.com/*     http://docs.rackspace.com/:splat  301!
 # RSVC Docs
 /docs/rsvc-solutions-guide/*    https://rsvc-solution-guide.netlify.app/docs/rsvc-solutions-guide/:splat    200
 
-# Private Cloud SDDC Docs
+# Private Cloud SDDC Docs Site
 /docs/sddc/*    https://docs-private-cloud-sddc.netlify.app/docs/sddc/:splat    200
 
 # AMR Solution Guide
