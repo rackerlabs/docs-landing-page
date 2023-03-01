@@ -112,9 +112,9 @@ img[src$="cloudformation-launch-stack.png"] {
 }
 
 .blog-headline-container {
-  background-image: url(/img/cfcf-rings-background.svg);
+  background-image: url(/img/expert-insights-logo-tagline.svg), url(/img/cfcf-rings-background.svg) ;
   background-repeat: no-repeat;
-  background-position: 100% 70%;
+  background-position: bottom left, 100% 70%;
   background-size: cover;
   z-index: 1;
   padding: 120px 100px 120px 100px;
