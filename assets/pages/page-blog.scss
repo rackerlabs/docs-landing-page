@@ -113,10 +113,10 @@ img[src$="cloudformation-launch-stack.png"] {
 
 .blog-headline-container {
   background-color: black;
-  background-image: url(/img/expert-insights-logo-tagline.svg), url(/img/cfcf-rings-background.svg) ;
+  background-image: url(/img/cfcf-rings-background.svg);
   background-repeat: no-repeat;
-  background-position: left, center;
-  background-size: 332px, cover;
+  background-position: center;
+  background-size: cover;
   z-index: 1;
   padding: 120px 100px 120px 100px;
   @media screen and (max-width: 499px) {
@@ -149,6 +149,18 @@ img[src$="cloudformation-launch-stack.png"] {
     width: 30%;
 }
 }
+
+.blog-headline-container::after {
+  content: '.';
+  background-image: url(https://deploy-preview-347--docs-landing-page.netlify.app/img/expert-insights-logo-tagline.svg);
+  width: 332px;
+  height: 133px;
+  background-repeat: no-repeat;
+  display: block;
+  color: white;
+  overflow: hidden;
+  text-indent: -5px;
+  }
 
 .docs-header-headline-container {
   background-image: url(/img/headline-cover.jpg);
