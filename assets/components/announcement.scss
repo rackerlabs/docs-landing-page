@@ -1,6 +1,7 @@
 .announcement {
     .header-announcement {
         background: #64005A;
+        /*
         .banner::after {
                 /* This ::after is temporary for June 8, 2023 maintenance banner */
                 content: "NON-SERVICE DISRUPTING MAINTENANCE: On June 8, 2023, between 09:00 CDT and 12:00 CDT, docs.rackspace.com will be redirected to our new Website.";
@@ -12,14 +13,14 @@
                 font-weight: 500;
                 line-height: 17px;
                 color: #FFF;    
-         }
+         }*/
         .banner {
             position: relative;
             width: 100%;
             margin: 0 auto;
             padding: 15px 10px;
             p {
-                display: none; /* using this to hide branding text across all websites and replace with warning in banner::after above */
+                /* display: none;  will use this to hide branding text across all websites when we un-comment banner::after above */
                 font-family: "open-sans-regular", arial, sans-serif;
                 font-style: normal;
                 text-align: center;
