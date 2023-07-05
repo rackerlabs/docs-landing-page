@@ -1,10 +1,10 @@
 .announcement {
     .header-announcement {
         background: #64005A;
-        /*
+        
         .banner::after {
-                This is a temporary maintenance banner for migration release
-                content: "SERVICE DISRUPTING MAINTENANCE: On June 29, 2023 between 17:00 CDT and 21:00 CDT docs.rackspace.com and docs.rackspace.com/blog will be unavailable while they are redirected to a new website.";
+                /* This is a temporary maintenance banner for migration release */
+                content: "SERVICE DISRUPTING MAINTENANCE: On July 12, 2023 between 17:00 CDT and 21:00 CDT docs.rackspace.com and docs.rackspace.com/blog will be unavailable while they are redirected to a new website.";
                 display: block;
                 font-family: "open-sans-regular", arial, sans-serif;
                 font-style: normal;
@@ -13,14 +13,14 @@
                 font-weight: 500;
                 line-height: 17px;
                 color: #FFF;    
-         }*/
+         }
         .banner {
             position: relative;
             width: 100%;
             margin: 0 auto;
             padding: 15px 10px;
             p {
-                /* display: none; use this to hide branding text across all websites when we un-comment banner::after above */
+                display: none; /* use this to hide branding text across all websites when we un-comment banner::after above */
                 font-family: "open-sans-regular", arial, sans-serif;
                 font-style: normal;
                 text-align: center;
